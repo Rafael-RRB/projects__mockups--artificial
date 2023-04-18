@@ -1,0 +1,66 @@
+@import './normalize.css';
+@import './accessibility.css';
+
+/* Font for headings */
+@font-face {
+  font-family: Orbitron;
+  src: url('./font/Orbitron/Orbitron-VariableFont_wght.ttf');
+}
+/* Font for body */
+@font-face {
+  font-family: Roboto;
+  src: url('./font/Roboto/Roboto-LightItalic.ttf');
+  font-style: italic;
+  font-weight: 200;
+}
+@font-face {
+  font-family: Roboto;
+  src: url('./font/Roboto/Roboto-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url('./font/Roboto/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --color-main: #0E4180;
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #000000;
+  --color-font-light: #EEEEEE;
+  --color-font-dark: #212121;
+  
+  font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color: var(--color-font-dark);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-size: 10px;
+}
+
+/* Elements */
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Orbitron;
+  font-weight: 900;
+}
+/* Classes */
+.main {
+  padding-top: 5rem;
+
+  min-height: calc(100vh - 5rem);
+}

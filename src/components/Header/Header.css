@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+
+  background-color: var(--color-bg-light);
+  border-bottom: .1rem solid var(--color-main);
+
+  width: 100%;
+  height: 5.1rem;
+
+  padding: 0 1rem;
+}
+
+  .header__logo {
+    background: transparent url('./img/ui/logo/logo__artificial.svg') no-repeat center / 2rem;
+  }
+
+  .header__links {
+
+  }
+
+    .links__account {
+      display: inline-block;
+      background: transparent url('./img/ui/icons/account.svg') no-repeat center / 2rem;
+    }
+
+    .links__menu {
+      padding: 0;
+      margin: 0;
+      border: 0;
+
+      background: transparent url('./img/ui/icons/menu.svg') no-repeat center / 2rem;
+    }
