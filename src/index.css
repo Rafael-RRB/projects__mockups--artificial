@@ -4,24 +4,24 @@
 /* Font for headings */
 @font-face {
   font-family: Orbitron;
-  src: url('./font/Orbitron/Orbitron-VariableFont_wght.ttf');
+  src: url('../font/Orbitron/Orbitron-VariableFont_wght.ttf');
 }
 /* Font for body */
 @font-face {
   font-family: Roboto;
-  src: url('./font/Roboto/Roboto-LightItalic.ttf');
+  src: url('../font/Roboto/Roboto-LightItalic.ttf');
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: Roboto;
-  src: url('./font/Roboto/Roboto-Medium.ttf');
+  src: url('../font/Roboto/Roboto-Medium.ttf');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: Roboto;
-  src: url('./font/Roboto/Roboto-Bold.ttf');
+  src: url('../font/Roboto/Roboto-Bold.ttf');
   font-style: normal;
   font-weight: 700;
 }
