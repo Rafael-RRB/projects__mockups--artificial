@@ -1,6 +1,10 @@
 import './Banner.css';
 
 function Banner(props) {
+  /* images */
+  const imageMinimum = props.imageMinimum;
+  const imageDefault = props.imageDefault;
+  const imageMaximum = props.imageMaximum;
   /* page identifier */
   const page = props.page;
   /* alternative text */
@@ -8,11 +12,12 @@ function Banner(props) {
 
   return(
     <picture className={`main__banner main__banner--${page}`}>
-      <source className='banner__image' media='(max-width: 280px)' srcSet={`../../assets/img/banner/banner__${page}--min.webp`} />
-      <source className='banner__image' media='(max-width: 540px)' srcSet={`../../assets/img/banner/banner__${page}--default.webp`} />
-      <img className='banner__image' src={`../../assets/img/banner/banner__${page}--max.webp`} alt={alt} />
+      <source className='banner__image' media='(max-width: 280px)' srcSet={imageMinimum} />
+      <source className='banner__image' media='(max-width: 540px)' srcSet={imageDefault} />
+      <img className='banner__image' src={imageMaximum} alt={alt} />
     </ picture>
   )
 }
+
 
 export default Banner;
