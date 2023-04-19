@@ -3,6 +3,11 @@ a, button, input, textarea, select, option, label {
   width: 5rem;
   min-height: 50px;
   height: 5rem;
+  -webkit-tap-highlight-color: var(--color-highlight);
+}
+
+button {
+  cursor: pointer;
 }
 
 .a11y-hidden {
