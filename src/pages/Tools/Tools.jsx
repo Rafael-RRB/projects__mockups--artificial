@@ -4,7 +4,7 @@ import Banner from '../../components/Banner/Banner.jsx';
 function Tools(props) {
   return (
     <main className="main">
-      <Banner page={''} alt={''}/>
+      <Banner page={'tools'} alt={'desenho de cinco cachorros ciêntistas.'}/>
     </main>
   );
 }

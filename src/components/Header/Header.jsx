@@ -1,11 +1,12 @@
 import './Header.css';
+import { Outlet, Link } from "react-router-dom";
 
 function Header(props) {
   return (
-    <header className="header">
-      <a href="" className="header__logo">
+    <header className="header">      
+      <Link to='/' className="header__logo">
         <span className="a11y-hidden">Home</span>
-      </a>
+      </Link>
 
       <nav className="header__links">
         <a href="" className="links__account">

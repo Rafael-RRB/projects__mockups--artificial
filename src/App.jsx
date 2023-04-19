@@ -7,6 +7,7 @@ import Home from './pages/Home/Home.jsx';
 import Tools from './pages/Tools/Tools.jsx';
 import About from './pages/About/About.jsx';
 import Contact from './pages/Contact/Contact.jsx';
+import Gallery from './pages/Gallery/Gallery.jsx';
 import NoPage from './pages/NoPage/NoPage.jsx';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Route path='sobre' element={<About />} />
 
           <Route path='contato' element={<Contact />} />
+          
+          <Route path='galeria' element={<Gallery />} />
 
           <Route path="*" element={<NoPage />} />
         <Route />

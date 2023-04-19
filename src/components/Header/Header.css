@@ -13,7 +13,7 @@
 }
 
   .header__logo {
-    background: transparent url('./img/ui/logo/logo__artificial.svg') no-repeat center / 2rem;
+    background: transparent url('../img/ui/logo/logo__artificial.svg') no-repeat center / 2rem;
   }
 
   .header__links {
@@ -22,7 +22,7 @@
 
     .links__account {
       display: inline-block;
-      background: transparent url('./img/ui/icons/account.svg') no-repeat center / 2rem;
+      background: transparent url('../img/ui/icons/account.svg') no-repeat center / 2rem;
     }
 
     .links__menu {
@@ -30,5 +30,5 @@
       margin: 0;
       border: 0;
 
-      background: transparent url('./img/ui/icons/menu.svg') no-repeat center / 2rem;
+      background: transparent url('../img/ui/icons/menu.svg') no-repeat center / 2rem;
     }

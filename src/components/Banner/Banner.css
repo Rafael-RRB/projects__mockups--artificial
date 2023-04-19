@@ -6,22 +6,31 @@
   margin: auto;
 }
 
-  .banner__home {
-    background-image: linear-gradient(#c8cfd1 83.9285%, #fdfdfd 83.9285%);
-  }
-  .banner__about {
+.main__banner--home {
+  background: var(--color-banner-home) url('../img/ui/background/banner__home--light.svg') repeat center / 5vw;
+}
+.main__banner--about {
+  background: var(--color-banner-about) url('../img/ui/background/banner__about--light.svg') repeat center / 5vw;
+}
+.main__banner--tools {
+  background: var(--color-banner-tools) url('../img/ui/background/banner__tools--light.svg') repeat center / 5vw;
+}
+.main__banner--contact {
+  background: var(--color-banner-contact) url('../img/ui/background/banner__contact--light.svg') repeat center / 5vw;
+}
+.main__banner--gallery {
+  background: var(--color-banner-gallery) url('../img/ui/background/banner__gallery--light.svg') repeat center / 5vw;
+  
+}
+.main__banner--nopage {
+  background: var(--color-banner-nopage) url('../img/ui/background/banner__nopage--light.svg') repeat center / 5vw;
+}
 
-  }
-  .banner__tools {
-
-  }
-  .banner__contact {
-
-  }
-  .banner__nopage {
-
+  .banner__image {
+    
   }
 
+  
 @media screen and (min-width: 540px) {}
 @media screen and (min-width: 768px) {}
 @media screen and (min-width: 1024px) {}

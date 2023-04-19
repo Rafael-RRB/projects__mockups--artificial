@@ -27,6 +27,13 @@
 }
 
 :root {
+  --color-banner-home: #3C46FF;
+  --color-banner-about: #FFFF66;
+  --color-banner-contact: #FF6E3C;
+  --color-banner-gallery: #42FFFF;
+  --color-banner-tools: #51DA4C;
+  --color-banner-nopage: #EEEEEE;
+
   --color-main: #0E4180;
   --color-bg-light: #ffffff;
   --color-bg-dark: #000000;
@@ -50,6 +57,10 @@
 }
 
 /* Elements */
+html {
+  overflow-y: overlay;
+}
+
 body * {
   box-sizing: border-box;
 }
