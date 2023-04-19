@@ -13,22 +13,86 @@
 }
 
   .header__logo {
-    background: transparent url('../img/ui/logo/logo__artificial.svg') no-repeat center / 2rem;
+    background: transparent url('../img/ui/logo/logo__artificial.svg') no-repeat center / 2.5rem;
   }
 
-  .header__links {
-
+  .header__menu {
+    display: flex;
   }
 
-    .links__account {
+    .menu__account {
       display: inline-block;
-      background: transparent url('../img/ui/icons/account.svg') no-repeat center / 2rem;
+      background: transparent url('../img/ui/icons/menu__account.svg') no-repeat center / 2.5rem;
     }
 
-    .links__menu {
+    .menu__submenu {
       padding: 0;
       margin: 0;
       border: 0;
 
-      background: transparent url('../img/ui/icons/menu.svg') no-repeat center / 2rem;
+      background: transparent url('../img/ui/icons/menu__submenu.svg') no-repeat center / 2.5rem;
     }
+
+      .submenu__options {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-bg-light);
+        border-left: .1rem solid var(--color-main);
+      }
+
+        .options__option {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          width: auto;
+          padding: 0 4rem 0 5rem;
+          border-bottom: .1rem solid var(--color-main);
+        }
+        
+          .option__close {
+            background-color: transparent;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+
+            background-image: url('../img/ui/icons/menu__close.svg');
+            cursor: pointer;
+          }
+          
+          .option__link {
+            color: inherit;
+            text-decoration: none;
+          }
+
+            .link__text {
+              font-size: 2rem;
+            }
+
+            .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {
+              background-color: transparent;
+              background-repeat: no-repeat;
+              background-position: 1.25rem center;
+              background-size: 2.5rem;
+            }
+
+            .link__home {
+              background-image: url('../img/ui/icons/page__home.svg');
+            }
+
+            .link__gallery {
+              background-image: url('../img/ui/icons/page__gallery.svg');
+            }
+
+            .link__tools {
+              background-image: url('../img/ui/icons/page__tools.svg');
+            }
+
+            .link__contact {
+              background-image: url('../img/ui/icons/page__contact.svg');
+            }
+
+            .link__about {
+              background-image: url('../img/ui/icons/page__about.svg');
+            }

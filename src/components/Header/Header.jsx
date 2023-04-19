@@ -8,16 +8,41 @@ function Header(props) {
         <span className="a11y-hidden">Home</span>
       </Link>
 
-      <nav className="header__links">
-        <a href="" className="links__account">
+      <section className="header__menu">
+        <a href="" className="menu__account">
           
         </a>
 
-        <button className="links__menu">
-          
+        <button className="menu__submenu">
+          <span className="a11y-hidden">Menu Hamburger</span>
         </button>
-      </nav>
+      </section>
 
+      <nav className="submenu__options">
+        <button className="options__option option__close">
+          <span className="link__text">Fechar...</span>
+        </button>
+
+        <Link to='/' className="options__option option__link link__home">
+          <span className="link__text">Página Inicial</span>
+        </Link>
+
+        <Link to='galeria' className="options__option option__link link__gallery">
+          <span className="link__text">Galeria</span>
+        </Link>
+
+        <Link to='ferramentas' className="options__option option__link link__tools">
+          <span className="link__text">Ferramentas</span>
+        </Link>
+
+        <Link to='contato' className="options__option option__link link__contact">
+          <span className="link__text">Contato</span>
+        </Link>
+
+        <Link to='sobre' className="options__option option__link link__about">
+          <span className="link__text">Sobre nós</span>
+        </Link>
+      </nav>
     </header>
   );
 }
