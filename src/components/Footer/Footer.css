@@ -41,23 +41,23 @@
       }
 
       .link-linkedin {
-        background-image: url('../img/ui/logo/linkedin.svg');
+        background-image: url('../../assets/img/ui/logo/linkedin.svg');
       }
 
       .link-github {
-        background-image: url('../img/ui/logo/github.svg');
+        background-image: url('../../assets/img/ui/logo/github.svg');
       }
 
       .link-alura {
-        background-image: url('../img/ui/logo/alura.svg');
+        background-image: url('../../assets/img/ui/logo/alura.svg');
       }
 
       .link-whatsapp {
-        background-image: url('../img/ui/logo/whatsapp.svg');
+        background-image: url('../../assets/img/ui/logo/whatsapp.svg');
       }
 
       .link-telegram {
-        background-image: url('../img/ui/logo/telegram.svg');
+        background-image: url('../../assets/img/ui/logo/telegram.svg');
       }
 
   .footer__copyright {

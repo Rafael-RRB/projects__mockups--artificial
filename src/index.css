@@ -4,24 +4,24 @@
 /* Font for headings */
 @font-face {
   font-family: Orbitron;
-  src: url('../font/Orbitron/Orbitron-VariableFont_wght.ttf');
+  src: url('./assets/font/Orbitron/Orbitron-VariableFont_wght.ttf');
 }
 /* Font for body */
 @font-face {
   font-family: Roboto;
-  src: url('../font/Roboto/Roboto-LightItalic.ttf');
+  src: url('./assets/font/Roboto/Roboto-LightItalic.ttf');
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: Roboto;
-  src: url('../font/Roboto/Roboto-Medium.ttf');
+  src: url('./assets/font/Roboto/Roboto-Medium.ttf');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: Roboto;
-  src: url('../font/Roboto/Roboto-Bold.ttf');
+  src: url('./assets/font/Roboto/Roboto-Bold.ttf');
   font-style: normal;
   font-weight: 700;
 }
@@ -34,9 +34,16 @@
   --color-banner-tools: #51DA4C;
   --color-banner-nopage: #EEEEEE;
 
+  --color-heading-chara: #A30000;
+  --color-heading-animal: #005759;
+  --color-heading-places: #005E00;
+  --color-heading-food: #475300;
+  --color-heading-people: #191984;
+
   --color-main: #0E4180;
   --color-highlight: #0e418040;
   --color-bg-light: #ffffff;
+  --color-bg-grey: #eeeeee;
   --color-bg-dark: #000000;
   --color-font-light: #EEEEEE;
   --color-font-dark: #212121;
@@ -60,6 +67,7 @@
 /* Elements */
 html {
   overflow-y: overlay;
+  scroll-behavior: smooth;
 }
 
 body * {
