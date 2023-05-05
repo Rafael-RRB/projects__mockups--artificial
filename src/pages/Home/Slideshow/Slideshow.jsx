@@ -45,7 +45,7 @@ function Slideshow(props) {
 
       <main className="slideshow__main" id={`slideshow-main-${category}`}>
         {imageList[0].map((url, index) => (
-          <img src={url} alt={imageList[2][index]} id={`${category}${index}`} key={`image-${index}`} className="slideshow__main__image" />
+          <img src={url} alt={imageList[2][index]} id={`${category}${index}`} key={`image-${index}`} loading={category !== 'character' ? 'lazy' : 'eager'} className="slideshow__main__image" />
         ))}
       </main>
 
