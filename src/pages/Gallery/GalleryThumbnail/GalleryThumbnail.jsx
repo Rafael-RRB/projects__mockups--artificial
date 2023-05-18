@@ -13,9 +13,9 @@ function GalleryThumbnail(props) {
     const buttonDownload = document.getElementById('buttonDownload');
     const buttonNewTab = document.getElementById('buttonNewTab');
 
-    mainImage.setAttribute('src', `/src/assets/img/pages/gallery/view/${view}.webp`);
+    mainImage.setAttribute('src', `/static/pages/gallery/view/${view}.webp`);
     mainImage.setAttribute('alt', alt);
-    [buttonDownload, buttonNewTab].forEach(button => button.setAttribute('href', `/src/assets/img/pages/gallery/source/${source}.png`));
+    [buttonDownload, buttonNewTab].forEach(button => button.setAttribute('href', `/static/pages/gallery/source/${source}.png`));
   }
 
   // Function used to render the categories and each thumbnail, for readability.
@@ -26,7 +26,7 @@ function GalleryThumbnail(props) {
           category.map((thumbnail, thumbnailIndex) => {
             const thumbnailBG = {
               backgroundColor: 'transparent',
-              backgroundImage: `url(/src/assets/img/pages/gallery/thumbnail/${thumbnail}.webp)`,
+              backgroundImage: `url(/static/pages/gallery/thumbnail/${thumbnail}.webp)`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
               backgroundSize: 'cover'
