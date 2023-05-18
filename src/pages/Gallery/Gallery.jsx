@@ -20,7 +20,7 @@ function Gallery(props) {
       console.log('Gallery successfully loaded from localStorage.')
     } else {
       (async () => {
-        const gallery = await fetch('./gallery.json');
+        const gallery = await fetch('/gallery.json');
         const galleryConvertion = await gallery.json();
         setImageList(galleryConvertion);
         localStorage.setItem('gallery', JSON.stringify(galleryConvertion));

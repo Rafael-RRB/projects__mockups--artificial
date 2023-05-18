@@ -23,8 +23,6 @@ function GalleryPreview(props) {
     });
   }
 
-  console.log([dataViews, dataThumbs, dataSources, dataAlts]);
-
   return (
     <section className='main__preview'>
       <GalleryContent title='Galeria' source={dataSources.length > 0 ? dataSources[0][0] : ''} view={dataViews.length > 0 ? dataViews[0][0]: ''} alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
