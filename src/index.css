@@ -47,6 +47,7 @@
   --color-bg-dark: #000000;
   --color-font-light: #EEEEEE;
   --color-font-dark: #212121;
+  --color-font-placeholder: #555555;
   
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -77,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Orbitron;
   font-weight: 900;
   line-height: 1;
+  margin: 0;
 }
 
 h1 { font-size: 3.2rem; }

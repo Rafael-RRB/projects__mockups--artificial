@@ -1,0 +1,48 @@
+.contact__form {
+  padding-bottom: 1rem;
+}
+
+  .form__title {
+    padding-bottom: 1rem;
+  }
+
+  .form__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+    .field__title {
+      text-transform: capitalize;
+      font-family: orbitron;
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+
+    .field__input {
+      width: 100%;
+      height: auto;
+      padding: 0 1rem;
+      border: .2rem solid var(--color-main);
+      border-radius: 1rem;
+      font-size: 1.4rem;
+    }
+    
+      .field__input::placeholder {
+        color: var(--color-font-placeholder);
+      }
+
+  .form__send {
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-family: orbitron;
+    font-weight: 900;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-main);
+    color: var(--color-font-light);
+  }

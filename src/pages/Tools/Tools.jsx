@@ -24,7 +24,7 @@ const toolsConcept = {
   identifier: 'concept',
   title: 'Conceituação',
   text: 'Nós usamos uma combinação de Imagens da Web, ChatGPT, DALL-E Mini e Crayon para desenvolver a nossa ideia inicial.',
-  src: ['../src/assets/img/pages/tools/tools__concept'],
+  src: ['/static/pages/tools/tools__concept'],
   alt: 'Colagens de imagens de uma floresta. Um esboço de lápis, e doze imagens simples geradas baseadas no esboço.'
 }
 const toolsGeneration = {
@@ -32,7 +32,7 @@ const toolsGeneration = {
   identifier: 'generation',
   title: 'Geração',
   text: 'Nós usamos o DALL-E 2 e outros sites, como Simplified. Alguns prompts necessitaram mais de cem gerações de imagem para obter resultados aceitáveis.',
-  src: ['../src/assets/img/pages/tools/tools__generation'],
+  src: ['/static/pages/tools/tools__generation'],
   alt: 'Colagens de pinturas de imagem geradas pela IA, de uma floresta, no estilo realista.'
 }
 const toolsInpainting = {
@@ -40,7 +40,7 @@ const toolsInpainting = {
   identifier: 'inpainting',
   title: 'Inpainting',
   text: 'Em alguns casos, as imagens geradas possuaim boa qualidade, mas eram aruinadas por pequenos defeitos, principalmente em mãos e olhos. Para corrigir isso, utilizamos o site getimg.ai para gerar novamente partes da imagem (áreas pretas, acima) para corrigir esses defeitos. Em apenas um caso, foi necessário corrigir o erro manualmente através do GIMP.',
-  src: ['../src/assets/img/pages/tools/tools__inpainting'],
+  src: ['/static/pages/tools/tools__inpainting'],
   alt: 'Imagem de um robô. Certas áreas da imagem estão vazias, que serão preenchidas pelo método de inpainting.'
 }
 const toolsUncropping = {
@@ -48,7 +48,7 @@ const toolsUncropping = {
   identifier: 'uncropping',
   title: 'Uncropping',
   text: 'Similar ao problema de defeitos, algumas imagens foram geradas perto demais, afetando a composição da imagem ou removendo detalhes importantes. Para resolver esse problema, o site "neural.love" foi utilizado, gerando as partes que faltavam na imagem original. Note na imagem acima o pequeno erro na geração: voltamos ao inpainting.',
-  src: ['../src/assets/img/pages/tools/tools__uncropping'],
+  src: ['/static/pages/tools/tools__uncropping'],
   alt: 'Imagem de uma menina segurando um guarda chuva enquanto chove. A imagem contém pequenos erros, que são corrigidos pelo método inpainting.'
 }
 const toolsOutpainting = {
@@ -57,10 +57,10 @@ const toolsOutpainting = {
   title: 'Outpainting',
   text: 'Apenas utilizado para geração dos banners de certas páginas nossas. Todas as imagens geradas possuiam resolução de 1024x1024 pixels, e o DALL-E 2 foi utilizado para expandir horizontalmente essas imagens, que posteriormente foram cortadas para atingir um Aspect Ratio de 16:9.',
   src: [
-    '../src/assets/img/pages/tools/tools__outpainting-A',
-    '../src/assets/img/pages/tools/tools__outpainting-B',
-    '../src/assets/img/pages/tools/tools__outpainting-C',
-    '../src/assets/img/pages/tools/tools__outpainting-D'
+    '/static/pages/tools/tools__outpainting-A',
+    '/static/pages/tools/tools__outpainting-B',
+    '/static/pages/tools/tools__outpainting-C',
+    '/static/pages/tools/tools__outpainting-D'
   ],
   alt: 'Colagem de quatro versões diferentes da mesma imagem, que foi expandida aos lados. A imagem é de uma garota bruxa lendo um livro, sentada em corrimão de pedra, ao por do sol.'
 }

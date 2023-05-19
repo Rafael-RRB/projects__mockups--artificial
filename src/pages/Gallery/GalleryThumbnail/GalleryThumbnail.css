@@ -1,0 +1,15 @@
+.preview__thumbnails {
+  padding: 0 2rem;
+  overflow: scroll;
+}
+
+  .thumbnails__category {
+    display: flex;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+    .category__thumb {
+      border: none;
+      border-radius: 50%;
+    }

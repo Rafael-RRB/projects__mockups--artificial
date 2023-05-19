@@ -1,4 +1,5 @@
 import './Footer.css';
+import { socialLinks } from '../../../public/config.js';
 
 function Footer(props) {
   return (
@@ -8,23 +9,23 @@ function Footer(props) {
       <p className="footer__description">Site desenvolvido por Rafael R. B., utilizando Crayion, DALL-E 2 e Simplified para inspiração e geração das imagens. Inpainting feito através do site getimg.ai, e Outpainting feito através do site neural.love.</p>
 
       <nav className="footer__social">
-        <a href="" className="social__link link-linkedin">
-        <span className="a11y-hidden">LinkedIn</span>
+        <a href={socialLinks.linkedin} className="social__link link-linkedin">
+          <span className="a11y-hidden">LinkedIn</span>
         </a>
 
-        <a href="" className="social__link link-github">
+        <a href={socialLinks.github} className="social__link link-github">
           <span className="a11y-hidden">GitHub</span>
         </a>
 
-        <a href="" className="social__link link-alura">
+        <a href={socialLinks.alura} className="social__link link-alura">
           <span className="a11y-hidden">Alura</span>
         </a>
 
-        <a href="" className="social__link link-whatsapp">
+        <a href={socialLinks.whatsapp} className="social__link link-whatsapp">
           <span className="a11y-hidden">WhatsApp</span>
         </a>
 
-        <a href="" className="social__link link-telegram">
+        <a href={socialLinks.telegram} className="social__link link-telegram">
           <span className="a11y-hidden">Telegram</span>
         </a>
       </nav>

@@ -1,0 +1,51 @@
+.main__contact {
+  padding: 2rem 2rem 0;
+}
+
+  .contact__outro {
+    padding: 0;
+  }
+
+    .outro__title {
+      padding-bottom: 1rem;
+    }
+
+    .outro__text {
+      font-size: 1.6rem;
+      padding-bottom: 2rem;
+      margin: 0;
+    }
+
+      .text__inline-link {
+        padding-right: 2.5rem;
+        /* Placeholder for the real icon */
+        background-image: linear-gradient(to right, transparent 80%, blue 80% 100%);
+      }
+
+.main__faq {
+  padding: 0 2rem;
+}
+
+  .faq__title {
+    padding-bottom: 2rem;
+  }
+
+  .faq__question-list {
+    padding: 0;
+    margin: 0;
+  }
+
+    .question-list__question {
+      list-style-type: none;
+    }
+
+      .question__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .question__answer {
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+        margin: 0;
+      }

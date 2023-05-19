@@ -12,13 +12,12 @@ function GalleryContent(props) {
       
       <figure className='content__figure' >
         <img className='figure__image' id='mainImage' src={`/static/pages/gallery/view/${currentImage}.webp`} alt={altText} />
-
-        <button className='figure__favorite'></button>
+        <button className='figure__favorite'>O</button>
       </figure>
       
       <div className='preview__buttons' >
-        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonDownload' download={true} className='preview__button preview__button--download'>download</a>
-        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonNewTab' target='_blank' className='preview__button preview__button--newtab'>nova guia</a>
+        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonDownload' download={true} className='preview__button preview__button--download'>Download</a>
+        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonNewTab' target='_blank' className='preview__button preview__button--newtab'>Nova guia</a>
       </div>
     </article>
   )
