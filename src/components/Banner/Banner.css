@@ -22,6 +22,11 @@
   background: var(--color-banner-gallery) url('../../assets/img/ui/background/banner__gallery--light.svg') repeat center / 5vw;
   
 }
+.main__banner--login {
+  margin: 0;
+  filter: sepia(1) hue-rotate(180deg);
+  z-index: -1;
+}
 .main__banner--nopage {
   background: var(--color-banner-nopage) url('../../assets/img/ui/background/banner__nopage--light.svg') repeat center / 5vw;
 }

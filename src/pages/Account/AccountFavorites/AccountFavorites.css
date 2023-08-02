@@ -1,0 +1,17 @@
+.main__favorites {
+
+}
+
+  .favorites__image {
+    min-width: 25.6rem;
+    max-width: 51.2rem;
+    aspect-ratio: 1;
+  }
+
+    .image__remove {
+
+    }
+
+    .image__download {
+
+    }

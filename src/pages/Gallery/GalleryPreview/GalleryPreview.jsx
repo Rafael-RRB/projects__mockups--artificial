@@ -25,7 +25,7 @@ function GalleryPreview(props) {
 
   return (
     <section className='main__preview'>
-      <GalleryContent title='Galeria' source={dataSources.length > 0 ? dataSources[0][0] : ''} view={dataViews.length > 0 ? dataViews[0][0]: ''} alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
+      <GalleryContent title='Galeria' source={dataSources.length > 0 ? dataSources[0][0] : ''} alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
       <GalleryThumbnail viewList={dataViews} thumbList={props.data === undefined ? undefined : dataThumbs} sourceList={dataSources} altList={dataAlts} />
     </section>
   );

@@ -1,4 +1,5 @@
 import './Header.css';
+import Login from '../../pages/Login/Login.jsx';
 import { Link } from "react-router-dom";
 
 function Header(props) {
@@ -41,6 +42,7 @@ function Header(props) {
     }, 210);
   }
 
+  
   return (
     <header className="header">      
       <Link to='/' className="header__logo">
@@ -48,9 +50,21 @@ function Header(props) {
       </Link>
 
       <section className="header__menu">
-        <a href="" className="menu__account">
-          
-        </a>
+        <Link to={
+            (() => {
+              if(localStorage.loginStatus !== undefined) {
+                if(JSON.parse(localStorage.loginStatus).status === 'logged') {
+                  return 'conta';
+                } else {
+                  return 'login';
+                }
+              } else {
+                return 'login';
+              }
+            })()
+          } className="menu__account" >
+          <span className="a11y-hidden">Sua Conta</span>
+        </Link>
 
         <button className="menu__submenu" id='menuOpen' onClick={openSubmenu}>
           <span className="a11y-hidden">Menu Hamburger</span>

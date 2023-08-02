@@ -3,7 +3,7 @@
 }
 
   .slides__slideshow {
-    
+    background-color: var(--color-bg-grey);
   }
 
     .slideshow__header {
@@ -57,6 +57,7 @@
       .slideshow__main__image {
         border-radius: 2rem;
         width: 83%;
+        max-width: 51.2rem;
         aspect-ratio: 1;
         scroll-snap-align: center;
       }
@@ -64,9 +65,10 @@
     .slideshow__footer {
       display: flex;
       flex-wrap: wrap;
+      max-width: 28rem;
       justify-content: space-between;
-      background-color: var(--color-bg-grey);
       padding: 2rem;
+      margin: auto;
       gap: 1rem;
     }
 

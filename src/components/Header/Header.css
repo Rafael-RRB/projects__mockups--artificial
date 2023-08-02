@@ -10,6 +10,8 @@
   height: 5.1rem;
 
   padding: 0 1rem;
+
+  z-index: 1;
 }
 
   .header__logo {

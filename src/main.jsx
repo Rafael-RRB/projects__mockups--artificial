@@ -30,7 +30,7 @@ Object.keys(json.categories).forEach((category, index) => {
   const categoryName = category.toUpperCase();
 
   for(let i = 0; i < 40; i++) {
-    // Thanks to ChatGPT, I've learned about "padStart". Yes, I wrote an entire function before this...
+    // Thanks to ChatGPT, I've learned about "padStart". Yes, I wrote an entire function from scratch before knowing this...
     const numberID = (i + 1).toString().padStart(4, "0");
 
     json.categories[category].push({

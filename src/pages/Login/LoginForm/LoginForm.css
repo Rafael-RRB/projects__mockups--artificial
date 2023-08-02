@@ -1,0 +1,38 @@
+.main__login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+  .login-form__switch {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+
+    .switch__button {
+
+    }
+
+  .login-form__fieldset {
+    padding: 0 0 2rem;
+    margin: 0;
+    border: none;
+  }
+
+    .fieldset__field {
+      width: auto;
+      height: auto;
+      padding-bottom: 1rem;
+    }
+
+      .field__login-title {
+        padding-bottom: 1rem;
+      }
+
+      .field__login-input {
+        width: 100%;
+        height: auto;
+      }
+
+  .login-form__confirm {
+    
+  }

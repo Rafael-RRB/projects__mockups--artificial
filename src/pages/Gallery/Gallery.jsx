@@ -29,6 +29,15 @@ function Gallery(props) {
     }
   }, []);
 
+  // Which image should appear when the Gallery page is opened.
+  if(localStorage.lastViewed === undefined && localStorage.gallery !== undefined) {
+    localStorage.setItem('lastViewed', JSON.stringify({
+      source: imageList.categories.animal[0].source,
+      view: imageList.categories.animal[0].view,
+      alt: imageList.categories.animal[0].alt
+    }));
+  }
+
   return(
     <main className="main">
       <Banner page={'gallery'} bannerList={bannerList} alt={'desenho anime de uma jovem em um museu de arte.'}/>

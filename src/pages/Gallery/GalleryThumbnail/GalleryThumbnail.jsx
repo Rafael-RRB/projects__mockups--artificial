@@ -1,7 +1,6 @@
 import './GalleryThumbnail.css';
 
 function GalleryThumbnail(props) {
-  console.log(props);
   const paths = props.thumbList;
   const viewList = props.viewList;
   const sourceList = props.sourceList;
@@ -16,6 +15,12 @@ function GalleryThumbnail(props) {
     mainImage.setAttribute('src', `/static/pages/gallery/view/${view}.webp`);
     mainImage.setAttribute('alt', alt);
     [buttonDownload, buttonNewTab].forEach(button => button.setAttribute('href', `/static/pages/gallery/source/${source}.png`));
+   
+    localStorage.setItem('lastViewed', JSON.stringify({
+      source: source,
+      view: view,
+      alt: alt
+    }));
   }
 
   // Function used to render the categories and each thumbnail, for readability.

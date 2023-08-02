@@ -18,7 +18,7 @@ function ContactForm(props) {
         return (
           <label htmlFor='' className="form__field" key={`field-${index}`}>
             <h3 className="field__title">{input.labelTitle}</h3>
-            <input type={input.type} placeholder={input.placeholder} value={inputValue} onChange={inputOnChange} {...input.pattern !== '' ? `pattern=${input.patern}` : ''} minLength={input.minLength} maxLength={input.maxLength} required className="field__input" />
+            <input type={input.type} placeholder={input.placeholder} value={inputValue} onChange={inputOnChange} pattern={input.pattern !== '' ? input.pattern : undefined} minLength={input.minLength} maxLength={input.maxLength} required className="field__input" />
           </label>
         );
       })}

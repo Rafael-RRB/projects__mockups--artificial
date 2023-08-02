@@ -1,5 +1,6 @@
 .preview__content {
   padding: 2rem 2rem 0;
+  max-width: 55.2rem;
 }
 
   .content__title {
@@ -8,7 +9,6 @@
 
   .content__figure {
     position: relative;
-    z-index: -1;
     margin: 0;
     padding-bottom: 0rem;
   }
@@ -26,8 +26,20 @@
       margin: 0;
       border: none;
       color: var(--color-font-light);
-      background-color: var(--color-main);
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
     }
+
+      .figure__favorite--off {
+        background-image: url(../../../assets/img/ui/icons/favorite__off.svg);
+      }
+
+      .figure__favorite--on {
+        background-image: url(../../../assets/img/ui/icons/favorite__on.svg);
+      }
 
   .preview__buttons {
     display: flex;
@@ -38,22 +50,25 @@
 
     .preview__button  {
       display: inline-flex;
-      justify-content: center;
       align-items: center;
       width: 50%;
+      padding-left: 1rem;
       color: var(--color-font-light);
       font-size: 1.2rem;
       font-family: orbitron;
       font-weight: 700;
       text-decoration: none;
-      text-align: center;
+      border-radius: 1rem;
       background-color: var(--color-main);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 1rem) center;
+      background-size: 2rem;
     }
 
       .preview__button--download {
-
+        background-image: url(../../../assets/img/ui/icons/download.svg);
       }
 
       .preview__button--newtab {
-
+        background-image: url(../../../assets/img/ui/icons/link__external.svg);
       }
