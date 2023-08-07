@@ -1,4 +1,6 @@
 import './GalleryContent.css';
+import { useState } from 'react';
+
 
 // Adds and removes a favorite
 function favoriteOnClick(event) {
@@ -26,11 +28,21 @@ function favoriteOnClick(event) {
   }
 }
 
-function GalleryContent(props) {
+function GalleryContent(props) {  
   const title = props.title;
   const currentImage = localStorage.lastViewed !== undefined ? JSON.parse(localStorage.lastViewed) : '';
   const downloadLink = props.source;
   const altText = props.alt;
+
+  // Only checks if image is in favorites if there is localStorage data
+  let loginUsername;
+  let loginUserObject;
+  let imageIsFavorite;
+  if(localStorage.loginStatus !== undefined && localStorage.loginList !== undefined) {
+    loginUsername = JSON.parse(localStorage.loginStatus).user;
+    loginUserObject = JSON.parse(localStorage.loginList).findIndex(login => login.user === loginUsername);
+    imageIsFavorite = (JSON.parse(localStorage.loginList)[loginUserObject].favorites.findIndex(images => images.source === currentImage.source));
+  }
 
   return (
     <article className='preview__content' >
@@ -42,7 +54,14 @@ function GalleryContent(props) {
             if(localStorage.loginStatus !== undefined) {
               if(JSON.parse(localStorage.loginStatus).status === 'logged') {
                 return (
-                  <button className='figure__favorite figure__favorite--off' onClick={event => favoriteOnClick(event)}></button>
+                  <button className={`figure__favorite figure__favorite--${(() => { if(imageIsFavorite === -1 || imageIsFavorite === undefined) {
+                    return 'off';
+                  } else {
+                    return 'on';
+                  }})()}`} onClick={event => {
+                    props.update();
+                    favoriteOnClick(event);
+                  }}></button>
                 );
               } else {
                 return '';

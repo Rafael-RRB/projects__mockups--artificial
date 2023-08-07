@@ -8,6 +8,7 @@ function GalleryThumbnail(props) {
 
   // Function used when a thumbnail is clicked.
   function clickThumbnails(view, source, alt) {
+
     const mainImage = document.getElementById('mainImage');
     const buttonDownload = document.getElementById('buttonDownload');
     const buttonNewTab = document.getElementById('buttonNewTab');
@@ -21,6 +22,8 @@ function GalleryThumbnail(props) {
       view: view,
       alt: alt
     }));
+
+    props.update();
   }
 
   // Function used to render the categories and each thumbnail, for readability.
