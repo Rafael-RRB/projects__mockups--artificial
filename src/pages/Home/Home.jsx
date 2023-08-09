@@ -9,6 +9,8 @@ import bannerSmall from '../../assets/img/banner/banner__home--min.webp';
 import bannerDefault from '../../assets/img/banner/banner__home--default.webp';
 import bannerLarge from '../../assets/img/banner/banner__home--max.webp';
 
+import ScrollPage from '../../components/ScrollPage/ScrollPage.jsx';
+
 const bannerList = {
   bannerSmall,
   bannerDefault,
@@ -34,6 +36,8 @@ function Home(props) {
         <Slideshow imageList={galleryFood} category='food' title='comidas'/>
         <Slideshow imageList={galleryPeople} category='people' title='retratos'/>
       </section>
+
+      
     </main>
   );
 }

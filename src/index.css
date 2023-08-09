@@ -94,3 +94,7 @@ img {
 
   min-height: calc(100vh - 5rem);
 }
+
+.js__hidden {
+  display: none;
+}

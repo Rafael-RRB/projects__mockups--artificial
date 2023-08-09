@@ -12,6 +12,8 @@ import Gallery from './pages/Gallery/Gallery.jsx';
 import Login from './pages/Login/Login.jsx';
 import NoPage from './pages/NoPage/NoPage.jsx';
 
+import ScrollPage from './components/ScrollPage/ScrollPage.jsx';
+
 function App() {
   return (
     <BrowserRouter>
@@ -32,11 +34,15 @@ function App() {
           <Route path='galeria' element={<Gallery />} />
 
           <Route path="*" element={<NoPage />} />
+
+          
         <Route />
       </Routes>
 
-      <Footer />  
+      <Footer />
+      <ScrollPage action='top' />
     </BrowserRouter>
+    
   )
 }
 
