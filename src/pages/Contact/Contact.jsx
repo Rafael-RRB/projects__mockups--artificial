@@ -71,7 +71,7 @@ const inputList = [
 
 function Contact(props) {
   // I needed to generate a large amount of alt text. Microsoft Edge should, hopefully, auto-generate them. I'll then fix any mistakes I find,
-  let runDebugTest = 0;
+  let runDebugTest = 1;
   useEffect(() => {
     if(runDebugTest) {
       let myGallery = JSON.parse(localStorage.gallery);
