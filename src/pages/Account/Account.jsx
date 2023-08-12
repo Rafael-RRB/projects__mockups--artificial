@@ -33,7 +33,7 @@ function Account(props) {
     <main className="main">
       <ContentSection object={accountIntro} />
       <AccountFavorites object={currentFavorites} />
-      <AccountUploadIcon userInfo={[loginList, userIndex]} />
+      <AccountUploadIcon userInfo={[loginList, userIndex]} refresh={props.refresh} />
     </main>
   );
 }

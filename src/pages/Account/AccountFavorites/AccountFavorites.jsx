@@ -2,8 +2,6 @@ import './AccountFavorites.css';
 import { GalleryContentFunction } from '../../Gallery/GalleryContent/GalleryContent.jsx';
 import { useState } from 'react';
 
-console.log(GalleryContentFunction);
-
 function AccountFavorites(props) {
   const [imageArray, setImageArray] = useState(props.object);
   const imageStyles = imageArray.map(image => ({

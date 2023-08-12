@@ -25,7 +25,7 @@ function GalleryPreview(props) {
   }
 
   // I feel extremely embarrassed to do this, but the only alternative would require some major code rewrites...
-  // ...thus, I believe it is a lot more productive to create a working version of this project, then learn more about React...
+  // ...thus, I believe it is a lot more productive to create a working version of this project, *then* learn more about React...
   // ...so I can prevent this problem from occurring again in the future.
   const [updateCount, setUpdateCount] = useState(0);
   function galleryUpdate() {
@@ -33,9 +33,11 @@ function GalleryPreview(props) {
     setUpdateCount(newCount);
   }
 
+
+
   return (
     <section className='main__preview'>
-      <GalleryContent update={galleryUpdate} title='Galeria' source={dataSources.length > 0 ? dataSources[0][0] : ''} alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
+      <GalleryContent update={galleryUpdate} title='Galeria' alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
       <GalleryThumbnail update={galleryUpdate} viewList={dataViews} thumbList={props.data === undefined ? undefined : dataThumbs} sourceList={dataSources} altList={dataAlts} />
     </section>
   );

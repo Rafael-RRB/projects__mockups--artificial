@@ -28,10 +28,11 @@ function favoriteOnClick(event) {
   }
 }
 
-function GalleryContent(props) {  
+function GalleryContent(props) {
+  console.log(props);
   const title = props.title;
   const currentImage = localStorage.lastViewed !== undefined ? JSON.parse(localStorage.lastViewed) : '';
-  const downloadLink = props.source;
+  const downloadLink = JSON.parse(localStorage.lastViewed).source;
   const altText = props.alt;
 
   // Only checks if image is in favorites if there is localStorage data
@@ -39,9 +40,12 @@ function GalleryContent(props) {
   let loginUserObject;
   let imageIsFavorite;
   if(localStorage.loginStatus !== undefined && localStorage.loginList !== undefined) {
-    loginUsername = JSON.parse(localStorage.loginStatus).user;
-    loginUserObject = JSON.parse(localStorage.loginList).findIndex(login => login.user === loginUsername);
-    imageIsFavorite = (JSON.parse(localStorage.loginList)[loginUserObject].favorites.findIndex(images => images.source === currentImage.source));
+    // Additionally, checks if user is logged in or not
+    if(JSON.parse(localStorage.loginStatus).status !== 'no-acc') {
+      loginUsername = JSON.parse(localStorage.loginStatus).user;
+      loginUserObject = JSON.parse(localStorage.loginList).findIndex(login => login.user === loginUsername);
+      imageIsFavorite = (JSON.parse(localStorage.loginList)[loginUserObject].favorites.findIndex(images => images.source === currentImage.source));
+    }    
   }
 
   return (

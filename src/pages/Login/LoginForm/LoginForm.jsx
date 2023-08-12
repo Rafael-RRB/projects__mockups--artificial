@@ -3,28 +3,9 @@ import { useState } from 'react';
 
 function LoginForm(props) {
   // localStorage logins. Yes, it's clear text - this is a static, front-end mockup website, y'know.
-  let loginList;
+  let loginList = props.loginData.loginList;
   let loginEmailList;
-  if(localStorage.getItem('loginList') === null) {
-    // If there is no localStorage data, create it.
-    console.log('No login list exists in local storage. Login list with Admin account will be created now. Email: admin, Password: admin.');
-    let myObject = [{
-      "user": "admin",
-      "pwd": "admin",
-      "imgBase64": "",
-      'favorites': []
-    }];
-    let userObject = {
-      'user': 'anonymous',
-      'status': 'no-acc'
-    }
-    localStorage.setItem('loginList', JSON.stringify(myObject));
-    localStorage.setItem('loginStatus', JSON.stringify(userObject));
-    loginList = myObject;
-  } else {
-    // If there is localStorage data, retrieve it.
-    loginList = JSON.parse(localStorage.getItem('loginList'));
-  }
+
   loginEmailList = loginList.map(login => login.user);
 
   // isLogin changes the form's functionality (login vs sign up)
@@ -168,7 +149,7 @@ function LoginForm(props) {
       const newAccount = {
         'user': event.target.querySelector('#login-user').value,
         'pwd': event.target.querySelector('#login-pwd').value,
-        'imgBase64': '',
+        'imgBase64': 'data:image/webp;base64,UklGRh4DAABXRUJQVlA4WAoAAAAwAAAAMQAAMQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIdQAAAAFHIBBI4SYXEREGOLFta1k+nOjQSUzAossQiC6R+A3glzPvT/67/gQtov8TYP6ADzsUXcBWNQkw1uTASQPwkXScs8Q4S00CtDVroKoxDzsw5V49ZpPHviro5LhHwRd/vVgaGBfLA9NiBE8lygLLYrdAvdjPHQBWUDggsgAAAPAGAJ0BKjIAMgA+bTSWR6QjIiEoFAoAgA2JYwB4g3AHqA2wG4A3gDeTMj5LFTYxWWRCwClFanUrvcQQfMvl9gAA/vyuMf7TL//+XT2BvBgLoSZF7rMcjcb44jKM2q//puf6XjvSPy0xl4Fy846i9uOcv3olai4BUPepbV3FzxTQ1fcO2Ev7n0Gy6WOxTqD5/nWvA1PXkW5TMVhFuUW0COJkvtOhUf4xtGgZCliP5bsAAAA=',
         'favorites': []
       };
       loginList.push(newAccount);

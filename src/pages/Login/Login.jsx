@@ -12,6 +12,7 @@ const bannerList = {
 }
 
 function Login(props) {
+  let loginData = props.loginData;
   // If loginList doesn't exist or there's only one credential (admin), assume user wants to signup; Else, assume user wants to login.
   const initialForm = (() => {
     if(JSON.parse(localStorage.getItem('loginList')) === null) {
@@ -31,7 +32,7 @@ function Login(props) {
   return(
     <main className="main main--login">
       <Banner page={'login'} bannerList={bannerList} alt={'imagem abstrata baseada na estátua "O pensador".'} />
-      <LoginForm isLogin={initialForm}/>
+      <LoginForm isLogin={initialForm} loginData={loginData}/>
     </main>
   );
 }

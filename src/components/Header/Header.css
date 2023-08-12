@@ -24,8 +24,14 @@
 
     .menu__account {
       display: inline-block;
-      background: transparent url('../../assets/img/ui/icons/menu__account.svg') no-repeat center / 2.5rem;
     }
+    
+      .account__profile-icon {
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        padding: 1rem;
+      }
 
     .menu__submenu {
       padding: 0;

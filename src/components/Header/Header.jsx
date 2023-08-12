@@ -1,6 +1,6 @@
 import './Header.css';
-import Login from '../../pages/Login/Login.jsx';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Header(props) {
   /* handles opening the hamburger menu */
@@ -42,7 +42,12 @@ function Header(props) {
     }, 210);
   }
 
-  
+  // Grabs the user's account icon if the user is actually logged in
+  let userProfileImage;
+  if(props.loginData.loginUserData !== undefined) {
+    userProfileImage = props.loginData.loginUserData.imgBase64;
+  }
+
   return (
     <header className="header">      
       <Link to='/' className="header__logo">
@@ -63,6 +68,7 @@ function Header(props) {
               }
             })()
           } className="menu__account" >
+          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : 'src/assets/img/ui/icons/menu__account.svg'} alt='Imagem de perfil' className='account__profile-icon'/>
           <span className="a11y-hidden">Sua Conta</span>
         </Link>
 

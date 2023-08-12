@@ -2,6 +2,7 @@ import './AccountUploadIcon.css';
 import { useState } from 'react';
 
 function AccountUploadIcon(props) {
+  console.log(props)
   const loginList = props.userInfo[0];
   const userIndex = props.userInfo[1];
   const [uploadedImages, setUploadedImages] = useState([]);
@@ -76,6 +77,7 @@ function AccountUploadIcon(props) {
     loginList[userIndex].imgBase64 = uploadedImages[uploadedImages.length - 1];
     localStorage.setItem('loginList', JSON.stringify(loginList));
     setUploadedImages([]);
+    props.refresh();
   }
 
   return (

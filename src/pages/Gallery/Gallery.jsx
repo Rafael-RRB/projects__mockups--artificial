@@ -17,7 +17,7 @@ function Gallery(props) {
   useEffect(() => {
     if(localStorage.getItem('gallery') !== null) {
       setImageList(JSON.parse(localStorage.getItem('gallery')));
-      console.log('Gallery successfully loaded from localStorage.')
+      console.log('Gallery successfully loaded from localStorage.');
     } else {
       (async () => {
         const gallery = await fetch('/gallery.json');
