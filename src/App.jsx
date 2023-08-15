@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header/Header.jsx';
@@ -54,7 +54,7 @@ function App() {
   const [refreshCounter, setRefreshCounter] = useState(0);
   function forceRefresh() {
     setRefreshCounter(refreshCounter + 1);
-  }
+  }  
 
   return (
     <BrowserRouter>

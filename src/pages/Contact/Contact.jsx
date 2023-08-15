@@ -70,31 +70,6 @@ const inputList = [
 ];
 
 function Contact(props) {
-  // I needed to generate a large amount of alt text. Microsoft Edge should, hopefully, auto-generate them. I'll then fix any mistakes I find,
-  let runDebugTest = 1;
-  useEffect(() => {
-    if(runDebugTest) {
-      let myGallery = JSON.parse(localStorage.gallery);
-      let myImages = [];
-      Object.entries(myGallery.categories).forEach(category => category[1].forEach(image => myImages.push(`/static/pages/gallery/view/${image.view}.webp`)));
-
-      let mySection = document.createElement('section');
-      myImages.forEach(src => {
-          let imgElement = document.createElement('img');
-          imgElement.setAttribute('src', src);
-          imgElement.setAttribute('width', 200);
-          imgElement.setAttribute('height', 200);
-          mySection.appendChild(imgElement);
-      });
-
-      document.querySelector('main').appendChild(mySection);
-
-      console.log(mySection);
-    } else {
-      runDebugTest++;
-    }
-  }, []);
-
   return(
     <main className="main">
       <Banner page={'contact'} bannerList={bannerList} alt={'imagem de um jovem com fone de ouvido utilizando um computador, visto de trás.'}/>

@@ -32,8 +32,7 @@ function GalleryPreview(props) {
     const newCount = updateCount + 1;
     setUpdateCount(newCount);
   }
-
-
+  
 
   return (
     <section className='main__preview'>

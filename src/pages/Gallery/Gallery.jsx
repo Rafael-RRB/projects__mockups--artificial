@@ -12,36 +12,48 @@ const bannerList = {
 }
 
 function Gallery(props) {
-  const [imageList, setImageList] = useState([]);
-
-  useEffect(() => {
+  // Gallery related functions
+  const [galleryJSON, setGalleryJSON] = useState(null);
+    
+  // function to fetch the gallery and update state
+  async function fetchGallery() {
+    let parsedJSON;
     if(localStorage.getItem('gallery') !== null) {
-      setImageList(JSON.parse(localStorage.getItem('gallery')));
-      console.log('Gallery successfully loaded from localStorage.');
+      console.log('Gallery exists in localStorage. Retrieving data...');
+      parsedJSON = JSON.parse(localStorage.getItem('gallery'));
+      setGalleryJSON(parsedJSON);
     } else {
-      (async () => {
-        const gallery = await fetch('/gallery.json');
-        const galleryConvertion = await gallery.json();
-        setImageList(galleryConvertion);
-        localStorage.setItem('gallery', JSON.stringify(galleryConvertion));
-        console.log('Gallery not found in localStorage. Fetched JSON and created localStorage copy.');
-      })();
+      const gallery = await fetch('/gallery.json');
+      const galleryConvertion = await gallery.json();
+      localStorage.setItem('gallery', JSON.stringify(galleryConvertion));
+      parsedJSON = galleryConvertion;
+      setGalleryJSON(galleryConvertion);
     }
+
+    // Which image should appear when the Gallery page is opened.
+    if(localStorage.lastViewed === undefined && localStorage.gallery !== undefined) {
+      localStorage.setItem('lastViewed', JSON.stringify({
+        source: parsedJSON.categories.animal[0].source,
+        view: parsedJSON.categories.animal[0].view,
+        alt: parsedJSON.categories.animal[0].alt
+      }));
+    }
+  }  
+
+  // Runs once, when APP is mounted
+  useEffect(() => {
+    fetchGallery();
   }, []);
-
-  // Which image should appear when the Gallery page is opened.
-  if(localStorage.lastViewed === undefined && localStorage.gallery !== undefined) {
-    localStorage.setItem('lastViewed', JSON.stringify({
-      source: imageList.categories.animal[0].source,
-      view: imageList.categories.animal[0].view,
-      alt: imageList.categories.animal[0].alt
-    }));
-  }
-
+  
   return(
     <main className="main">
-      <Banner page={'gallery'} bannerList={bannerList} alt={'desenho anime de uma jovem em um museu de arte.'}/>
-      <GalleryPreview data={imageList.categories} />
+      {(() => {
+        if(galleryJSON !== null) {
+          return (<Banner page={'gallery'} bannerList={bannerList} alt={'desenho anime de uma jovem em um museu de arte.'}/>,
+          <GalleryPreview data={galleryJSON.categories} />)
+        }
+      })()}
+      
     </main>
   );
 }

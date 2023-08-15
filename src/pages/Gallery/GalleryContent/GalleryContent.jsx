@@ -29,7 +29,6 @@ function favoriteOnClick(event) {
 }
 
 function GalleryContent(props) {
-  console.log(props);
   const title = props.title;
   const currentImage = localStorage.lastViewed !== undefined ? JSON.parse(localStorage.lastViewed) : '';
   const downloadLink = JSON.parse(localStorage.lastViewed).source;
