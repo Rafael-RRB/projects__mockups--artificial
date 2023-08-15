@@ -23,7 +23,7 @@ function Gallery(props) {
       parsedJSON = JSON.parse(localStorage.getItem('gallery'));
       setGalleryJSON(parsedJSON);
     } else {
-      const gallery = await fetch('/gallery.json');
+      const gallery = await fetch('./gallery.json');
       const galleryConvertion = await gallery.json();
       localStorage.setItem('gallery', JSON.stringify(galleryConvertion));
       parsedJSON = galleryConvertion;

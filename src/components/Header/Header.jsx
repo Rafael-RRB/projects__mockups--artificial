@@ -1,6 +1,7 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import defaultLogo from '../../assets/img/ui/icons/menu__account.svg';
 
 function Header(props) {
   /* handles opening the hamburger menu */
@@ -68,7 +69,7 @@ function Header(props) {
               }
             })()
           } className="menu__account" >
-          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : 'src/assets/img/ui/icons/menu__account.svg'} alt='Imagem de perfil' className='account__profile-icon'/>
+          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : defaultLogo} alt='Imagem de perfil' className='account__profile-icon'/>
           <span className="a11y-hidden">Sua Conta</span>
         </Link>
 
