@@ -1,12 +1,13 @@
 .preview__thumbnails {
-  padding: 0 2rem;
+  padding: 0 0 1rem 2rem;
+  margin-right: 2rem;
   overflow: scroll;
 }
 
   .thumbnails__category {
     display: flex;
     padding-bottom: 1rem;
-    gap: 1rem;
+    gap: 2rem;
   }
 
     .category__thumb {

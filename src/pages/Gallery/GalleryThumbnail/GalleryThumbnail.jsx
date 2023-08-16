@@ -41,7 +41,9 @@ function GalleryThumbnail(props) {
             };
             // Creates a thumbnail inside the specific category.
             return (
-              <button className='category__thumb' onClick={() => clickThumbnails(viewList[categoryIndex][thumbnailIndex], sourceList[categoryIndex][thumbnailIndex], altList[categoryIndex][thumbnailIndex])} style={thumbnailBG} key={`image-thumbnail-${categoryIndex}-${thumbnailIndex}}`}></button>
+              <button className='category__thumb' onClick={() => clickThumbnails(viewList[categoryIndex][thumbnailIndex], sourceList[categoryIndex][thumbnailIndex], altList[categoryIndex][thumbnailIndex])} style={thumbnailBG} key={`image-thumbnail-${categoryIndex}-${thumbnailIndex}}`}>
+                <span className="a11y-hidden">{`Trocar imagem. Descrição: ${altList[categoryIndex][thumbnailIndex]}`}</span>
+              </button>
             )
           })
         }

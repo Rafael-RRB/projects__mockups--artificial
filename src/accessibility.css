@@ -15,7 +15,8 @@ button {
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  position: absolute;
+  /* "position" seems to be causing some problems. I'll comment it out for now. */
+  /*position: absolute;*/
   white-space: nowrap;
   width: 1px;
 }

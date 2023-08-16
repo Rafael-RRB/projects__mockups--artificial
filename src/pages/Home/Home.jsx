@@ -17,12 +17,53 @@ const bannerList = {
   bannerLarge
 }
 
+
+
+
 function Home(props) {
-  const galleryChara = [list.viewList[0], list.thumbList[0], list.altList[0]];
-  const galleryAnimal = [list.viewList[1], list.thumbList[1], list.altList[1]];
-  const galleryPlaces = [list.viewList[2], list.thumbList[2], list.altList[2]];
-  const galleryFood = [list.viewList[3], list.thumbList[3], list.altList[3]];
-  const galleryPeople = [list.viewList[4], list.thumbList[4], list.altList[4]];
+  const homeGallery = props.gallery !== null ? props.gallery.categories : null;
+  const viewList = [[], [], [], [], []];
+  const thumbList = [[], [], [], [], []];
+  const altList = [[], [], [], [], []];
+
+  
+  if(homeGallery !== null) {
+    const categories = ['animal', 'chara', 'food', 'people', 'places'];
+    for(let i = 0; i < Object.keys(homeGallery).length; i++) {
+      // Looks a bit messy, but... it works.
+      randomFromArray(homeGallery[categories[i]], 8).forEach(image => {
+        viewList[i].push(`/static/pages/gallery/view/${image.view}.webp`);
+        thumbList[i].push(`/static/pages/gallery/thumbnail/${image.thumbnail}.webp`);
+        altList[i].push(`${image.alt}`);
+      });
+    }
+  }
+
+  function randomFromArray(array, quantity) {
+    // 
+    const realQuantity = quantity > array.length ? array.length : quantity;
+    const indexes = [];
+    const chosenIndexes = [];
+    // ChatGPT recommended something called the "Fisher-Yates algorithm". I'd rather learn more about it before actually using it...
+    // ...as CTRL + C, CTRL + V feels like cheating.
+    for(let i = 0; i < array.length; i++) {
+        indexes.push(i);
+    }
+    //
+    for(let i = 1; i <= realQuantity; i++) {
+        const randomIndex = Math.floor(Math.random() * (indexes.length));
+        chosenIndexes.push(indexes[randomIndex]);
+        indexes.splice(randomIndex, 1);
+    }
+    return chosenIndexes.map(e => array[e]);
+  }
+
+  // Here are the consts, to be used for the Slideshows
+  const galleryChara = [viewList[1], thumbList[1], altList[1]];
+  const galleryAnimal = [viewList[0], thumbList[0], altList[0]];
+  const galleryPlaces = [viewList[4], thumbList[4], altList[4]];
+  const galleryFood = [viewList[2], thumbList[2], altList[2]];
+  const galleryPeople = [viewList[3], thumbList[3], altList[3]];
 
   return(
     <main className="main">
@@ -36,8 +77,6 @@ function Home(props) {
         <Slideshow imageList={galleryFood} category='food' title='comidas'/>
         <Slideshow imageList={galleryPeople} category='people' title='retratos'/>
       </section>
-
-      
     </main>
   );
 }

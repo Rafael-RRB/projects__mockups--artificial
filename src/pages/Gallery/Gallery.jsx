@@ -12,38 +12,10 @@ const bannerList = {
 }
 
 function Gallery(props) {
-  // Gallery related functions
-  const [galleryJSON, setGalleryJSON] = useState(null);
-    
-  // function to fetch the gallery and update state
-  async function fetchGallery() {
-    let parsedJSON;
-    if(localStorage.getItem('gallery') !== null) {
-      console.log('Gallery exists in localStorage. Retrieving data...');
-      parsedJSON = JSON.parse(localStorage.getItem('gallery'));
-      setGalleryJSON(parsedJSON);
-    } else {
-      const gallery = await fetch('./gallery.json');
-      const galleryConvertion = await gallery.json();
-      localStorage.setItem('gallery', JSON.stringify(galleryConvertion));
-      parsedJSON = galleryConvertion;
-      setGalleryJSON(galleryConvertion);
-    }
+  const galleryJSON = props.gallery;
+  console.log(props);
 
-    // Which image should appear when the Gallery page is opened.
-    if(localStorage.lastViewed === undefined && localStorage.gallery !== undefined) {
-      localStorage.setItem('lastViewed', JSON.stringify({
-        source: parsedJSON.categories.animal[0].source,
-        view: parsedJSON.categories.animal[0].view,
-        alt: parsedJSON.categories.animal[0].alt
-      }));
-    }
-  }  
-
-  // Runs once, when APP is mounted
-  useEffect(() => {
-    fetchGallery();
-  }, []);
+  
   
   return(
     <main className="main">

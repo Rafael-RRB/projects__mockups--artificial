@@ -50,18 +50,51 @@ function App() {
     }
   }
 
+  // Gallery related functions
+  const [galleryJSON, setGalleryJSON] = useState(null);
+      
+  // function to fetch the gallery and update state
+  async function fetchGallery() {
+    let parsedJSON;
+    if(localStorage.getItem('gallery') !== null) {
+      console.log('Gallery exists in localStorage. Retrieving data...');
+      parsedJSON = JSON.parse(localStorage.getItem('gallery'));
+      setGalleryJSON(parsedJSON);
+    } else {
+      const gallery = await fetch('./gallery.json');
+      const galleryConvertion = await gallery.json();
+      localStorage.setItem('gallery', JSON.stringify(galleryConvertion));
+      parsedJSON = galleryConvertion;
+      setGalleryJSON(galleryConvertion);
+    }
+
+    // Which image should appear when the Gallery page is opened.
+    if(localStorage.lastViewed === undefined && localStorage.gallery !== undefined) {
+      localStorage.setItem('lastViewed', JSON.stringify({
+        source: parsedJSON.categories.animal[0].source,
+        view: parsedJSON.categories.animal[0].view,
+        alt: parsedJSON.categories.animal[0].alt
+      }));
+    }
+  }  
+  
   // This feels a bit sloppy, but I'm not sure what's the best way to do this.
   const [refreshCounter, setRefreshCounter] = useState(0);
   function forceRefresh() {
     setRefreshCounter(refreshCounter + 1);
   }  
 
+  // Runs once, when APP is mounted
+  useEffect(() => {
+    fetchGallery();
+  }, []);
+
   return (
     <BrowserRouter>
       <Header loginData={{loginList, loginUser, loginUserIndex, loginUserData}} />
 
       <Routes>
-        <Route path='/' index element={<Home />} />
+        <Route path='/' index element={<Home gallery={galleryJSON} />} />
           <Route path='conta' element={<Account refresh={forceRefresh} />} />
 
           <Route path='login' element={<Login loginData={{loginList, loginUser, loginUserIndex, loginUserData}} />} />
@@ -72,7 +105,7 @@ function App() {
 
           <Route path='contato' element={<Contact />} />
           
-          <Route path='galeria' element={<Gallery />} />
+          <Route path='galeria' element={<Gallery gallery={galleryJSON} />} />
 
           <Route path="*" element={<NoPage />} />
 

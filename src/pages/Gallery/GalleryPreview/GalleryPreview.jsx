@@ -33,7 +33,6 @@ function GalleryPreview(props) {
     setUpdateCount(newCount);
   }
   
-
   return (
     <section className='main__preview'>
       <GalleryContent update={galleryUpdate} title='Galeria' alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
