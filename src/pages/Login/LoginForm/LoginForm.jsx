@@ -166,30 +166,30 @@ function LoginForm(props) {
   return (
     <form action='' onSubmit={event => loginFormSubmit(event)} className='main__login-form'>
       <div className='login-form__switch'>
-        <button className='switch__button' type='button' onClick={event => setIsLogin(true)} disabled={isLogin ? true : undefined}>Login</button>
-        <button className='switch__button' type='button' onClick={event => setIsLogin(false)} disabled={isLogin ? undefined : true}>Nova Conta</button>
+        <button className='switch__button' type='button' onClick={event => setIsLogin(true)} disabled={isLogin ? true : undefined}>login</button>
+        <button className='switch__button' type='button' onClick={event => setIsLogin(false)} disabled={isLogin ? undefined : true}>cadastro</button>
       </div>
 
       <fieldset className='login-form__fieldset'>
         <label htmlFor='' className='fieldset__field'>
-          <h2 className='field__login-title'>e-mail</h2>
+          <h2 className='field__login-title'>E-mail</h2>
           <input type={isLogin ? 'text' : 'email'} value={emailInput} onChange={event => emailOnChange(event)} placeholder='Seu e-mail aqui...' minLength={3} maxLength={50} required id="login-user" className='field__login-input' />
         </label>
 
         <label htmlFor='' className='fieldset__field'>
-          <h2 className='field__login-title'>senha</h2>
+          <h2 className='field__login-title'>Senha</h2>
           <input type='password' value={pwdInput} onChange={event => pwdOnChange(event)} placeholder='Sua senha aqui...' required pattern={isLogin ? undefined : pwdRegex} id='login-pwd' className='field__login-input' />
         </label>
 
         {isLogin !== true ? (
           <label htmlFor='' className='fieldset__field'>
-            <h2 className='field__login-title'>confirmar</h2>
+            <h2 className='field__login-title'>Confirmar</h2>
             <input type='password' value={confirmPwd} onChange={event => pwdConfirmOnChange(event)} placeholder='Confirme sua senha aqui...' required id='login-confirm-pwd' className='field__login-input' />
           </label>
         ) : ''}
       </fieldset>
 
-      <button type='submit' className='login-form__confirm'>{...isLogin ? 'entrar' : 'criar conta'}</button>
+      <button type='submit' className='login-form__confirm'>{isLogin ? 'entrar' : 'criar conta'}</button>
     </form>
   )
 }

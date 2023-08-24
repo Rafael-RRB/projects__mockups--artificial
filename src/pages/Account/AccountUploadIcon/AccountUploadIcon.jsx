@@ -2,7 +2,6 @@ import './AccountUploadIcon.css';
 import { useState } from 'react';
 
 function AccountUploadIcon(props) {
-  console.log(props)
   const loginList = props.userInfo[0];
   const userIndex = props.userInfo[1];
   const [uploadedImages, setUploadedImages] = useState([]);
@@ -82,7 +81,7 @@ function AccountUploadIcon(props) {
 
   return (
     <section className='main__account-image'>
-      <h2 className='account-image__title'>imagem de perfil</h2>
+      <h2 className='account-image__title'>Imagem de Perfil</h2>
       <p className='account-image__description'>(Obs.: Tamanho máximo de 200kb)</p>
 
       <div className='account-image__comparison'>
@@ -90,7 +89,11 @@ function AccountUploadIcon(props) {
         {uploadedImages.length === 0 ? '' : <img src={uploadedImages[uploadedImages.length - 1]} alt='Imagem do perfil nova' className='comparison__image comparison__image--new' />}
       </div>
       
-      <input type="file" id="imageInput" onChange={event => uploadImage(event)} accept="image/*" className={`account-image__upload-button ${uploadedImages.length > 0 ? 'js__hidden' : ''}`} />
+      <label htmlFor='imageInput' onKeyDown={event => event.key === 'Enter' ? document.getElementById('imageInput').click() : ''} tabIndex="0" className={`account-image__upload${uploadedImages.length > 0 ? ' js__hidden' : ''}`}>
+        <h2 className='upload__title'>Upload de foto</h2> 
+        <input type="file" id="imageInput" onChange={event => uploadImage(event)} accept="image/*" className='js__hidden' />
+      </label>
+      
       
       <div className='account-image__decisions'>
         {uploadedImages.length === 0 ? '' : <button id='accountBtnNewImg' className='decisions__button' onClick={() => changeProfilePicture()}>Aceitar</button>}

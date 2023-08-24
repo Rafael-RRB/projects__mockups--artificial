@@ -70,9 +70,11 @@
             border-top: none;
             border-right: none;
             border-left: none;
+            border-radius: 0;
 
             background-image: url('../../assets/img/ui/icons/menu__close.svg');
             cursor: pointer;
+            color: inherit;
           }
           
           .option__link {

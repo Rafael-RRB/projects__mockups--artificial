@@ -25,6 +25,7 @@ const inputList = [
   {
     labelTitle: 'nome',
     placeholder: 'Seu nome aqui...',
+    element: 'input',
     type: 'text',
     value: '',
     pattern: '',
@@ -34,6 +35,7 @@ const inputList = [
   {
     labelTitle: 'e-mail',
     placeholder: 'Seu e-mail aqui...',
+    element: 'input',
     type: 'email',
     value: '',
     pattern: '',
@@ -42,7 +44,8 @@ const inputList = [
   },
   {
     labelTitle: 'assunto',
-    placeholder: 'assunto da mensagem...',
+    placeholder: 'Assunto da mensagem...',
+    element: 'input',
     type: 'text',
     value: '',
     pattern: '',
@@ -52,6 +55,7 @@ const inputList = [
   {
     labelTitle: 'mensagem',
     placeholder: 'Sua mensagem aqui...',
+    element: 'textarea',
     type: 'text',
     value: '',
     pattern: '',
@@ -61,6 +65,7 @@ const inputList = [
   {
     labelTitle: 'telefone (DDD)',
     placeholder: 'Seu telefone aqui...',
+    element: 'input',
     type: 'tel',
     value: '',
     pattern: '',

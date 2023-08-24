@@ -1,19 +1,27 @@
 .main__login-form {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 }
 
   .login-form__switch {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 2rem;
   }
 
     .switch__button {
-
+      width: calc(50% - .5rem);
     }
 
+      .switch__button:disabled {
+        filter: brightness(0.8);
+      }
+
   .login-form__fieldset {
-    padding: 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem;
     margin: 0;
     border: none;
   }
@@ -25,14 +33,16 @@
     }
 
       .field__login-title {
+        font-size: 1.8rem;
         padding-bottom: 1rem;
       }
 
       .field__login-input {
         width: 100%;
         height: auto;
+        padding: 0 1rem;
       }
 
   .login-form__confirm {
-    
+    width: 100%;
   }

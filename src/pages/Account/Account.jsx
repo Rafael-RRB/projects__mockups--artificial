@@ -1,18 +1,8 @@
 import "./Account.css";
-import ContentSection from "../../components/ContentSection/ContentSection.jsx";
 import AccountFavorites from "./AccountFavorites/AccountFavorites.jsx";
 import "./AccountUploadIcon/AccountUploadIcon.jsx";
 import { useState, useEffect } from 'react';
 import AccountUploadIcon from "./AccountUploadIcon/AccountUploadIcon.jsx";
-
-
-// ContentSection Object
-const accountIntro = {
-  headingLevel: '1',
-  identifier: 'intro',
-  title: 'Seus Favoritos',
-  text: '',
-}
 
 function Account(props) {
   const currentUser = JSON.parse(localStorage.loginStatus).user;
@@ -31,7 +21,6 @@ function Account(props) {
 
   return(
     <main className="main">
-      <ContentSection object={accountIntro} />
       <AccountFavorites object={currentFavorites} />
       <AccountUploadIcon userInfo={[loginList, userIndex]} refresh={props.refresh} />
     </main>

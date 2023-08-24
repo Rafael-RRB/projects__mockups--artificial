@@ -96,11 +96,42 @@ span {
   display: block;
 }
 
+/**/
+button {
+  background-color: var(--color-main);
+  border: none;
+  color: var(--color-font-light);
+  font-size: 1.2rem;
+  font-family: orbitron;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input {
+  border: .2rem solid var(--color-main);
+}
+
+  input::placeholder {
+    font-size: 1.2rem;
+    color: var(--color-font-placeholder);
+  }
+
+button, input {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+*:disabled {
+  filter: brightness(0.8);
+}
+
 /* Classes */
 .main {
   padding-top: 5rem;
 
+  /* Might re-apply later
   min-height: calc(100vh - 5rem);
+  */
 }
 
 .js__hidden {

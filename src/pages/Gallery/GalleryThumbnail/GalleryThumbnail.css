@@ -1,6 +1,6 @@
 .preview__thumbnails {
-  padding: 0 0 1rem 2rem;
-  margin-right: 2rem;
+  padding-bottom: 1rem;
+  margin: 0 2rem;
   overflow: scroll;
 }
 

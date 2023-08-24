@@ -1,0 +1,57 @@
+.main__account-image {
+  padding: 0 2rem 2rem;
+}
+
+  .account-image__title {
+    padding-bottom: 1rem;
+  }
+
+  .account-image__description {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  .account-image__comparison {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 2rem;
+  }
+
+    .comparison__image {
+      width: 50%;
+      aspect-ratio: 1;
+    }
+
+      .comparison__image--old {
+        
+      }
+
+      .comparison__image--new {
+        
+      }
+
+      .account-image__upload {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        background-color: var(--color-main);
+        border-radius: 1rem;
+        margin: 0 5%;
+      }
+
+        .upload__title {
+          padding: 0 2rem;
+          font-size: 2rem;
+          color: var(--color-font-light);
+        }
+
+      .account-image__decisions {
+        display: flex;
+        justify-content: space-between;
+      }
+
+        .decisions__button {
+          width: calc(50% - 1rem);
+        }

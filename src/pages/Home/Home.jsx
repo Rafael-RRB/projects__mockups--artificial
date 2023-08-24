@@ -1,5 +1,7 @@
 import './Home.css';
-import { list } from './Slideshow/SlideshowImport.jsx';
+
+// This was used before I created the JSON gallery... I think.
+// import { list } from './Slideshow/SlideshowImport.jsx';
 
 import Banner from '../../components/Banner/Banner.jsx';
 import Introduction from './Introduction/Introduction.jsx';
@@ -9,16 +11,11 @@ import bannerSmall from '../../assets/img/banner/banner__home--min.webp';
 import bannerDefault from '../../assets/img/banner/banner__home--default.webp';
 import bannerLarge from '../../assets/img/banner/banner__home--max.webp';
 
-import ScrollPage from '../../components/ScrollPage/ScrollPage.jsx';
-
 const bannerList = {
   bannerSmall,
   bannerDefault,
   bannerLarge
 }
-
-
-
 
 function Home(props) {
   const homeGallery = props.gallery !== null ? props.gallery.categories : null;
@@ -40,16 +37,18 @@ function Home(props) {
   }
 
   function randomFromArray(array, quantity) {
-    // 
+    // Prevents having a quantity larger than the array itself.
     const realQuantity = quantity > array.length ? array.length : quantity;
     const indexes = [];
     const chosenIndexes = [];
+    
     // ChatGPT recommended something called the "Fisher-Yates algorithm". I'd rather learn more about it before actually using it...
     // ...as CTRL + C, CTRL + V feels like cheating.
     for(let i = 0; i < array.length; i++) {
         indexes.push(i);
     }
-    //
+
+    // Selects a random index from indexes, adding it to "chosenIndexes", the removes it from indexes (to prevent duplicates).
     for(let i = 1; i <= realQuantity; i++) {
         const randomIndex = Math.floor(Math.random() * (indexes.length));
         chosenIndexes.push(indexes[randomIndex]);
@@ -58,7 +57,7 @@ function Home(props) {
     return chosenIndexes.map(e => array[e]);
   }
 
-  // Here are the consts, to be used for the Slideshows
+  // Here are the consts, to be used for the Slideshows. I think this is better than simply passing a direct object.
   const galleryChara = [viewList[1], thumbList[1], altList[1]];
   const galleryAnimal = [viewList[0], thumbList[0], altList[0]];
   const galleryPlaces = [viewList[4], thumbList[4], altList[4]];

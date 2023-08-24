@@ -3,7 +3,7 @@
 }
 
   .form__title {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .form__field {
@@ -21,14 +21,23 @@
       padding-bottom: 1rem;
     }
 
-    .field__input {
+    .field__editable {
       width: 100%;
-      height: auto;
-      padding: 0 1rem;
       border: .2rem solid var(--color-main);
       border-radius: 1rem;
       font-size: 1.4rem;
+      overflow: hidden;
     }
+
+      .field__editable--input {
+        padding: 0 1rem;
+      }
+
+      .field__editable--textarea {
+        min-height: 9em;/*calc(1.5rem + 5em);*/
+        height: auto;
+        padding: 1em 1rem;
+      }
     
       .field__input::placeholder {
         color: var(--color-font-placeholder);
@@ -37,6 +46,7 @@
   .form__send {
     width: 100%;
     height: auto;
+    margin-top: 1rem;
     text-transform: uppercase;
     font-family: orbitron;
     font-weight: 900;
