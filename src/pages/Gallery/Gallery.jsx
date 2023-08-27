@@ -12,10 +12,7 @@ const bannerList = {
 }
 
 function Gallery(props) {
-  const galleryJSON = props.gallery;
-  console.log(props);
-
-  
+  const galleryJSON = props.gallery;  
   
   return(
     <main className="main">

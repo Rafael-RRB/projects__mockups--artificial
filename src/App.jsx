@@ -95,7 +95,7 @@ function App() {
 
       <Routes>
         <Route path='/' index element={<Home gallery={galleryJSON} />} />
-          <Route path='conta' element={<Account refresh={forceRefresh} />} />
+          <Route path='conta' element={<Account loginData={{loginList, loginUser, loginUserIndex, loginUserData}} refresh={forceRefresh} />} />
 
           <Route path='login' element={<Login loginData={{loginList, loginUser, loginUserIndex, loginUserData}} />} />
 

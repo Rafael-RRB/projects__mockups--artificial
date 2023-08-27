@@ -137,3 +137,10 @@ button, input {
 .js__hidden {
   display: none;
 }
+
+/* CTRL+C CTRL+V */
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1920px) {}

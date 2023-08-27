@@ -22,6 +22,7 @@ function AccountFavorites(props) {
   }
 
   return (
+    imageArray.length !== 0 ? (
     <section className='main__favorites'>
       <h1 className='favorites__title'>Favoritos</h1>
 
@@ -44,9 +45,9 @@ function AccountFavorites(props) {
             </a>
           </article>
         ))}
-      </div>      
+      </div>
     </section>
-  )
+  ) : '');
 }
 
 export default AccountFavorites;

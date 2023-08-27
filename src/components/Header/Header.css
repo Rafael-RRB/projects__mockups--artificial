@@ -63,6 +63,10 @@
           height: 5.1rem;
           padding: 0 3rem 0 5rem;
           border-bottom: .1rem solid var(--color-main);
+          font-family: Roboto;
+          font-weight: 400;
+          text-transform: none;
+          transition: border 100ms;
         }
         
           .option__close {
@@ -112,3 +116,200 @@
             .link__about {
               background-image: url('../../assets/img/ui/icons/page__about.svg');
             }
+
+@media screen and (min-width: 576px) {
+  .header {
+    padding: 0 2rem;
+  }
+  
+    .header__logo {}
+  
+    .header__menu {}
+  
+      .menu__account {}
+      
+        .account__profile-icon {}
+  
+      .menu__submenu {}
+  
+        .submenu__options {}
+  
+          .options__option {}
+          
+            .option__close {}
+            
+            .option__link {}
+  
+              .link__text {}
+  
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+  
+              .link__home {}
+  
+              .link__gallery {}
+  
+              .link__tools {}
+  
+              .link__contact {}
+  
+              .link__about {}
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 2rem;
+  }
+  
+    .header__logo {}
+  
+    .header__menu {}
+  
+      .menu__account {}
+      
+        .account__profile-icon {}
+  
+      .menu__submenu {}
+  
+        .submenu__options {}
+  
+          .options__option {}
+          
+            .option__close {}
+            
+            .option__link {}
+  
+              .link__text {}
+  
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+  
+              .link__home {}
+  
+              .link__gallery {}
+  
+              .link__tools {}
+  
+              .link__contact {}
+  
+              .link__about {}
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    
+  }
+    
+    .header__logo {
+      transition: border 100ms;
+    }
+
+      .header__logo:focus, .header__logo:hover {
+        border-bottom: .4rem solid var(--color-main);
+      }
+  
+    .header__menu {}
+  
+      .menu__account {
+        transition: transform 300ms, filter 300ms;
+        outline: none;
+      }
+
+        .menu__account:focus, .menu__account:hover {
+          filter: brightness(0.8);
+          transform: scale(1.25);
+        }
+
+        .menu__account--mobile {
+          display: none;
+        }
+      
+        .account__profile-icon {}
+  
+      .menu__submenu {
+        display: none;
+      }
+  
+        .submenu__options {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          position: initial;
+          border-left: none;
+          gap: 1rem;
+        }
+
+          .submenu__options--mobile {
+            display: none;
+          }
+  
+          .options__option {
+            padding-right: 1.25rem;
+          }
+
+            .options__option:hover, .options__option:focus {
+              border-bottom-width: .5rem;
+              outline: none;
+            }
+          
+            .option__close {
+              display: none;
+            }
+
+              .option__close ~ * {
+                display: none;
+              }
+            
+            .option__link {
+            }
+  
+              .link__text {
+                font-size: 1.2rem;
+              }
+  
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+  
+              .link__home {}
+  
+              .link__gallery {}
+  
+              .link__tools {}
+  
+              .link__contact {}
+  
+              .link__about {}
+}
+
+@media screen and (min-width: 1400px) {
+  .header {}
+  
+    .header__logo {}
+  
+    .header__menu {}
+  
+      .menu__account {}
+      
+        .account__profile-icon {}
+  
+      .menu__submenu {}
+  
+        .submenu__options {}
+  
+          .options__option {}
+          
+            .option__close {}
+            
+            .option__link {}
+  
+              .link__text {}
+  
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+  
+              .link__home {}
+  
+              .link__gallery {}
+  
+              .link__tools {}
+  
+              .link__contact {}
+  
+              .link__about {}
+}

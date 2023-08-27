@@ -1,13 +1,13 @@
 import "./Account.css";
 import AccountFavorites from "./AccountFavorites/AccountFavorites.jsx";
 import "./AccountUploadIcon/AccountUploadIcon.jsx";
-import { useState, useEffect } from 'react';
 import AccountUploadIcon from "./AccountUploadIcon/AccountUploadIcon.jsx";
 
 function Account(props) {
-  const currentUser = JSON.parse(localStorage.loginStatus).user;
-  const loginList = JSON.parse(localStorage.loginList);
-  const userIndex = loginList.findIndex(account => account.user === currentUser);
+  const currentUser =  props.loginData.loginUser;//JSON.parse(localStorage.loginStatus).user;
+  if(currentUser === 'anonymous') { window.location.href = '/';}
+  const loginList = props.loginData.loginList;//JSON.parse(localStorage.loginList);
+  const userIndex = props.loginData.loginUserIndex//loginList.findIndex(account => account.user === currentUser);
 
   let currentAccount;
   // checks only if loginStatus exists, prevents crash/errors
@@ -17,6 +17,8 @@ function Account(props) {
       currentAccount = jsonAccounts[jsonAccounts.findIndex(login => login.user === 'admin')];
     }
   }
+  
+  console.log(currentUser);
   const currentFavorites = currentAccount.favorites;
 
   return(
