@@ -66,7 +66,6 @@
           font-family: Roboto;
           font-weight: 400;
           text-transform: none;
-          transition: border 100ms;
         }
         
           .option__close {
@@ -243,6 +242,7 @@
   
           .options__option {
             padding-right: 1.25rem;
+            transition: all 100ms;
           }
 
             .options__option:hover, .options__option:focus {
@@ -265,7 +265,9 @@
                 font-size: 1.2rem;
               }
   
-              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {
+                
+              }
   
               .link__home {}
   

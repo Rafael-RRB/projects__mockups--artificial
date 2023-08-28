@@ -18,7 +18,6 @@ function Account(props) {
     }
   }
   
-  console.log(currentUser);
   const currentFavorites = currentAccount.favorites;
 
   return(

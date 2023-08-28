@@ -134,9 +134,17 @@ button, input {
   */
 }
 
+/* Generic classes */
+.span__no-wrap {
+  display: inline-block;
+}
+
+/* JS classes */
 .js__hidden {
   display: none;
 }
+
+
 
 /* CTRL+C CTRL+V */
 @media screen and (min-width: 576px) {}

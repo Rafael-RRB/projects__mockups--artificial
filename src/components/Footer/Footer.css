@@ -1,66 +1,168 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: var(--color-main);
   
   font-size: 1.2rem;
   color: var(--color-font-light);
+  border-top: .1rem solid var(--color-bg-light);
 
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
-  .footer__title {
-    font-size: 2rem;
-    padding: 0 0 2rem;
-    margin: 0;
-    text-align: center;
+  .footer__about {
+    padding-bottom: 2rem;
   }
 
-  .footer__description {
-    width: 20rem;
-    margin: 0 auto;
-  }
-
-  .footer__social {
-    display: flex;
-    width: 20rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-    margin: 2rem auto;
-  }
-
-    .social__link {
-      display: inline-block;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 4rem;
+    .about__title {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
     }
-      .social__link:hover {
-        filter: invert(.25);
-      }
 
-      .link-linkedin {
-        background-image: url('../../assets/img/ui/logo/linkedin.svg');
-      }
-
-      .link-github {
-        background-image: url('../../assets/img/ui/logo/github.svg');
-      }
-
-      .link-alura {
-        background-image: url('../../assets/img/ui/logo/alura.svg');
-      }
-
-      .link-whatsapp {
-        background-image: url('../../assets/img/ui/logo/whatsapp.svg');
-      }
-
-      .link-telegram {
-        background-image: url('../../assets/img/ui/logo/telegram.svg');
-      }
-
-  .footer__copyright {
-    margin: 0;
-    text-align: center;
+    .about__description {
+      width: 24rem;
+      font-size: 1.6rem;
+      margin: 0 auto;
+    }
+  
+  .footer__other {
+    padding-bottom: 2rem;
   }
+
+    .other__social {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 20rem;
+      padding-bottom: 1rem;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+      .social__link {
+        display: inline-block;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4rem;
+      }
+        .social__link:hover {
+          filter: invert(.25);
+        }
+
+        .link-linkedin {
+          background-image: url('../../assets/img/ui/logo/linkedin.svg');
+        }
+
+        .link-github {
+          background-image: url('../../assets/img/ui/logo/github.svg');
+        }
+
+        .link-alura {
+          background-image: url('../../assets/img/ui/logo/alura.svg');
+        }
+
+        .link-whatsapp {
+          background-image: url('../../assets/img/ui/logo/whatsapp.svg');
+        }
+
+        .link-telegram {
+          background-image: url('../../assets/img/ui/logo/telegram.svg');
+        }
+
+    .other__copyright {
+      margin: 0;
+      text-align: center;
+    }
+
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+    .footer__about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem 3rem 2rem 0;
+      border-right: .1rem solid var(--color-font-light);
+    }
+  
+      .about__title {
+        padding-bottom: 0;
+      }
+  
+      .about__description {
+        margin: 0;
+      }
+    
+    .footer__other {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 2rem;
+    }
+  
+      .other__social {
+        width: 31rem;
+      }
+  
+        .social__link {}
+
+          .social__link:hover {}
+  
+          .link-linkedin {}
+  
+          .link-github {}
+  
+          .link-alura {}
+  
+          .link-whatsapp {}
+  
+          .link-telegram {}
+  
+      .other__copyright {}
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 4rem 0;
+  }
+  
+    .footer__about {}
+  
+      .about__title {}
+  
+      .about__description {}
+    
+    .footer__other {}
+  
+      .other__social {}
+  
+        .social__link {}
+
+          .social__link:hover {}
+  
+          .link-linkedin {}
+  
+          .link-github {}
+  
+          .link-alura {}
+  
+          .link-whatsapp {}
+  
+          .link-telegram {}
+  
+      .other__copyright {}
+}
+@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1920px) {}
