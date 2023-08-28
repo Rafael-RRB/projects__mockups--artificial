@@ -1,12 +1,13 @@
 .main__introduction {
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 1rem;
   background-color: var(--color-main);
 }
 
   .introduction__title, .introduction__paragraph {
     color: var(--color-font-light);
-    padding-bottom: 2rem;
-    margin: 0;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    max-width: 51.6rem;
   }
 
   .introduction__title {
@@ -32,3 +33,34 @@
   .introduction__paragraph {
     font-size: 1.6rem;
   }
+
+@media screen and (min-width: 576px) {
+  .main__introduction {
+    padding: 2rem 3rem 1rem;
+  }
+  
+    .introduction__title, .introduction__paragraph {}
+  
+    .introduction__title {}
+  
+      .title__decoration {}
+  
+    .introduction__paragraph {}
+}
+
+@media screen and (min-width: 768px) {
+  .main__introduction {
+    
+  }
+  
+    .introduction__title, .introduction__paragraph {}
+  
+    .introduction__title {}
+  
+      .title__decoration {}
+  
+    .introduction__paragraph {}
+}
+@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1920px) {}

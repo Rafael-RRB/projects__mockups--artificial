@@ -43,6 +43,7 @@
         margin: 0;
         font-size: 2rem;
         color: var(--color-font-light);
+        text-transform: uppercase;
       }
 
     .slideshow__main {
@@ -56,10 +57,12 @@
 
       .slideshow__main__image {
         border-radius: 2rem;
-        width: 83%;
-        max-width: 51.2rem;
+        min-width: 20rem;
+        width: 40%;
+        max-width: 25.6rem;
         aspect-ratio: 1;
         scroll-snap-align: center;
+        flex-shrink: 0;
       }
 
     .slideshow__footer {
@@ -80,3 +83,89 @@
         border-radius: 50%;
         background-color: red;
       }
+
+@media screen and (min-width: 576px) {
+  .slides {}
+  
+    .slides__slideshow {}
+  
+      .slideshow__header {}
+  
+        .header__character {}
+  
+        .header__animal {}
+  
+        .header__places {}
+  
+        .header__food {}
+  
+        .header__people {}
+  
+  
+        .slideshow__header__link {}
+  
+        .slideshow__header__title {}
+  
+      .slideshow__main {}
+  
+        .slideshow__main__image {}
+  
+      .slideshow__footer {
+        max-width: none;
+      }
+  
+        .slideshow__footer__thumbnails {}
+}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {
+  .slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+    .slides__slideshow {
+      display: inline-block;
+      border: .1rem solid var(--color-main);
+      border-radius: 1rem;
+      overflow: hidden;
+      max-width: 84.8rem;
+    }
+  
+      .slideshow__header {}
+  
+        .header__character {}
+  
+        .header__animal {}
+  
+        .header__places {}
+  
+        .header__food {}
+  
+        .header__people {}
+  
+  
+        .slideshow__header__link {}
+  
+        .slideshow__header__title {}
+  
+      .slideshow__main {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 0;
+        overflow-x: auto;
+        scroll-snap-type: none;
+      }
+  
+        .slideshow__main__image {}
+  
+      .slideshow__footer {
+        display: none;
+      }
+  
+        .slideshow__footer__thumbnails {}
+}
+@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1920px) {}
