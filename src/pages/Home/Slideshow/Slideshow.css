@@ -122,13 +122,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 3rem 0;
+    background-color: var(--color-bg-grey);
   }
   
     .slides__slideshow {
       display: inline-block;
-      border: .1rem solid var(--color-main);
       border-radius: 1rem;
       overflow: hidden;
       max-width: 84.8rem;

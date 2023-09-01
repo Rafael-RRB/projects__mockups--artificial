@@ -1,36 +1,71 @@
 .articles {
-  padding: 2rem 2rem 0;
+  padding: 1rem 2rem 0rem;
+  margin: 0 auto;
 }
 
   .articles__content {
-
+    display: flex;
+    flex-direction: column;
   }
 
-    .content__heading, .content__text {
-      margin: 0;
+  .articles__content:last-child .content__image {
+      aspect-ratio: auto;
     }
 
-    .content__heading {
-      padding-bottom: 1rem;
+    .content__images {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
+
+      .content__image {
+        display: inline-block;
+        max-width: 24rem;
+        aspect-ratio: 1;
+        line-height: 0;
+      }
+
+        .image__decoration {
+          width: 100%;
+        }
 
     .content__text {
-      line-height: 1.25;
-      padding-bottom: 2rem;
+      display: inline-block;
     }
 
-      h1 + p.content__text {
-        font-size: 2.4rem;
+      .text__heading, .text__paragraph {
+        margin: 0;
       }
 
-      h2 + p.content__text {
-        font-size: 1.6rem;
+      .text__heading {
+        padding: 1rem 0;
       }
 
-    .content__image {
-      display: flex;
-    }
-
-      .image__decoration {
+      .text__paragraph {
+        line-height: 1.25;
         padding-bottom: 2rem;
       }
+
+        h1 + p.text__paragraph {
+          font-size: 2.4rem;
+        }
+
+        h2 + p.text__paragraph {
+          font-size: 1.6rem;
+        }
+
+/* For CTRL + C & CTRL + V
+
+.articles
+.articles__content
+.articles__content:last-child .content__image
+.content__image
+.image__decoration
+.content__text
+.text__heading, .text__paragraph
+.text__heading
+.text__paragraph
+h1 + p.text__paragraph
+h2 + p.text__paragraph
+
+*/

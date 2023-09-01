@@ -7,7 +7,7 @@
 }
 
 .main__banner--home {
-  background: var(--color-banner-home) url('../../assets/img/ui/background/banner__home--light.svg') repeat center / 5vw;
+  background: var(--color-banner-home) url('../../assets/img/ui/background/banner__home--light.svg') repeat center / 5%;
 }
 .main__banner--about {
   background: var(--color-banner-about) url('../../assets/img/ui/background/banner__about--light.svg') repeat center / 5vw;

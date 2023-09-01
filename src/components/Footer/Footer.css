@@ -140,11 +140,12 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 2rem 0;
+    padding: 3rem 0 3rem;
     justify-content: center;
   }
   
     .footer__about {
+      padding: 3rem 3.5rem 3rem 0;
       width: auto;
     }
   
