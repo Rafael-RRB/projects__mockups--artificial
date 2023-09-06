@@ -34,7 +34,7 @@ function Slideshow(props) {
   }
 
   return(
-    <article className="slides__slideshow">
+    <article className={`slides__slideshow slides__slideshow--${category}`}>
       <header className={`slideshow__header header__${category}`} id={`slideshow-header-${category}`}>
         <Link onClick={pageScroll} to="galeria" className="slideshow__header__link">
           <span onClick={scrollTo({top: 0, left: 0, behavior: 'smooth'})} className="a11y-hidden">Link para Galeria</span>

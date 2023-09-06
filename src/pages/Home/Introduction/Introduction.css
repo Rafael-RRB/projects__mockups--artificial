@@ -1,5 +1,5 @@
 .main__introduction {
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem .5rem;
   background-color: var(--color-main);
 }
 
@@ -7,13 +7,13 @@
     color: var(--color-font-light);
     padding-bottom: 1rem;
     margin: 0 auto;
-    max-width: 51.6rem;
+    max-width: 96rem;
   }
 
   .introduction__title {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .1rem;
     font-size: 2.4rem;
     text-transform: uppercase;
   }
@@ -22,9 +22,9 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      font-size: 3rem;
-      width: 5rem;
-      height: 5rem;
+      font-size: 3.6rem;
+      width: 4.8rem;
+      height: 4.8rem;
       border-radius: 50%;
       color: var(--color-main);
       background-color: var(--color-font-light);
@@ -36,16 +36,20 @@
 
 @media screen and (min-width: 576px) {
   .main__introduction {
-    padding: 3rem 3rem 2rem;
+    padding: 3rem 3rem 1.5rem;
   }
   
     .introduction__title, .introduction__paragraph {}
   
-    .introduction__title {}
+    .introduction__title {
+      padding-bottom: 3rem;
+    }
   
       .title__decoration {}
   
-    .introduction__paragraph {}
+    .introduction__paragraph {
+      padding-bottom: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -55,12 +59,42 @@
   
     .introduction__title, .introduction__paragraph {}
   
-    .introduction__title {}
+    .introduction__title {
+      font-size: 3.6rem;
+    }
   
-      .title__decoration {}
+      .title__decoration {
+        font-size: 7.6rem;
+        width: 9.6rem;
+        height: 9.6rem;
+      }
   
-    .introduction__paragraph {}
+    .introduction__paragraph {
+      font-size: 2.4rem;
+    }
 }
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+  .main__introduction {
+    padding: 6rem 0rem 4.5rem;
+  }
+  
+    .introduction__title, .introduction__paragraph {}
+  
+    .introduction__title {
+      font-size: 4.8rem;
+      padding-bottom: 3rem;
+    }
+  
+      .title__decoration {
+        font-size: 7.2rem;
+        width: 9.6rem;
+        height: 9.6rem;
+      }
+  
+    .introduction__paragraph {
+      font-size: 3.2rem;
+      padding-bottom: 1.5rem;
+    }
+}
 @media screen and (min-width: 1400px) {}
 @media screen and (min-width: 1920px) {}

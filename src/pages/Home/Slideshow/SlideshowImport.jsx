@@ -1,3 +1,6 @@
+// WARNING
+// This was used in an older version of the component.
+
 /* VIEW IMAGES */
 /* characters */
 import imageViewChara1 from '/static/pages/gallery/view/IMG__CHARA__VIEW--0006.webp';

@@ -1,16 +1,35 @@
 .slides {
-
 }
 
   .slides__slideshow {
     background-color: var(--color-bg-grey);
   }
 
+    .slides__slideshow--character {
+
+    }
+
+    .slides__slideshow--animal {
+
+    }
+
+    .slides__slideshow--places {
+
+    }
+
+    .slides__slideshow--food {
+
+    }
+
+    .slides__slideshow--people {
+
+    }    
+
     .slideshow__header {
       display: flex;
       align-items: center;
-      padding: 1.25rem 1rem;
-      gap: 1rem;
+      padding: .75rem;
+      gap: .75rem;
     }
 
       .header__character {
@@ -43,7 +62,6 @@
         margin: 0;
         font-size: 2rem;
         color: var(--color-font-light);
-        text-transform: uppercase;
       }
 
     .slideshow__main {
@@ -59,10 +77,11 @@
         border-radius: 2rem;
         min-width: 20rem;
         width: 40%;
-        max-width: 25.6rem;
+        max-width: max(256px, 25.6rem);
         aspect-ratio: 1;
         scroll-snap-align: center;
         flex-shrink: 0;
+        background-color: var(--color-bg-grey);
       }
 
     .slideshow__footer {
@@ -81,7 +100,7 @@
         height: 5rem;
         border: none;
         border-radius: 50%;
-        background-color: red;
+        background-color: var(--color-bg-light);
       }
 
 @media screen and (min-width: 576px) {
@@ -89,52 +108,9 @@
   
     .slides__slideshow {}
   
-      .slideshow__header {}
-  
-        .header__character {}
-  
-        .header__animal {}
-  
-        .header__places {}
-  
-        .header__food {}
-  
-        .header__people {}
-  
-  
-        .slideshow__header__link {}
-  
-        .slideshow__header__title {}
-  
-      .slideshow__main {}
-  
-        .slideshow__main__image {}
-  
-      .slideshow__footer {
-        max-width: none;
+      .slideshow__header {
+        padding: 1.75rem;
       }
-  
-        .slideshow__footer__thumbnails {}
-}
-@media screen and (min-width: 768px) {}
-@media screen and (min-width: 1200px) {
-  .slides {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    padding: 3rem 0;
-    background-color: var(--color-bg-grey);
-  }
-  
-    .slides__slideshow {
-      display: inline-block;
-      border-radius: 1rem;
-      overflow: hidden;
-      max-width: 84.8rem;
-    }
-  
-      .slideshow__header {}
   
         .header__character {}
   
@@ -152,9 +128,148 @@
         .slideshow__header__title {}
   
       .slideshow__main {
+        padding: 3rem;
+        gap: 3rem;
+      }
+  
+        .slideshow__main__image {}
+  
+      .slideshow__footer {
+        padding: 3rem;
+        max-width: none;
+      }
+  
+        .slideshow__footer__thumbnails {}
+}
+@media screen and (min-width: 768px) {
+  .slides {
+
+  }
+  
+    .slides__slideshow {
+      
+    }
+  
+      .slideshow__header {
+        padding: 2.375rem;
+        gap: 2.375rem;
+      }
+  
+        .header__character {
+          
+        }
+  
+        .header__animal {
+          
+        }
+  
+        .header__places {
+          
+        }
+  
+        .header__food {
+          
+        }
+  
+        .header__people {
+          
+        }
+  
+  
+        .slideshow__header__link {
+          background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 3.75rem;
+        }
+  
+        .slideshow__header__title {
+          font-size: 4rem;
+        }
+  
+      .slideshow__main {
+        
+      }
+  
+        .slideshow__main__image {
+          
+        }
+  
+      .slideshow__footer {
+        
+      }
+  
+        .slideshow__footer__thumbnails {
+
+        }
+}
+
+@media screen and (min-width: 1200px) {
+  .slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 278.4rem;
+    padding: 6rem 0;
+    margin: 0 auto;
+    /*background-color: var(--color-bg-grey);*/
+  }
+  
+    .slides__slideshow {
+      display: inline-block;
+      border-radius: 1rem;
+      overflow: hidden;
+      /* (25.6rem * 3 elements) + (3rem * 4 gaps) + (1rem * 2 borders) = 90.8rem */
+      max-width: 90.8rem;
+      border: 1rem solid #000;
+    }
+  
+      .slides__slideshow--character {
+        border-color: var(--color-heading-chara);
+      }
+      
+      .slides__slideshow--animal {
+        border-color: var(--color-heading-animal);
+      }
+      
+      .slides__slideshow--places {
+        border-color: var(--color-heading-places);
+      }
+      
+      .slides__slideshow--food {
+        border-color: var(--color-heading-food);
+      }
+      
+      .slides__slideshow--people {
+        border-color: var(--color-heading-people);
+      }
+
+      .slideshow__header {
+        padding: 2rem 3rem 3rem;
+        gap: 3rem;
+      }
+  
+        .header__character {}
+  
+        .header__animal {}
+  
+        .header__places {}
+  
+        .header__food {}
+  
+        .header__people {}
+  
+        .slideshow__header__link {
+          background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 5rem;
+        }
+  
+        .slideshow__header__title {
+          font-size: 6rem;
+        }
+  
+      .slideshow__main {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 2rem 0;
+        padding: 3rem;
+        gap: 3rem;
         overflow-x: auto;
         scroll-snap-type: none;
       }
@@ -168,4 +283,56 @@
         .slideshow__footer__thumbnails {}
 }
 @media screen and (min-width: 1400px) {}
-@media screen and (min-width: 1920px) {}
+
+@media screen and (min-width: 1920px) {
+  .slides {
+  }
+  
+    .slides__slideshow {
+    }
+  
+      .slides__slideshow--character {
+      }
+      
+      .slides__slideshow--animal {
+      }
+      
+      .slides__slideshow--places {
+      }
+      
+      .slides__slideshow--food {
+      }
+      
+      .slides__slideshow--people {
+      }
+
+      .slideshow__header {
+      }
+  
+        .header__character {}
+  
+        .header__animal {}
+  
+        .header__places {}
+  
+        .header__food {}
+  
+        .header__people {}
+  
+        .slideshow__header__link {
+        }
+  
+        .slideshow__header__title {
+        }
+  
+      .slideshow__main {
+      }
+  
+        .slideshow__main__image {
+        }
+  
+      .slideshow__footer {
+      }
+  
+        .slideshow__footer__thumbnails {}
+}

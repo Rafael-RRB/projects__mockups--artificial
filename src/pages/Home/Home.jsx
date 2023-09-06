@@ -70,11 +70,11 @@ function Home(props) {
       <Introduction />
       
       <section className="slides">
-        <Slideshow imageList={galleryChara} category='character' title='personagens'/>
-        <Slideshow imageList={galleryAnimal} category='animal' title='animais'/>
-        <Slideshow imageList={galleryPlaces} category='places' title='paisagens'/>
-        <Slideshow imageList={galleryFood} category='food' title='comidas'/>
-        <Slideshow imageList={galleryPeople} category='people' title='retratos'/>
+        <Slideshow imageList={galleryChara} category='character' title='Personagens'/>
+        <Slideshow imageList={galleryAnimal} category='animal' title='Animais'/>
+        <Slideshow imageList={galleryPlaces} category='places' title='Paisagens'/>
+        <Slideshow imageList={galleryFood} category='food' title='Comidas'/>
+        <Slideshow imageList={galleryPeople} category='people' title='Retratos'/>
       </section>
     </main>
   );

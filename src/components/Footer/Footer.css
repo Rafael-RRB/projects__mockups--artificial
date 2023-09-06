@@ -7,6 +7,7 @@
   background-color: var(--color-main);
   
   font-size: 1.2rem;
+  line-height: 1.25;
   color: var(--color-font-light);
   border-top: .1rem solid var(--color-bg-light);
 
@@ -34,13 +35,14 @@
   
   .footer__other {
     padding-bottom: 2rem;
+    width: 100%;
+    max-width: 19rem;
   }
 
     .other__social {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      width: 20rem;
       padding-bottom: 1rem;
       margin: 0 auto;
       gap: 1rem;
@@ -52,6 +54,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 4rem;
+
+        transition: filter 200ms;
       }
         .social__link:hover {
           filter: invert(.25);
@@ -85,8 +89,8 @@
 @media screen and (min-width: 576px) {
   .footer {
     flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem .5rem 2rem 2rem;
+    justify-content: center;
+    padding: 1.5rem;
   }
   
     .footer__about {
@@ -95,8 +99,11 @@
       justify-content: space-evenly;
       align-items: start;
       width: 100%;
+      max-width: 30rem;
       gap: 1rem;
-      padding: 2rem 3.5rem 2rem 0;
+      padding: 1.5rem 3rem 1.5rem 0;
+      /* Margin-left due to 4rem social icons (.5rem left & right) */
+      margin-left: .5rem;
       margin-bottom: 0;
       border-bottom: none;
       border-right: .1rem solid var(--color-font-light);
@@ -107,19 +114,19 @@
       }
   
       .about__description {
-        width: 29.5rem;
-        max-width: 30rem;
         margin: 0;
+        width: 100%;
       }
     
     .footer__other {
       display: flex;
       flex-direction: column;
-      padding: 0 0 0 2rem;
+      padding: 0 0 0 2.5rem;
+      max-width: 21.5rem;
     }
   
       .other__social {
-        width: 20rem;
+        gap: 2rem;
       }
   
         .social__link {}
@@ -140,26 +147,28 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 3rem 0 3rem;
+    padding: 1.5rem 0 1.5rem;
     justify-content: center;
+    font-size: 1.8rem;
   }
   
     .footer__about {
-      padding: 3rem 3.5rem 3rem 0;
-      width: auto;
+      padding: 1.5rem 3rem 1.5rem 0;
+      max-width: 47rem;
+      gap: 3rem;
     }
   
-      .about__title {}
+      .about__title {
+        font-size: 3rem;
+      }
   
       .about__description {
-        width: 31rem;
-        max-width: none;
+        font-size: 2.4rem;
       }
     
     .footer__other {}
   
       .other__social {
-        width: 31rem;
       }
   
         .social__link {}
@@ -179,15 +188,27 @@
       .other__copyright {}
 }
 @media screen and (min-width: 1200px) {
-  .footer {}
+  .footer {
+    padding: 3rem 0;
+    font-size: 2.4rem;
+  }
   
-    .footer__about {}
+    .footer__about {
+      padding: 3rem 3rem 3rem 0;
+      max-width: 80rem;
+    }
   
-      .about__title {}
+      .about__title {
+        font-size: 4rem;
+      }
   
-      .about__description {}
+      .about__description {
+        font-size: 3.2rem;
+      }
     
-    .footer__other {}
+    .footer__other {
+      max-width: 35.5rem;
+    }
   
       .other__social {}
   
