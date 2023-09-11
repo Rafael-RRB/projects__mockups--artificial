@@ -159,11 +159,11 @@
     }
   
       .about__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
   
       .about__description {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
     
     .footer__other {}
@@ -190,7 +190,7 @@
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 3rem 0;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   
     .footer__about {
@@ -199,11 +199,11 @@
     }
   
       .about__title {
-        font-size: 4rem;
+        font-size: 3rem;
       }
   
       .about__description {
-        font-size: 3.2rem;
+        font-size: 2.4rem;
       }
     
     .footer__other {

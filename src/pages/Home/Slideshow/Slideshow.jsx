@@ -10,13 +10,17 @@ function Slideshow(props) {
   /* scrolls to the heading (with offset) and scrolls to the correct image */
   function scrollBehavior(parentID, targetID) {
     const elementTarget = document.getElementById(parentID);
+    const elementMain = document.getElementById(parentID).parentElement.querySelector('main');
+    const elementMainCSS = window.getComputedStyle(elementMain);
+    const paddingTotal = parseFloat(elementMainCSS.paddingLeft) + parseFloat(elementMainCSS.paddingRight) + parseFloat(elementMainCSS.gap);
+    console.log(paddingTotal);
     const heightValue = elementTarget.offsetTop - 50;
     const imageTarget = document.getElementById(targetID);
     const horizontalScroll = imageTarget.offsetLeft;
     /* scrolls to heading */
     window.scrollTo(0, heightValue);
     imageTarget.parentElement.scrollTo({
-      left: horizontalScroll,
+      left: horizontalScroll - paddingTotal,
       top: 0,
       behavior: 'smooth'
     });

@@ -13,7 +13,7 @@
   .introduction__title {
     display: flex;
     align-items: center;
-    gap: .1rem;
+    gap: .5rem;
     font-size: 2.4rem;
     text-transform: uppercase;
   }
@@ -60,17 +60,17 @@
     .introduction__title, .introduction__paragraph {}
   
     .introduction__title {
-      font-size: 3.6rem;
+      font-size: 3rem;
     }
   
       .title__decoration {
-        font-size: 7.6rem;
-        width: 9.6rem;
-        height: 9.6rem;
+        font-size: 4.5rem;
+        width: 6rem;
+        height: 6rem;
       }
   
     .introduction__paragraph {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -81,18 +81,18 @@
     .introduction__title, .introduction__paragraph {}
   
     .introduction__title {
-      font-size: 4.8rem;
+      font-size: 3.6rem;
       padding-bottom: 3rem;
     }
   
       .title__decoration {
-        font-size: 7.2rem;
-        width: 9.6rem;
-        height: 9.6rem;
+        font-size: 5.4rem;
+        width: 7.2rem;
+        height: 7.2rem;
       }
   
     .introduction__paragraph {
-      font-size: 3.2rem;
+      font-size: 2.4rem;
       padding-bottom: 1.5rem;
     }
 }

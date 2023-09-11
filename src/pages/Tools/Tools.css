@@ -141,8 +141,12 @@
           
         }
   
-        .text__heading--tools {
-          
+        h1.text__heading--tools {
+          font-size: 4rem;
+        }
+
+        h2.text__heading--tools {
+          font-size: 3rem;
         }
   
         .text__paragraph--tools {
@@ -150,11 +154,11 @@
         }
   
         h1 + p.text__paragraph--tools {
-  
+          font-size: 3rem;
         }
   
         h2 + p.text__paragraph--tools {
-  
+          font-size: 2rem;
         }
 }
 @media screen and (min-width: 1200px) {
@@ -202,8 +206,12 @@
           
         }
   
-        .text__heading--tools {
-          
+        h1.text__heading--tools {
+          font-size: 4.8rem;
+        }
+
+        h2.text__heading--tools {
+          font-size: 3.6rem;
         }
   
         .text__paragraph--tools {
@@ -211,11 +219,11 @@
         }
   
         h1 + p.text__paragraph--tools {
-  
+          font-size: 3.6rem;
         }
   
         h2 + p.text__paragraph--tools {
-  
+          font-size: 2.4rem;
         }
 }
 @media screen and (min-width: 1400px) {}

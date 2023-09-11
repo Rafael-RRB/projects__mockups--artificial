@@ -87,11 +87,11 @@
     .slideshow__footer {
       display: flex;
       flex-wrap: wrap;
-      max-width: 28rem;
+      max-width: 23rem;
       justify-content: space-between;
       padding: 2rem;
       margin: auto;
-      gap: 1rem;
+      gap: 2rem;
     }
 
       .slideshow__footer__thumbnails {
@@ -137,6 +137,7 @@
       .slideshow__footer {
         padding: 3rem;
         max-width: none;
+        gap: 0;
       }
   
         .slideshow__footer__thumbnails {}
@@ -181,7 +182,7 @@
         }
   
         .slideshow__header__title {
-          font-size: 4rem;
+          font-size: 2.5rem;
         }
   
       .slideshow__main {
@@ -193,7 +194,8 @@
         }
   
       .slideshow__footer {
-        
+        gap: 3rem;
+        justify-content: center;
       }
   
         .slideshow__footer__thumbnails {
@@ -262,7 +264,7 @@
         }
   
         .slideshow__header__title {
-          font-size: 6rem;
+          font-size: 3rem;
         }
   
       .slideshow__main {

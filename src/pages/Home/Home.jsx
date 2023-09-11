@@ -28,7 +28,7 @@ function Home(props) {
     const categories = ['animal', 'chara', 'food', 'people', 'places'];
     for(let i = 0; i < Object.keys(homeGallery).length; i++) {
       // Looks a bit messy, but... it works.
-      randomFromArray(homeGallery[categories[i]], 8).forEach(image => {
+      randomFromArray(homeGallery[categories[i]], 9).forEach(image => {
         viewList[i].push(`/static/pages/gallery/view/${image.view}.webp`);
         thumbList[i].push(`/static/pages/gallery/thumbnail/${image.thumbnail}.webp`);
         altList[i].push(`${image.alt}`);
