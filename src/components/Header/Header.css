@@ -12,6 +12,8 @@
   padding: 0 1rem;
 
   z-index: 1;
+
+  box-shadow: var(--boxshadow-medium);
 }
 
   .header__logo {
@@ -39,6 +41,8 @@
       border: 0;
 
       background: transparent url('../../assets/img/ui/icons/menu__submenu.svg') no-repeat center / 2.5rem;
+
+      box-shadow: none;
     }
 
       .submenu__options {
@@ -53,6 +57,8 @@
         transition-property: all;
         transition-duration: 200ms;
         transition-timing-function: linear;
+
+        box-shadow: var(--boxshadow-medium);
       }
 
         .options__option {
@@ -78,6 +84,8 @@
             background-image: url('../../assets/img/ui/icons/menu__close.svg');
             cursor: pointer;
             color: inherit;
+
+            box-shadow: none;
           }
           
           .option__link {
@@ -234,6 +242,7 @@
           position: initial;
           border-left: none;
           gap: 1rem;
+          box-shadow: none;
         }
 
           .submenu__options--mobile {

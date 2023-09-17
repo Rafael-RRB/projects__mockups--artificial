@@ -20,9 +20,13 @@
 
       .content__image {
         display: inline-block;
-        max-width: 24rem;
+        max-width: 25.6rem;
+        height: fit-content;
         aspect-ratio: 1;
         line-height: 0;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: var(--boxshadow-medium);
       }
 
         .image__decoration {
@@ -69,3 +73,21 @@ h1 + p.text__paragraph
 h2 + p.text__paragraph
 
 */
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+  .content__image {
+    max-width: 51.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content__image {
+    max-width: 102.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {}
+
+@media screen and (min-width: 1920px) {}

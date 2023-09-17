@@ -45,7 +45,7 @@ const toolsInpainting = {
   identifier: 'inpainting',
   modifier: page,
   title: 'Inpainting',
-  text: 'Em alguns casos, as imagens geradas possuaim boa qualidade, mas eram aruinadas por pequenos defeitos, principalmente em mãos e olhos. Para corrigir isso, utilizamos o site getimg.ai para gerar novamente partes da imagem (áreas pretas, acima) para corrigir esses defeitos. Em apenas um caso, foi necessário corrigir o erro manualmente através do GIMP.',
+  text: 'Em alguns casos, as imagens geradas possuíam boa qualidade, mas eram arruinadas por pequenos defeitos, principalmente em mãos e olhos. Para corrigir isso, utilizamos o site getimg.ai para gerar novamente partes da imagem (áreas pretas, acima) para corrigir esses defeitos. Em apenas um caso, foi necessário corrigir o erro manualmente através do GIMP.',
   src: ['/static/pages/tools/tools__inpainting'],
   alt: 'Imagem de um robô. Certas áreas da imagem estão vazias, que serão preenchidas pelo método de inpainting.'
 }
@@ -63,7 +63,7 @@ const toolsOutpainting = {
   identifier: 'outpainting',
   modifier: page,
   title: 'Outpainting',
-  text: 'Apenas utilizado para geração dos banners de certas páginas nossas. Todas as imagens geradas possuiam resolução de 1024x1024 pixels, e o DALL-E 2 foi utilizado para expandir horizontalmente essas imagens, que posteriormente foram cortadas para atingir um Aspect Ratio de 16:9.',
+  text: 'Apenas utilizado para geração dos banners de certas páginas nossas. Todas as imagens geradas possuíam resolução de 1024x1024 pixels, e o DALL-E 2 foi utilizado para expandir horizontalmente essas imagens, que posteriormente foram cortadas para atingir um Aspect Ratio de 16:9.',
   src: [
     '/static/pages/tools/tools__outpainting-A',
     '/static/pages/tools/tools__outpainting-B',

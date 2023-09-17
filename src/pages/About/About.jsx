@@ -1,4 +1,5 @@
 import './About.css';
+import { useState } from 'react';
 import Banner from '../../components/Banner/Banner.jsx';
 import bannerSmall from '../../assets/img/banner/banner__about--min.webp';
 import bannerDefault from '../../assets/img/banner/banner__about--default.webp';
@@ -20,8 +21,8 @@ const aboutIntro = {
 }
 const aboutCreation = {
   headingLevel: '2',
-  title: 'Criação do site',
   identifier: 'creation',
+  title: 'Criação do site',
   text: 'O ArtIficial foi criado em 2023 pelo Rafael R. B.. A gente teve a ideia de criar um site sobre artes conceituais feitas por IAs quando o nosso fundador percebeu o quanto essas tecnologias estão ficando incríveis e como era fácil corrigir os erros comuns que elas cometiam.',
   src: ['/static/pages/about/about__creator'],
   alt: 'Arte vetorial do criador do site, Rafael R.B..'
@@ -66,7 +67,6 @@ const aboutClientC = {
   src: ['/static/pages/about/about__client-c'],
   alt: 'Arte vetorial de uma das clientes fantasia, uma artista.'
 }
-
 
 function About(props) {
   return(

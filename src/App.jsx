@@ -82,6 +82,7 @@ function App() {
   const [refreshCounter, setRefreshCounter] = useState(0);
   function forceRefresh() {
     setRefreshCounter(refreshCounter + 1);
+    console.log(refreshCounter);
   }  
 
   // Runs once, when APP is mounted
@@ -101,7 +102,7 @@ function App() {
 
           <Route path='ferramentas' element={<Tools />} />
 
-          <Route path='sobre' element={<About />} />
+          <Route path='sobre' element={<About refresh={forceRefresh} />} />
 
           <Route path='contato' element={<Contact />} />
           

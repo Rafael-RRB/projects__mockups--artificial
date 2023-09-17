@@ -52,6 +52,13 @@
   --color-font-light: #EEEEEE;
   --color-font-dark: #212121;
   --color-font-placeholder: #555555;
+  --color-boxshadow-light: #AAAAAA66;
+  --color-boxshadow-medium: #55555566;
+  --color-boxshadow-dark: #00000066;
+
+  --boxshadow-light: .2rem .2rem .4rem .2rem var(--color-boxshadow-light);
+  --boxshadow-medium: .2rem .2rem .4rem .2rem var(--color-boxshadow-medium);
+  --boxshadow-dark: .2rem .2rem .4rem .2rem var(--color-boxshadow-dark);
   
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -119,11 +126,18 @@ input {
 button, input {
   border-radius: 1rem;
   padding: 1rem;
+  box-shadow: var(--boxshadow-medium);
 }
 
 *:disabled {
-  filter: brightness(0.8);
+  filter: brightness(0.5);
 }
+
+/* Default Effects */
+button:hover, button:focus {
+  filter: brightness(0.5);
+}
+
 
 /* Classes */
 .main {

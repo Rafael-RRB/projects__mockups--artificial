@@ -1,4 +1,5 @@
 import "./ContentSection.css";
+import { useState } from 'react';
 
 function ContentSection(props) {
   const HeadingLevel = `h${props.object.headingLevel}`;
@@ -23,19 +24,28 @@ function ContentSection(props) {
     artTxt: `text__paragraph${modifier !== undefined ? ` text__paragraph${modifier}` : ''}`,
   }
 
+  // I had to rewrite a bunch of code
+  const [counterRefresh, setCounterRefresh] = useState(0);
+  const targetSrc = '/static/pages/about/about__creator';
+  const changeSrc = '/static/pages/about/about__collage';
+  function switchImage(event) {
+    alert(':^)');
+    setCounterRefresh(...counterRefresh + 1);
+    console.log(counterRefresh)
+  }
+
+  // Why onClick ? I wanted to show someone... something when a specific image was clicked. 'tis all.
   if(src !== undefined) {
     src.forEach((currentSource, index) => pictureArray.push(
       (
         <picture className={`${classes.secPic}`} key={`picture-${identifier}-${index}`}>
           <source media='(max-width: 280px)' srcSet={`${currentSource}--min.webp`} />
-          <source media='(max-width: 540px)' srcSet={`${currentSource}--min.webp`} />
-          <img className={`${classes.secPicImg}`} src={`${currentSource}--min.webp`} alt={`${alt}`} />
+          <source media='(max-width: 768px)' srcSet={`${currentSource}--default.webp`} />
+          <img className={`${classes.secPicImg}`} src={`${currentSource}--max.webp`} alt={`${alt}`} />
         </picture>
       )
     ));
   }
-
-  console.log('pictureArray length ? ' + pictureArray.length);
 
   return(
     <article className={`${classes.art}`}>

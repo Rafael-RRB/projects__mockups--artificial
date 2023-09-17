@@ -56,7 +56,13 @@
       .slideshow__header__link {
         display: inline-block;
         background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 2.5rem;
+        transition: filter 200ms;
+        outline: none;
       }
+
+        .slideshow__header__link:focus, .slideshow__header__link:hover {
+          filter: brightness(0.5);
+        }
 
       .slideshow__header__title {
         margin: 0;
@@ -82,6 +88,7 @@
         scroll-snap-align: center;
         flex-shrink: 0;
         background-color: var(--color-bg-grey);
+        box-shadow: var(--boxshadow-medium);
       }
 
     .slideshow__footer {
@@ -101,6 +108,9 @@
         border: none;
         border-radius: 50%;
         background-color: var(--color-bg-light);
+        box-shadow: var(--boxshadow-dark);
+        transition: filter 200ms;
+        outline: none;
       }
 
 @media screen and (min-width: 576px) {

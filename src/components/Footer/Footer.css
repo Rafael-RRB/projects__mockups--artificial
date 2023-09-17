@@ -16,7 +16,7 @@
 
   .footer__about {
     padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border-bottom: .1rem solid var(--color-font-light);
   }
 
@@ -53,12 +53,14 @@
 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 4rem;
+        background-size: 3rem;
 
-        transition: filter 200ms;
+        transition: filter 200ms;        
       }
-        .social__link:hover {
+        .social__link:hover, .social__link:focus {
           filter: invert(.25);
+          outline: none;
+          
         }
 
         .link-linkedin {
@@ -122,11 +124,11 @@
       display: flex;
       flex-direction: column;
       padding: 0 0 0 2.5rem;
-      max-width: 21.5rem;
+      max-width: 19.5rem;
     }
   
       .other__social {
-        gap: 2rem;
+        
       }
   
         .social__link {}

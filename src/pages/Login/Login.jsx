@@ -31,8 +31,10 @@ function Login(props) {
 
   return(
     <main className="main main--login">
-      <Banner page={'login'} bannerList={bannerList} alt={'imagem abstrata baseada na estátua "O pensador".'} />
-      <LoginForm isLogin={initialForm} loginData={loginData}/>
+      <section className='main__wrapper--login'>
+        <Banner page={'login'} bannerList={bannerList} alt={'imagem abstrata baseada na estátua "O pensador".'} />
+        <LoginForm isLogin={initialForm} loginData={loginData}/>
+      </section>      
     </main>
   );
 }

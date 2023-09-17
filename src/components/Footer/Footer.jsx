@@ -32,7 +32,7 @@ function Footer(props) {
           </a>
         </nav>
 
-        <p className="other__copyright">© 2023 - <span className='span__no-wrap'>Rafael R. B.</span>.</p>
+        <p className="other__copyright">© 2023. <span className='span__no-wrap'>Rafael R. B.</span>.</p>
       </section>      
     </footer>
   );
