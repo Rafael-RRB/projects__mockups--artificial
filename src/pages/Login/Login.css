@@ -67,7 +67,9 @@
     }
 
       .main__banner--login {
+        min-height: 57.1rem;
         max-height: calc(100vh - 11.1rem);
+        min-width: 57.1rem;
         max-width: calc(100vh - 11.1rem); 
       }
 
