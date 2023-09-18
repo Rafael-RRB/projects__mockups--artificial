@@ -153,6 +153,11 @@ button:hover, button:focus {
   display: inline-block;
 }
 
+.span__no-wrap--bold {
+  display: inline-block;
+  font-weight: 900;
+}
+
 /* JS classes */
 .js__hidden {
   display: none;
