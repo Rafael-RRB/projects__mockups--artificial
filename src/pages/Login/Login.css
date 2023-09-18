@@ -40,7 +40,9 @@
         display: inline-flex;
         align-items: center;
         /* max based on header height & top/bottom padding */
+        min-height: 40.8rem;
         max-height: calc(100vh - 11.1rem);
+        min-width: 40.8rem;
         max-width: calc(100vh - 11.1rem);
         aspect-ratio: 1;
         flex-shrink: 1;
