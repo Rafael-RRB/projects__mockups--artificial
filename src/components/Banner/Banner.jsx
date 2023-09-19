@@ -12,8 +12,8 @@ function Banner(props) {
 
   return(
     <picture className={`main__banner main__banner--${page}`}>
-      <source className='banner__image' media='(max-width: 280px)' srcSet={bannerSmall} />
-      <source className='banner__image' media='(max-width: 540px)' srcSet={bannerDefault} />
+      <source media='(max-width: 576px)' srcSet={bannerSmall} />
+      <source media='(max-width: 1200px)' srcSet={bannerDefault} />
       <img className='banner__image' src={bannerMaximum} alt={alt} />
     </picture>
   )

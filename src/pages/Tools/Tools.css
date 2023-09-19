@@ -286,7 +286,7 @@
 }
 @media screen and (min-width: 1400px) {
   .articles--tools {
-    max-width: 123.4rem;
+    max-width: 125.4rem;
     padding: 6rem;
   }
   
@@ -302,7 +302,7 @@
         flex-wrap: wrap;
         min-width: 0;
         width: auto;
-        max-width: 76.8rem;
+        max-width: 78.2rem;
       }
 
         .articles__content--tools:last-child .content__image--tools {
@@ -331,7 +331,7 @@
 
         .content__image--tools {
           min-width: 0;
-          width: 25.6rem;
+          width: 26.6rem;
           max-width: none;
         }
     
