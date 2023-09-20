@@ -209,7 +209,7 @@
       transition: border 100ms;
     }
 
-      .header__logo:focus, .header__logo:hover {
+      .header__logo:hover {
         border-bottom: .4rem solid var(--color-main);
       }
   
@@ -220,7 +220,7 @@
         outline: none;
       }
 
-        .menu__account:focus, .menu__account:hover {
+        .menu__account:hover {
           filter: brightness(0.8);
           transform: scale(1.25);
         }
@@ -254,7 +254,7 @@
             transition: all 100ms;
           }
 
-            .options__option:hover, .options__option:focus {
+            .options__option:hover {
               border-bottom-width: .5rem;
               outline: none;
             }

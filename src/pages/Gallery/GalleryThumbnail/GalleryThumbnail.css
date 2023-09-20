@@ -13,4 +13,5 @@
     .category__thumb {
       border: none;
       border-radius: 50%;
+      transition: filter 200ms;
     }

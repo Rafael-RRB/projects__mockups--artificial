@@ -1,0 +1,5 @@
+On each image, done the following with *paint.net*:
+
+1. Effects,  oil painting. Brush size 1, Coarseness 255;
+2. Repeat step 1;
+3. Effects, add Noise. Intensity 20, Color Saturation 0, Coverage 100.

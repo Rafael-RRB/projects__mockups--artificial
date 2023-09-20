@@ -79,7 +79,7 @@ function Tools(props) {
     <main className="main">
       <Banner page={page} bannerList={bannerList} alt={'desenho de cinco cachorros ciêntistas.'} />
 
-      <section className="articles articles--tools">
+      <section className={`articles articles--${page}`} >
         <ContentSection object={toolsIntro} />
         <ContentSection object={toolsConcept} />
         <ContentSection object={toolsGeneration} />
