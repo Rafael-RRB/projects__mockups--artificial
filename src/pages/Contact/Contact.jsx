@@ -17,6 +17,7 @@ const bannerList = {
 const contactIntro = {
   headingLevel: '1',
   identifier: 'contactIntro',
+  modifier: 'contact',
   title: 'Fale Conosco',
   text: 'Adoraríamos muito saber de você! Se tiver alguma dúvida, sugestão ou quiser experimentar nossos serviços, fique à vontade para entrar em contato. Temos várias maneiras de nos comunicar e prometemos responder rapidinho! Para agilizar ainda mais, nos conte tudo o que precisamos saber. Mal podemos esperar para falar com você!',
 }

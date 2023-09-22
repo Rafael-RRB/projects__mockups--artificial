@@ -146,10 +146,15 @@ function LoginForm(props) {
       }
     } else {
       // What to do if the current form is for signup.
+      const userInput = event.target.querySelector('#login-user').value;
+      const pwdInput = event.target.querySelector('#login-pwd').value;
+
       const newAccount = {
-        'user': event.target.querySelector('#login-user').value,
-        'pwd': event.target.querySelector('#login-pwd').value,
+        'user': userInput,
+        'pwd': pwdInput,
+        'username': userInput.match(/(.*?)@/)[1],
         'imgBase64': 'data:image/webp;base64,UklGRh4DAABXRUJQVlA4WAoAAAAwAAAAMQAAMQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIdQAAAAFHIBBI4SYXEREGOLFta1k+nOjQSUzAossQiC6R+A3glzPvT/67/gQtov8TYP6ADzsUXcBWNQkw1uTASQPwkXScs8Q4S00CtDVroKoxDzsw5V49ZpPHviro5LhHwRd/vVgaGBfLA9NiBE8lygLLYrdAvdjPHQBWUDggsgAAAPAGAJ0BKjIAMgA+bTSWR6QjIiEoFAoAgA2JYwB4g3AHqA2wG4A3gDeTMj5LFTYxWWRCwClFanUrvcQQfMvl9gAA/vyuMf7TL//+XT2BvBgLoSZF7rMcjcb44jKM2q//puf6XjvSPy0xl4Fy846i9uOcv3olai4BUPepbV3FzxTQ1fcO2Ev7n0Gy6WOxTqD5/nWvA1PXkW5TMVhFuUW0COJkvtOhUf4xtGgZCliP5bsAAAA=',
+        'bannerBase64': 'linear-gradient(to bottom, var(--color-banner-home), var(--color-banner-home))',
         'favorites': []
       };
       loginList.push(newAccount);
@@ -171,18 +176,18 @@ function LoginForm(props) {
       </div>
 
       <fieldset className='login-form__fieldset'>
-        <label htmlFor='' className='fieldset__field'>
+        <label className='fieldset__field'>
           <h2 className='field__login-title'>E-mail</h2>
           <input type={isLogin ? 'text' : 'email'} value={emailInput} onChange={event => emailOnChange(event)} placeholder='Seu e-mail aqui...' minLength={3} maxLength={50} required id="login-user" className='field__login-input' />
         </label>
 
-        <label htmlFor='' className='fieldset__field'>
+        <label className='fieldset__field'>
           <h2 className='field__login-title'>Senha</h2>
           <input type='password' value={pwdInput} onChange={event => pwdOnChange(event)} placeholder='Sua senha aqui...' required pattern={isLogin ? undefined : pwdRegex} id='login-pwd' className='field__login-input' />
         </label>
 
         {isLogin !== true ? (
-          <label htmlFor='' className='fieldset__field'>
+          <label className='fieldset__field'>
             <h2 className='field__login-title'>Confirmar</h2>
             <input type='password' value={confirmPwd} onChange={event => pwdConfirmOnChange(event)} placeholder='Confirme sua senha aqui...' required id='login-confirm-pwd' className='field__login-input' />
           </label>

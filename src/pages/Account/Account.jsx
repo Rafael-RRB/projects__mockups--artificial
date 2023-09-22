@@ -2,6 +2,7 @@ import "./Account.css";
 import AccountFavorites from "./AccountFavorites/AccountFavorites.jsx";
 import "./AccountUploadIcon/AccountUploadIcon.jsx";
 import AccountUploadIcon from "./AccountUploadIcon/AccountUploadIcon.jsx";
+import AccountUser from "./AccountUser/AccountUser.jsx";
 
 function Account(props) {
   const currentUser =  props.loginData.loginUser;//JSON.parse(localStorage.loginStatus).user;
@@ -22,10 +23,13 @@ function Account(props) {
 
   return(
     <main className="main">
+      <AccountUser userInfo={[loginList, userIndex]} />
       <AccountFavorites object={currentFavorites} />
-      <AccountUploadIcon userInfo={[loginList, userIndex]} refresh={props.refresh} />
+      
     </main>
   );
 }
+
+// <AccountUploadIcon userInfo={[loginList, userIndex]} refresh={props.refresh} />
 
 export default Account;

@@ -13,12 +13,14 @@ function Slideshow(props) {
     const elementMain = document.getElementById(parentID).parentElement.querySelector('main');
     const elementMainCSS = window.getComputedStyle(elementMain);
     const paddingTotal = parseFloat(elementMainCSS.paddingLeft) + parseFloat(elementMainCSS.paddingRight) + parseFloat(elementMainCSS.gap);
-    console.log(paddingTotal);
     const heightValue = elementTarget.offsetTop - 50;
     const imageTarget = document.getElementById(targetID);
     const horizontalScroll = imageTarget.offsetLeft;
+
     /* scrolls to heading */
-    window.scrollTo(0, heightValue);
+    // Maybe scrolling up isn't good for UX..?
+    //window.scrollTo(0, heightValue);
+
     imageTarget.parentElement.scrollTo({
       left: horizontalScroll - paddingTotal,
       top: 0,
