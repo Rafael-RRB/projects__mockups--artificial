@@ -37,7 +37,13 @@
     }
 
       .account__edit::after {
-        
+        display: block;
+        content: "";
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
       }
 
       .account__edit--banner {

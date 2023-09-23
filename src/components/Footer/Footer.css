@@ -36,31 +36,49 @@
   .footer__other {
     padding-bottom: 2rem;
     width: 100%;
-    max-width: 19rem;
   }
 
     .other__social {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      max-width: 13rem;
       padding-bottom: 1rem;
       margin: 0 auto;
-      gap: 1rem;
+      gap: 2rem;
     }
 
       .social__link {
         display: inline-block;
+        position: relative;
+        
+        min-width: 0;
+        width: 3rem;
+        min-height: 0;
+        height: 3rem;
 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 3rem;
+        background-size: 100%;
 
-        transition: filter 200ms;        
+        border-radius: 50%;
+        box-shadow: var(--boxshadow-dark);
+
+        outline: none;
+        transition: filter 200ms;
       }
+
+        .social__link::after {
+          content: "";
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          top: -1rem;
+          right: -1rem;
+        }
+
         .social__link:hover, .social__link:focus {
-          filter: invert(.25);
-          outline: none;
-          
+          filter: brightness(0.5);     
         }
 
         .link-linkedin {
@@ -84,7 +102,7 @@
         }
 
     .other__copyright {
-      margin: 0;
+      margin: auto;
       text-align: center;
     }
 
@@ -102,7 +120,7 @@
       align-items: start;
       width: 100%;
       max-width: 30rem;
-      gap: 1rem;
+      gap: 2rem;
       padding: 1.5rem 3rem 1.5rem 0;
       /* Margin-left due to 4rem social icons (.5rem left & right) */
       margin-left: .5rem;
@@ -123,12 +141,11 @@
     .footer__other {
       display: flex;
       flex-direction: column;
+      width: auto;
       padding: 0 0 0 2.5rem;
-      max-width: 19.5rem;
     }
   
       .other__social {
-        
       }
   
         .social__link {}
@@ -145,7 +162,9 @@
   
           .link-telegram {}
   
-      .other__copyright {}
+      .other__copyright {
+        
+      }
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -157,7 +176,6 @@
     .footer__about {
       padding: 1.5rem 3rem 1.5rem 0;
       max-width: 47rem;
-      gap: 3rem;
     }
   
       .about__title {
@@ -171,6 +189,8 @@
     .footer__other {}
   
       .other__social {
+        padding-bottom: 2rem;
+        max-width: 23rem;
       }
   
         .social__link {}
@@ -209,7 +229,7 @@
       }
     
     .footer__other {
-      max-width: 35.5rem;
+      max-width: 25.5rem;
     }
   
       .other__social {}

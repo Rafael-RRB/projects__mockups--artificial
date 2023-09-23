@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="20"
-   height="20"
-   viewBox="0 0 20 20"
+   width="25"
+   height="25"
+   viewBox="0 0 25 25"
    fill="none"
    version="1.1"
-   id="svg7189"
-   sodipodi:docname="menu__submenu.svg"
+   id="svg18155"
+   sodipodi:docname="menu__close--white.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs7193" />
+     id="defs18159" />
   <sodipodi:namedview
-     id="namedview7191"
+     id="namedview18157"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -24,19 +24,20 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="6.975"
-     inkscape:cx="-20.860215"
-     inkscape:cy="13.620072"
+     inkscape:zoom="11.836968"
+     inkscape:cx="10.940302"
+     inkscape:cy="12.587683"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg7189" />
+     inkscape:current-layer="svg18155" />
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"
-     d="M 0,4 C 0,3.171573 0.671573,2.5 1.5,2.5 h 17 C 19.3284,2.5 20,3.171573 20,4 20,4.82843 19.3284,5.5 18.5,5.5 H 1.5 C 0.671573,5.5 0,4.82843 0,4 Z m 0,5.99998 c 0,-0.82843 0.671573,-1.5 1.5,-1.5 h 17 c 0.8284,0 1.5,0.67157 1.5,1.5 0,0.82842 -0.6716,1.5 -1.5,1.5 h -17 c -0.828427,0 -1.5,-0.67158 -1.5,-1.5 z M 1.5,14.5 C 0.671573,14.5 0,15.1716 0,16 c 0,0.8285 0.671573,1.5 1.5,1.5 h 17 c 0.8284,0 1.5,-0.6715 1.5,-1.5 0,-0.8284 -0.6716,-1.5 -1.5,-1.5 z"
-     fill="#0f4483"
-     id="path7187" />
+     d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25ZM15.0711 8L16.4853 9.41422L13.6568 12.2426L16.4853 15.071L15.0711 16.4853L12.2426 13.6569L9.4142 16.4853L8 15.071L10.8284 12.2426L8 9.41418L9.41422 8L12.2426 10.8284L15.0711 8Z"
+     fill="#0F4483"
+     id="path18153"
+     style="fill:#ffffff;fill-opacity:1" />
 </svg>
