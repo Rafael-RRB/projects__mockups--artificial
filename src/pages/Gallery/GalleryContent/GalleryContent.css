@@ -51,8 +51,10 @@
     .preview__button  {
       display: inline-flex;
       align-items: center;
-      width: 50%;
-      padding-left: 1rem;
+      justify-content: center;
+      width: auto;
+      padding-left: 5rem;
+      padding-right: 1rem;
       color: var(--color-font-light);
       font-size: 1.2rem;
       font-family: orbitron;
@@ -61,14 +63,16 @@
       border-radius: 1rem;
       background-color: var(--color-main);
       background-repeat: no-repeat;
-      background-position: calc(100% - 1rem) center;
-      background-size: 2rem;
+      background-position: calc(1.25rem) center;
+      background-size: 2.5rem;
     }
 
       .preview__button--download {
-        background-image: url(../../../assets/img/ui/icons/download.svg);
+        background-image: url(../../../assets/img/ui/icons/download--white.svg);
+        flex-grow: 2;        
       }
 
       .preview__button--newtab {
         background-image: url(../../../assets/img/ui/icons/link__external--white.svg);
+        flex-grow: 1;
       }

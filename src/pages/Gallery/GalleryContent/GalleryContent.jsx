@@ -77,7 +77,7 @@ function GalleryContent(props) {
       
       <div className='preview__buttons' >
         <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonDownload' download={true} className='preview__button preview__button--download'>Download</a>
-        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonNewTab' target='_blank' className='preview__button preview__button--newtab'>Nova guia</a>
+        <a href={`/static/pages/gallery/source/${downloadLink}.png`} id='buttonNewTab' target='_blank' className='preview__button preview__button--newtab'>Abrir</a>
       </div>
     </article>
   )

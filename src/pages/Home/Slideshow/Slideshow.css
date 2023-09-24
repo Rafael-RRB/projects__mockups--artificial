@@ -54,11 +54,27 @@
 
 
       .slideshow__header__link {
+        min-width: 0;
+        width: 2.5rem;
+        min-height: 0;
+        height: 2.5rem;
+        margin: 1.25rem;
         display: inline-block;
         background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 2.5rem;
         transition: filter 200ms;
         outline: none;
+        position: relative;
       }
+
+        .slideshow__header__link::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          top: -1.25rem;
+          right: -1.25rem;
+        }
 
         .slideshow__header__link:focus, .slideshow__header__link:hover {
           filter: brightness(0.5);

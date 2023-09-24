@@ -19,7 +19,6 @@
 }
 .main__banner--gallery {
   background: var(--color-banner-gallery) url('../../assets/img/ui/background/banner__gallery--light.svg') repeat center / 5vw;
-  
 }
 .main__banner--login {
   margin: 0;

@@ -17,7 +17,7 @@
 }
 
   .header__logo {
-    background: transparent url('../../assets/img/ui/logo/logo__artificial.svg') no-repeat center / 3rem;
+    background: transparent url('../../assets/img/ui/logo/logo__artificial.svg') no-repeat center / 2.5rem;
     transition-property: border-bottom, background-image, background-color;
     transition-duration: 200ms;
     outline: none;
@@ -51,7 +51,7 @@
         width: inherit;
         height: inherit;
         border-radius: 50%;
-        padding: 1rem;
+        padding: 1.25rem;
       }
 
     .menu__submenu {
@@ -144,7 +144,7 @@
               background-color: transparent;
               background-repeat: no-repeat;
               background-position: 1.5rem center;
-              background-size: 3rem;
+              background-size: 2.5rem;
             }
 
             .link__home {
