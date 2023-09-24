@@ -96,7 +96,7 @@
           align-items: center;
           width: auto;
           height: 5.1rem;
-          padding: 0 1.5rem 0 6rem;
+          padding: 0 1.25rem 0 5rem;
           border-bottom: .1rem solid var(--color-main);
           font-family: Roboto;
           font-weight: 400;
@@ -143,7 +143,7 @@
             .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {
               background-color: transparent;
               background-repeat: no-repeat;
-              background-position: 1.5rem center;
+              background-position: 1.25rem center;
               background-size: 2.5rem;
             }
 
@@ -275,7 +275,9 @@
         
       }
   
-    .header__menu {}
+    .header__menu {
+      display: none;
+    }
   
       .menu__account {
         
@@ -301,7 +303,7 @@
           width: auto;
           position: initial;
           border-left: none;
-          gap: 1rem;
+          gap: 0;
           box-shadow: none;
         }
 
