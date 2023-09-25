@@ -3,6 +3,7 @@
 
   .slides__slideshow {
     background-color: var(--color-bg-grey);
+    position: relative;
   }
 
     .slides__slideshow--character {
@@ -90,19 +91,54 @@
       display: flex;
       overflow-x: scroll;
       background-color: var(--color-bg-light);
-      padding: 2rem;
+      /* Note to self: to perfectly center image, use calc((100vw - min(75vw, 25.6rem)) / 2) -- assuming image width of 25.6rem */
+      padding: 2rem 50vw;
       gap: 2rem;
       scroll-snap-type: x mandatory;
     }
 
+    .slideshow__button {
+      position: absolute;
+      border-radius: 50%;
+      top: calc(6.5rem + min(75vw, 25.6rem) / 2);
+      border: .2rem solid white;
+      box-shadow: var(--boxshadow-dark);
+      transition-property: filter;
+      transition-duration: 200ms;
+    }
+    
+      .slideshow__button--backward {
+        left: 1rem;
+      }
+
+        .slideshow__button--backward::before {
+          /* I want the transform to only affect the icon */
+          content: "";
+          display: block;
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          /* this -.2rem is from the borders */
+          top: -.2rem;
+          right: -.2rem;
+          background: transparent url('../../../assets/img/ui/icons/arrow__slider--white.svg') no-repeat center / 2.5rem;
+          transform: rotateY(180deg);
+        }
+      
+      .slideshow__button--forward {
+        right: 1rem;
+        background: var(--color-main) url('../../../assets/img/ui/icons/arrow__slider--white.svg') no-repeat center / 2.5rem;
+      }
+
       .slideshow__main__image {
+        display: inline-block;
         border-radius: 2rem;
-        min-width: 20rem;
-        width: 40%;
+        min-width: min(25.6rem, 75vw);
+        width: 75vw;
         max-width: max(256px, 25.6rem);
         aspect-ratio: 1;
         scroll-snap-align: center;
-        flex-shrink: 0;
+
         background-color: var(--color-bg-grey);
         box-shadow: var(--boxshadow-medium);
       }
@@ -154,11 +190,14 @@
         .slideshow__header__title {}
   
       .slideshow__main {
-        padding: 3rem;
         gap: 3rem;
       }
   
         .slideshow__main__image {}
+
+      .slideshow__button {
+        top: calc(8.5rem + min(75vw, 25.6rem) / 2);
+      }
   
       .slideshow__footer {
         padding: 3rem;
@@ -204,7 +243,6 @@
   
   
         .slideshow__header__link {
-          background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 3.75rem;
         }
   
         .slideshow__header__title {
@@ -219,6 +257,10 @@
           
         }
   
+      .slideshow__button {
+        top: calc(9.75rem + min(75vw, 25.6rem) / 2);
+      }
+
       .slideshow__footer {
         gap: 3rem;
         justify-content: center;
@@ -243,31 +285,26 @@
   
     .slides__slideshow {
       display: inline-block;
-      border-radius: 1rem;
+      border-radius: 2rem;
       overflow: hidden;
       /* (25.6rem * 3 elements) + (3rem * 4 gaps) + (1rem * 2 borders) = 90.8rem */
       max-width: 90.8rem;
-      border: 1rem solid #000;
+      box-shadow: var(--boxshadow-medium);
     }
   
       .slides__slideshow--character {
-        border-color: var(--color-heading-chara);
       }
       
       .slides__slideshow--animal {
-        border-color: var(--color-heading-animal);
       }
       
       .slides__slideshow--places {
-        border-color: var(--color-heading-places);
       }
       
       .slides__slideshow--food {
-        border-color: var(--color-heading-food);
       }
       
       .slides__slideshow--people {
-        border-color: var(--color-heading-people);
       }
 
       .slideshow__header {
@@ -286,7 +323,6 @@
         .header__people {}
   
         .slideshow__header__link {
-          background: url('../../../assets/img/ui/icons/menu__external-link.svg') no-repeat center / 5rem;
         }
   
         .slideshow__header__title {

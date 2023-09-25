@@ -8,21 +8,28 @@ function Slideshow(props) {
   const imageList = props.imageList;
 
   /* scrolls to the heading (with offset) and scrolls to the correct image */
-  function scrollBehavior(parentID, targetID) {
-    const elementTarget = document.getElementById(parentID);
-    const elementMain = document.getElementById(parentID).parentElement.querySelector('main');
-    const elementMainCSS = window.getComputedStyle(elementMain);
-    const paddingTotal = parseFloat(elementMainCSS.paddingLeft) + parseFloat(elementMainCSS.paddingRight) + parseFloat(elementMainCSS.gap);
-    const heightValue = elementTarget.offsetTop - 50;
+  function scrollThumbnail(targetID) {
     const imageTarget = document.getElementById(targetID);
     const horizontalScroll = imageTarget.offsetLeft;
 
-    /* scrolls to heading */
-    // Maybe scrolling up isn't good for UX..?
-    //window.scrollTo(0, heightValue);
+    // This is supposed to scroll up, to the heading, but maybe it isn't good for UX..? It didn't feel good on a phone, using landscape mode.
+    // window.scrollTo(0, heightValue);
 
     imageTarget.parentElement.scrollTo({
-      left: horizontalScroll - paddingTotal,
+      left: horizontalScroll - (imageTarget.offsetWidth / 2),
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  /* scrolls to the left or to the right */
+  function scrollCarousel(targetID, direction) {
+    const carouselTarget = document.getElementById(targetID);
+    const currentScroll = carouselTarget.scrollLeft;
+    const scrollAmount = direction === 'backward' ? -256 : 256;
+
+    carouselTarget.scrollTo({
+      left: currentScroll + scrollAmount,
       top: 0,
       behavior: 'smooth'
     });
@@ -55,9 +62,13 @@ function Slideshow(props) {
         ))}
       </main>
 
+      {/* I could have used sticky, instead of absolute, but the former has slightly less support... but maybe I shouldn't bother with Internet Explorer? */}
+      <button className='slideshow__button slideshow__button--backward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'backward')}></button>
+      <button className='slideshow__button slideshow__button--forward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'forward')}></button>
+
       <footer className="slideshow__footer">
         {imageList[1].map((url, index) => (
-          <button onClick={event => scrollBehavior(`slideshow-header-${category}`, `${category}${index}`)} style={{backgroundImage: `url(${imageList[1][index]})`}} key={`thumb-${index}`} className="slideshow__footer__thumbnails">
+          <button onClick={event => scrollThumbnail(`${category}${index}`)} style={{backgroundImage: `url(${imageList[1][index]})`}} key={`thumb-${index}`} className="slideshow__footer__thumbnails">
             <span className="a11y-hidden">{imageList[2][index]}</span>
           </button>
         ))}
