@@ -9,7 +9,6 @@
   font-size: 1.2rem;
   line-height: 1.25;
   color: var(--color-font-light);
-  border-top: .1rem solid var(--color-bg-light);
 
   padding: 2rem 2rem 0;
 }

@@ -55,6 +55,9 @@
   --color-boxshadow-light: #AAAAAA66;
   --color-boxshadow-medium: #55555566;
   --color-boxshadow-dark: #00000066;
+  --color-border-light: #fff;
+  --color-border-slideshow: #BBBBBB;
+  --color-border-dark: #000;
 
   --boxshadow-light: .2rem .2rem .4rem .2rem var(--color-boxshadow-light);
   --boxshadow-medium: .2rem .2rem .4rem .2rem var(--color-boxshadow-medium);

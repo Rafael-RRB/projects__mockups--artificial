@@ -63,8 +63,13 @@ function Slideshow(props) {
       </main>
 
       {/* I could have used sticky, instead of absolute, but the former has slightly less support... but maybe I shouldn't bother with Internet Explorer? */}
-      <button className='slideshow__button slideshow__button--backward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'backward')}></button>
-      <button className='slideshow__button slideshow__button--forward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'forward')}></button>
+      <button className='slideshow__button slideshow__button--backward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'backward')}>
+        <span className="a11y-hidden">Imagem anterior</span>
+      </button>
+
+      <button className='slideshow__button slideshow__button--forward' onClick={event => scrollCarousel(`slideshow-main-${category}`, 'forward')}>
+        <span className="a11y-hidden">Imagem posterior</span>
+      </button>
 
       <footer className="slideshow__footer">
         {imageList[1].map((url, index) => (

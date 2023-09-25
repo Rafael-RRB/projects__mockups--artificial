@@ -1,8 +1,13 @@
 .slides {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--color-bg-grey);
 }
 
   .slides__slideshow {
-    background-color: var(--color-bg-grey);
+    background-color: var(--color-bg-light);
+    border-bottom: .1rem solid var(--color-border-slideshow);
     position: relative;
   }
 
@@ -53,7 +58,6 @@
         background-color: var(--color-heading-people);
       }
 
-
       .slideshow__header__link {
         min-width: 0;
         width: 2.5rem;
@@ -90,7 +94,6 @@
     .slideshow__main {
       display: flex;
       overflow-x: scroll;
-      background-color: var(--color-bg-light);
       /* Note to self: to perfectly center image, use calc((100vw - min(75vw, 25.6rem)) / 2) -- assuming image width of 25.6rem */
       padding: 2rem 50vw;
       gap: 2rem;
@@ -103,6 +106,7 @@
       top: calc(6.5rem + min(75vw, 25.6rem) / 2);
       border: .2rem solid white;
       box-shadow: var(--boxshadow-dark);
+      outline: none;
       transition-property: filter;
       transition-duration: 200ms;
     }
@@ -148,7 +152,7 @@
       flex-wrap: wrap;
       max-width: 23rem;
       justify-content: space-between;
-      padding: 2rem;
+      padding: 0 2rem 2rem;
       margin: auto;
       gap: 2rem;
     }
