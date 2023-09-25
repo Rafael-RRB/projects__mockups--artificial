@@ -111,11 +111,11 @@
       transition-duration: 200ms;
     }
     
-      .slideshow__button--backward {
+      .slideshow__button--previous {
         left: 1rem;
       }
 
-        .slideshow__button--backward::before {
+        .slideshow__button--previous::before {
           /* I want the transform to only affect the icon */
           content: "";
           display: block;
@@ -129,7 +129,7 @@
           transform: rotateY(180deg);
         }
       
-      .slideshow__button--forward {
+      .slideshow__button--next {
         right: 1rem;
         background: var(--color-main) url('../../../assets/img/ui/icons/arrow__slider--white.svg') no-repeat center / 2.5rem;
       }
