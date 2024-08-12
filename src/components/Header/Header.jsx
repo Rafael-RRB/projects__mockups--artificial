@@ -1,6 +1,5 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import defaultLogo from '../../assets/img/ui/icons/menu__account.svg';
 
 function Header(props) {
@@ -69,7 +68,7 @@ function Header(props) {
               }
             })()
           } className="menu__account menu__account--mobile" >
-          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : defaultLogo} alt='Imagem de perfil' className='account__profile-icon'/>
+          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : defaultLogo} width='25' height='25' alt='Imagem de perfil' className='account__profile-icon'/>
           <span className="a11y-hidden">Sua Conta</span>
         </Link>
 
@@ -118,7 +117,7 @@ function Header(props) {
               }
             })()
           } className="menu__account" >
-          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : defaultLogo} alt='Imagem de perfil' className='account__profile-icon'/>
+          <img src={JSON.parse(localStorage.loginStatus).status === 'logged' ? userProfileImage : defaultLogo} width='25' height='25' alt='Imagem de perfil' className='account__profile-icon'/>
           <span className="a11y-hidden">Sua Conta</span>
         </Link>
 

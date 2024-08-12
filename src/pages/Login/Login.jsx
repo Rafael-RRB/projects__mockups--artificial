@@ -1,11 +1,14 @@
 import './Login.css';
 import Banner from '../../components/Banner/Banner.jsx';
-import bannerSmall from '../../assets/img/banner/banner__login--min.webp';
+import bannerMin from '../../assets/img/banner/banner__login--min.webp';
+import bannerSmall from '../../assets/img/banner/banner__login--small.webp';
 import bannerDefault from '../../assets/img/banner/banner__login--default.webp';
 import bannerLarge from '../../assets/img/banner/banner__login--max.webp';
+import LoginBanner from './LoginBanner/LoginBanner.jsx';
 import LoginForm from './LoginForm/LoginForm.jsx';
 
 const bannerList = {
+  bannerMin,
   bannerSmall,
   bannerDefault,
   bannerLarge
@@ -32,9 +35,9 @@ function Login(props) {
   return(
     <main className="main main--login">
       <section className='main__wrapper--login'>
-        <Banner page={'login'} bannerList={bannerList} alt={'imagem abstrata baseada na estátua "O pensador".'} />
+        <LoginBanner page={'login'} bannerList={bannerList} alt={'imagem abstrata baseada na estátua "O pensador".'} />
         <LoginForm isLogin={initialForm} loginData={loginData}/>
-      </section>      
+      </section>
     </main>
   );
 }

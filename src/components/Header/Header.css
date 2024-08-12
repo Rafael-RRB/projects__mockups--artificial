@@ -35,6 +35,7 @@
     .menu__account {
       display: inline-block;
       outline: none;
+      background-size: 2.5rem;
       transition-property: background-color;
       transition-duration: 200ms;
     }
@@ -102,7 +103,7 @@
           font-weight: 400;
           text-transform: none;
 
-          transition-property: background-color, background-image, color;
+          transition-property: background-color, background-image, color, opacity;
           transition-duration: 200ms;
           outline: none;
         }
@@ -227,30 +228,78 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 0 2rem;
+    
   }
+    
+    .header__logo {
+    }
+
+      .header__logo:hover, .header__logo:focus {
+        
+      }
   
-    .header__logo {}
+    .header__menu {
+      display: none;
+    }
   
-    .header__menu {}
-  
-      .menu__account {}
+      .menu__account {
+        
+      }
+
+        .menu__account:hover, .menu__account:focus {
+          
+        }
+
+        .menu__account--mobile {
+          display: none;
+        }
       
         .account__profile-icon {}
   
-      .menu__submenu {}
+      .menu__submenu {
+        display: none;
+      }
   
-        .submenu__options {}
+        .submenu__options {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          position: initial;
+          border-left: none;
+          gap: 0;
+          box-shadow: none;
+        }
+
+          .submenu__options--mobile {
+            display: none;
+          }
   
-          .options__option {}
+          .options__option {
+          }
+
+            .options__option:hover, .options__option:focus {
+              
+            }
           
-            .option__close {}
+            .option__close {
+              display: none;
+            }
+
+              .option__close ~ * {
+                display: none;
+              }
             
-            .option__link {}
+            .option__link {
+              
+            }
   
-              .link__text {}
+              .link__text {
+                font-size: 1.2rem;
+              }
   
-              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {}
+              .link__home, .link__gallery, .link__tools, .link__contact, .link__about, .option__close {
+                
+              }
   
               .link__home {}
   

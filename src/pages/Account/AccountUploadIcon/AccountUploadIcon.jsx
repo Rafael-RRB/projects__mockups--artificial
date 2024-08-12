@@ -1,6 +1,12 @@
 import './AccountUploadIcon.css';
 import { useState } from 'react';
 
+/*
+
+Not used anymore.
+
+*/
+
 function AccountUploadIcon(props) {
   const loginList = props.userInfo[0];
   const userIndex = props.userInfo[1];

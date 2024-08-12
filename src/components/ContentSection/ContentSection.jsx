@@ -9,6 +9,7 @@ function ContentSection(props) {
   const text = props.object.text;
   const src = props.object.src;
   const alt = props.object.alt;
+  const sizes = props.object.sizes;
   
   let pictureArray = [];
 
@@ -24,24 +25,18 @@ function ContentSection(props) {
     artTxt: `text__paragraph${modifier !== undefined ? ` text__paragraph${modifier}` : ''}`,
   }
 
-  // I had to rewrite a bunch of code
-  const [counterRefresh, setCounterRefresh] = useState(0);
-  const targetSrc = '/static/pages/about/about__creator';
-  const changeSrc = '/static/pages/about/about__collage';
-  function switchImage(event) {
-    alert(':^)');
-    setCounterRefresh(...counterRefresh + 1);
-    console.log(counterRefresh)
-  }
-
-  // Why onClick ? I wanted to show someone... something when a specific image was clicked. 'tis all.
   if(src !== undefined) {
     src.forEach((currentSource, index) => pictureArray.push(
       (
         <picture className={`${classes.secPic}`} key={`picture-${identifier}-${index}`}>
-          <source media='(max-width: 280px)' srcSet={`${currentSource}--min.webp`} />
-          <source media='(max-width: 768px)' srcSet={`${currentSource}--default.webp`} />
-          <img className={`${classes.secPicImg}`} src={`${currentSource}--max.webp`} alt={`${alt}`} />
+          <source media='(max-width: 280px)' srcSet={`${currentSource}--240p.webp`} />
+          <source media='(max-width: 767px)' srcSet={`${currentSource}--256p.webp`} />
+          <source media='(max-width: 1399px)' srcSet={`${currentSource}--384p.webp`} />
+          <source media='(max-width: 1919px)' srcSet={`${currentSource}--512p.webp`} />
+          <source media='(max-width: 2559px)' srcSet={`${currentSource}--640p.webp`} />
+          <source media='(max-width: 3199px)' srcSet={`${currentSource}--768p.webp`} />
+          <source media='(max-width: 3839px)' srcSet={`${currentSource}--896p.webp`} />
+          <img className={`${classes.secPicImg}`} src={`${currentSource}--1024p.webp`} width={sizes[0]} height={sizes[1]} alt={`${alt}`} loading="lazy" />
         </picture>
       )
     ));

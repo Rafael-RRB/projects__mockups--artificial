@@ -13,15 +13,13 @@ const bannerList = {
 function Gallery(props) {
   const galleryJSON = props.gallery;
 
-  console.log(galleryJSON);
-
   return(
     <main className="main">
       <Banner page={'gallery'} bannerList={bannerList} alt={'desenho anime de uma jovem em um museu de arte.'}/>
       {(() => {
         if(galleryJSON !== null) {
           return (
-            <GalleryPreview data={galleryJSON.categories} />
+            <GalleryPreview data={galleryJSON.categories} refresh={props.refresh} />
           )
         }
       })()}

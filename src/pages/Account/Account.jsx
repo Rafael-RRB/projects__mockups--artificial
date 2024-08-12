@@ -1,7 +1,6 @@
 import "./Account.css";
 import AccountFavorites from "./AccountFavorites/AccountFavorites.jsx";
 import "./AccountUploadIcon/AccountUploadIcon.jsx";
-import AccountUploadIcon from "./AccountUploadIcon/AccountUploadIcon.jsx";
 import AccountUser from "./AccountUser/AccountUser.jsx";
 
 function Account(props) {
@@ -23,9 +22,7 @@ function Account(props) {
 
   return(
     <main className="main">
-      <AccountUser userInfo={[loginList, userIndex]} />
-      <AccountFavorites object={currentFavorites} />
-      
+      <AccountUser userInfo={[loginList, userIndex]} refresh={props.refresh} />
     </main>
   );
 }

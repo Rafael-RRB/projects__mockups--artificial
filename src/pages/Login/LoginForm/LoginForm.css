@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 0 1rem;
+    padding: 0;
     margin: 0;
     border: none;
   }
@@ -32,7 +32,7 @@
     .fieldset__field {
       width: auto;
       height: auto;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
 
       .field__login-title {
@@ -45,7 +45,16 @@
         height: auto;
         padding: 0 1rem;
         font-size: 1.6rem;
+        border: .2rem solid transparent;
+        transition-property: border-color, box-shadow;
+        transition-duration: 200ms;
       }
+
+        .field__login-input:hover, .field__login-input:focus {
+          outline: none;
+          border-color: var(--color-main);
+          box-shadow: none;
+        }
 
       .field__login-input::placeholder {
         font-size: 1.6rem;
@@ -64,7 +73,7 @@
 
 @media screen and (min-width: 768px) {
   .main__login-form {
-    width: 50%;
+    width: 75%;
     padding: 0;
   }
   
@@ -72,9 +81,7 @@
       gap: 2rem;
     }
   
-      .switch__button {
-        font-size: 1.75rem;
-      }
+      .switch__button {}
   
         .switch__button:disabled {
         }
@@ -85,21 +92,13 @@
       .fieldset__field {
       }
   
-        .field__login-title {
-          font-size: 2.25rem;
-        }
+        .field__login-title {}
   
-        .field__login-input {
-          font-size: 2rem;
-        }
+        .field__login-input {}
 
-          .field__login-input::placeholder {
-            font-size: 2rem;
-          }
+          .field__login-input::placeholder {}
   
-    .login-form__confirm {
-      font-size: 1.75rem;
-    }
+    .login-form__confirm {}
 }
 
 @media screen and (min-width: 1200px) {
@@ -114,7 +113,7 @@
     }
   
       .switch__button {
-        font-size: 2.1rem;
+        font-size: 1.75rem;
         height: 6rem;
       }
   
@@ -130,28 +129,25 @@
       }
   
         .field__login-title {
-          font-size: 2.7rem;
+          font-size: 2.25rem;
         }
   
         .field__login-input {
-          font-size: 2.4rem;
+          font-size: 2rem;
           padding: 0 1.5rem;
           height: 6rem;
         }
 
           .field__login-input::placeholder {
-            font-size: 2.4rem;
+            font-size: 2rem;
           }
   
     .login-form__confirm {
-      font-size: 2.1rem;
+      font-size: 1.75rem;
       height: 6rem;
     }
 }
 
-@media screen and (min-width: 1400px) {
-  .main__login-form {
-  }
-}
+@media screen and (min-width: 1400px) {}
 
 @media screen and (min-width: 1920px) {}

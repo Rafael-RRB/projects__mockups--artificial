@@ -1,42 +1,53 @@
 .contact__form {
-  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: .1rem solid var(--color-border-default);
 }
 
-  .form__title {
-    padding-bottom: 2rem;
-  }
+  .form__title {}
 
   .form__field {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding-bottom: 1rem;
+    gap: 1rem;
   }
 
     .field__title {
       text-transform: capitalize;
       font-family: orbitron;
       font-size: 1.8rem;
-      padding-bottom: 1rem;
     }
 
     .field__editable {
       width: 100%;
-      border: .2rem solid var(--color-main);
+      border: .2rem solid transparent;
       border-radius: 1rem;
       font-size: 1.4rem;
       overflow: hidden;
+      transition-property: border-color, box-shadow;
+      transition-duration: 200ms;
     }
 
       .field__editable--input {
         padding: 0 1rem;
       }
 
+        .field__editable:hover, .field__editable:focus {
+          outline: none;
+          border: .2rem solid var(--color-main);
+          box-shadow: none;
+        }
+
       .field__editable--textarea {
         min-height: 9em;/*calc(1.5rem + 5em);*/
         height: auto;
         padding: 1em 1rem;
+        scroll-padding: 2rem;
+        resize: none;
       }
     
       .field__input::placeholder {
@@ -44,9 +55,8 @@
       }
 
   .form__send {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin-top: 1rem;
     text-transform: uppercase;
     font-family: orbitron;
     font-weight: 900;
@@ -56,3 +66,68 @@
     background-color: var(--color-main);
     color: var(--color-font-light);
   }
+
+@media screen and (min-width: 576px) {
+  .contact__form {
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+    .form__title {}
+  
+    .form__field {
+      gap: 1.5rem;
+    }
+  
+      .field__title {}
+  
+      .field__editable {}
+  
+        .field__editable--input {}
+  
+          .field__editable:hover, .field__editable:focus {}
+  
+        .field__editable--textarea {}
+      
+        .field__input::placeholder {}
+  
+    .form__send {}
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {
+  .contact__form {
+    width: 50%;
+    max-width: 96rem;
+    margin: auto;
+    gap: 2rem;
+    padding: 0;
+    border-bottom: none;
+  }
+  
+    .form__title {}
+  
+    .form__field {
+      gap: 1rem;
+    }
+  
+      .field__title {}
+  
+      .field__editable {}
+  
+        .field__editable--input {}
+  
+          .field__editable:hover, .field__editable:focus {}
+  
+        .field__editable--textarea {}
+      
+        .field__input::placeholder {}
+  
+    .form__send {
+    }
+}
+
+@media screen and (min-width: 1400px) {}
+
+@media screen and (min-width: 1920px) {}

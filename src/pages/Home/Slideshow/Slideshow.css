@@ -1,13 +1,13 @@
 .slides {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   background-color: var(--color-bg-grey);
 }
 
   .slides__slideshow {
     background-color: var(--color-bg-light);
-    border-bottom: .1rem solid var(--color-border-slideshow);
+    border-bottom: .1rem solid var(--color-border-default);
+    margin-bottom: 1rem;
     position: relative;
   }
 
@@ -95,7 +95,8 @@
       display: flex;
       overflow-x: scroll;
       /* Note to self: to perfectly center image, use calc((100vw - min(75vw, 25.6rem)) / 2) -- assuming image width of 25.6rem */
-      padding: 2rem 50vw;
+      padding: 2rem 50vw 1.333rem;
+      margin-bottom: 0.667rem;
       gap: 2rem;
       scroll-snap-type: x mandatory;
     }
@@ -103,13 +104,18 @@
     .slideshow__button {
       position: absolute;
       border-radius: 50%;
-      top: calc(6.5rem + min(75vw, 25.6rem) / 2);
+      /* This was way harder than it should be, honestly. Formula: (Header height + Main top padding + (Image height / 2) - (Button Height / 2) */
+      top: calc(6.5rem + 2rem + min(75vw, 25.6rem) / 2 - 2.5rem);
       border: .2rem solid white;
       box-shadow: var(--boxshadow-dark);
       outline: none;
       transition-property: filter;
       transition-duration: 200ms;
     }
+
+      .slideshow__button:active {
+        animation: var(--animation-click);
+      }
     
       .slideshow__button--previous {
         left: 1rem;
@@ -137,6 +143,7 @@
       .slideshow__main__image {
         display: inline-block;
         border-radius: 2rem;
+        /* If the image doesn't load, having a min-width allows it to look normal, instead of a weird shadowy column */
         min-width: min(25.6rem, 75vw);
         width: 75vw;
         max-width: max(256px, 25.6rem);
@@ -163,19 +170,27 @@
         height: 5rem;
         border: none;
         border-radius: 50%;
+        background-size: 100%;
         background-color: var(--color-bg-light);
         box-shadow: var(--boxshadow-dark);
         transition: filter 200ms;
         outline: none;
       }
 
+        .slideshow__footer__thumbnails:active {
+          animation: var(--animation-click);
+        }
+
 @media screen and (min-width: 576px) {
   .slides {}
   
-    .slides__slideshow {}
+    .slides__slideshow {
+      margin-bottom: 2rem;
+    }
   
       .slideshow__header {
-        padding: 1.75rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
       }
   
         .header__character {}
@@ -194,17 +209,31 @@
         .slideshow__header__title {}
   
       .slideshow__main {
+        /* 2/3 padding & 1/3 margin due to mobile scrollbar... at least in Chrome(ium?) */
+        padding: 3rem 50vw 2rem;
+        margin-bottom: 1rem;
         gap: 3rem;
       }
   
         .slideshow__main__image {}
 
       .slideshow__button {
-        top: calc(8.5rem + min(75vw, 25.6rem) / 2);
+        top: calc(8rem + 3rem + min(75vw, 25.6rem) / 2 - 2.5rem);
       }
+      
+        .slideshow__button--previous {
+          left: 2rem;
+        }
+  
+          .slideshow__button--previous::before {
+          }
+        
+        .slideshow__button--next {
+          right: 2rem;
+        }
   
       .slideshow__footer {
-        padding: 3rem;
+        padding: 0 3rem 3rem;
         max-width: none;
         gap: 0;
       }
@@ -217,12 +246,12 @@
   }
   
     .slides__slideshow {
-      
+      margin-bottom: 3rem;
     }
   
       .slideshow__header {
-        padding: 2.375rem;
-        gap: 2.375rem;
+        padding: 2.25rem;
+        gap: 2.25rem;
       }
   
         .header__character {
@@ -262,8 +291,19 @@
         }
   
       .slideshow__button {
-        top: calc(9.75rem + min(75vw, 25.6rem) / 2);
+        top: calc(9.5rem + 3rem + min(75vw, 25.6rem) / 2 - 2.5rem);
       }
+
+        .slideshow__button--previous {
+          left: 3rem;
+        }
+
+          .slideshow__button--previous::before {
+          }
+        
+        .slideshow__button--next {
+          right: 3rem;
+        }
 
       .slideshow__footer {
         gap: 3rem;
@@ -277,23 +317,17 @@
 
 @media screen and (min-width: 1200px) {
   .slides {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 3rem;
-    max-width: 278.4rem;
-    padding: 6rem 0;
+    padding: 6rem 3rem;
     margin: 0 auto;
-    /*background-color: var(--color-bg-grey);*/
   }
   
     .slides__slideshow {
-      display: inline-block;
+      max-width: 102.4rem;
       border-radius: 2rem;
       overflow: hidden;
-      /* (25.6rem * 3 elements) + (3rem * 4 gaps) + (1rem * 2 borders) = 90.8rem */
-      max-width: 90.8rem;
       box-shadow: var(--boxshadow-medium);
+      margin: 0 auto;
     }
   
       .slides__slideshow--character {
@@ -312,7 +346,7 @@
       }
 
       .slideshow__header {
-        padding: 2rem 3rem 3rem;
+        padding: 3rem;
         gap: 3rem;
       }
   
@@ -334,48 +368,57 @@
         }
   
       .slideshow__main {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 3rem;
-        gap: 3rem;
-        overflow-x: auto;
-        scroll-snap-type: none;
+        /* 50% minus half of an image's width */
+        padding: 6rem calc(50% - min(15vw, 25.6rem)) 3rem;
+        margin-bottom: 3rem;
       }
   
-        .slideshow__main__image {}
+        .slideshow__main__image {
+          flex-grow: 1;
+          flex-shrink: 0;
+          min-width: min(256px, 25.6rem);
+          width: 30vw;
+          max-width: max(512px, 51.2rem);
+        }
+
+      .slideshow__button {
+        top: calc(11rem + 6rem + min(30vw, 51.2rem) / 2 - 2.5rem)
+      }
+
+        .slideshow__button--previous {
+          left: 3rem;
+        }
+
+          .slideshow__button--previous::before {
+          }
+        
+        .slideshow__button--next {
+          right: 3rem;
+        }
   
       .slideshow__footer {
-        display: none;
       }
   
         .slideshow__footer__thumbnails {}
 }
-@media screen and (min-width: 1400px) {}
-
-@media screen and (min-width: 1920px) {
-  .slides {
-  }
+@media screen and (min-width: 1400px) {
+  .slides {}
   
     .slides__slideshow {
+      max-width: 128rem;
     }
   
-      .slides__slideshow--character {
-      }
+      .slides__slideshow--character {}
       
-      .slides__slideshow--animal {
-      }
+      .slides__slideshow--animal {}
       
-      .slides__slideshow--places {
-      }
+      .slides__slideshow--places {}
       
-      .slides__slideshow--food {
-      }
+      .slides__slideshow--food {}
       
-      .slides__slideshow--people {
-      }
+      .slides__slideshow--people {}
 
-      .slideshow__header {
-      }
+      .slideshow__header {}
   
         .header__character {}
   
@@ -387,20 +430,63 @@
   
         .header__people {}
   
-        .slideshow__header__link {
-        }
+        .slideshow__header__link {}
   
-        .slideshow__header__title {
-        }
+        .slideshow__header__title {}
   
-      .slideshow__main {
-      }
+      .slideshow__main {}
   
-        .slideshow__main__image {
-        }
+        .slideshow__main__image {}
+
+      .slideshow__button {}
+
+        .slideshow__button--previous {}
+
+          .slideshow__button--previous::before {}
+        
+        .slideshow__button--next {}
   
-      .slideshow__footer {
-      }
+      .slideshow__footer {}
+  
+        .slideshow__footer__thumbnails {}
+}
+
+@media screen and (min-width: 1920px) {
+  .slides {}
+  
+    .slides__slideshow {}
+  
+      .slides__slideshow--character {}
+      
+      .slides__slideshow--animal {}
+      
+      .slides__slideshow--places {}
+      
+      .slides__slideshow--food {}
+      
+      .slides__slideshow--people {}
+
+      .slideshow__header {}
+  
+        .header__character {}
+  
+        .header__animal {}
+  
+        .header__places {}
+  
+        .header__food {}
+  
+        .header__people {}
+  
+        .slideshow__header__link {}
+  
+        .slideshow__header__title {}
+  
+      .slideshow__main {}
+  
+        .slideshow__main__image {}
+  
+      .slideshow__footer {}
   
         .slideshow__footer__thumbnails {}
 }

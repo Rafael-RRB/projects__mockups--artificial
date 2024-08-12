@@ -30,6 +30,7 @@ const toolsConcept = {
   title: 'Inspirações',
   text: <>Nós usamos uma combinação de imagens da web, <span className='span__no-wrap--bold'>ChatGPT 3.5</span>, <span className='span__no-wrap--bold'>DALL-E Mini</span> e <span className='span__no-wrap--bold'>Craiyon</span> para desenvolver a nossa ideia inicial.</>,
   src: ['/static/pages/tools/tools__concept'],
+  sizes: [1024, 1024],
   alt: 'Colagens de imagens de uma floresta. Um esboço de lápis, e doze imagens simples geradas baseadas no esboço.'
 }
 const toolsGeneration = {
@@ -39,6 +40,7 @@ const toolsGeneration = {
   title: 'Geração',
   text: <>Nós usamos o <span className='span__no-wrap--bold'>DALL-E 2</span> e outros sites, como <span className='span__no-wrap--bold'>Simplified</span>. Alguns prompts necessitaram mais de cem gerações de imagem para obter resultados aceitáveis.</>,
   src: ['/static/pages/tools/tools__generation'],
+  sizes: [1024, 1024],
   alt: 'Colagens de pinturas de imagem geradas pela IA, de uma floresta, no estilo realista.'
 }
 const toolsInpainting = {
@@ -46,8 +48,9 @@ const toolsInpainting = {
   identifier: 'inpainting',
   modifier: page,
   title: 'Inpainting',
-  text: <>Em alguns casos, as imagens geradas possuíam boa qualidade, mas eram arruinadas por pequenos defeitos, principalmente em mãos e olhos. Para corrigir isso, utilizamos o site <span className='span__no-wrap--bold'>getimg.ai</span> para gerar novamente partes da imagem (áreas pretas, acima) para corrigir esses defeitos. Em apenas um caso, foi necessário corrigir o erro manualmente através do <span className='span__no-wrap--bold'>GIMP</span>.</>,
+  text: <>Em alguns casos, as imagens geradas possuíam boa qualidade, mas eram arruinadas por pequenos defeitos, principalmente em mãos e olhos. Para corrigir isso, utilizamos o site <span className='span__no-wrap--bold'>getimg.ai</span> para gerar novamente partes da imagem (áreas pretas, acima) para corrigir esses defeitos. Em apenas um caso, foi necessário corrigir o erro manualmente através do <span className='span__no-wrap--bold'>GIMP.</span></>,
   src: ['/static/pages/tools/tools__inpainting'],
+  sizes: [1024, 1024],
   alt: 'Imagem de um robô. Certas áreas da imagem estão vazias, que serão preenchidas pelo método de inpainting.'
 }
 const toolsUncropping = {
@@ -57,6 +60,7 @@ const toolsUncropping = {
   title: 'Uncropping',
   text: <>Similar ao problema de defeitos, algumas imagens foram geradas perto demais, afetando a composição da imagem ou removendo detalhes importantes. Para resolver esse problema, o site <span className='span__no-wrap--bold'>neural.love</span> foi utilizado, gerando as partes que faltavam na imagem original. Note na imagem acima o pequeno erro na geração: voltamos ao inpainting.</>,
   src: ['/static/pages/tools/tools__uncropping'],
+  sizes: [1024, 1024],
   alt: 'Imagem de uma menina segurando um guarda chuva enquanto chove. A imagem contém pequenos erros, que são corrigidos pelo método inpainting.'
 }
 const toolsOutpainting = {
@@ -71,6 +75,7 @@ const toolsOutpainting = {
     '/static/pages/tools/tools__outpainting-C',
     '/static/pages/tools/tools__outpainting-D'
   ],
+  sizes: [1024, 512],
   alt: 'Colagem de quatro versões diferentes da mesma imagem, que foi expandida aos lados. A imagem é de uma garota bruxa lendo um livro, sentada em corrimão de pedra, ao por do sol.'
 }
 

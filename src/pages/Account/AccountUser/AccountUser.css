@@ -1,6 +1,8 @@
 .main__account-user {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  min-height: 85vh;
   gap: 2rem;
 }
 
@@ -11,15 +13,15 @@
     position: relative;
     background-repeat: no-repeat;
     background-position: top center;
-    /* 50% + 1/2 padding-top */
-    background-size: 100% calc(50% + 1rem);
-    padding: 2rem 2rem 0;
+    background-size: 100% 50%;
+    padding: 4rem 2rem;
   }
 
     .banner__profile-photo {
       aspect-ratio: 1;
       width: 70%;
       max-width: 25.6rem;
+      max-height: 25.6rem;
       background-color: var(--color-banner-home);
       border: .5rem solid #fff;
       border-radius: 50%;
@@ -27,14 +29,28 @@
 
     .account__edit {
       position: absolute;
-      background: white url('/src/assets/img/ui/icons/page__tools.svg') no-repeat center / 50%;
+      background-color: #ffffffff;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
       border-radius: 50%;
       transition: filter 200ms;
       min-width: 0;
       width: 3rem;
       min-height: 0;
       height: 3rem;
+      cursor: pointer;
+      box-shadow: none;
+      outline: none;
     }
+
+      .account__edit:hover, .account__edit:focus {
+        filter: brightness(0.5);
+      }
+
+      .account__edit__input {
+        display: none;
+      }
 
       .account__edit::after {
         display: block;
@@ -46,14 +62,22 @@
         right: -1rem;
       }
 
+      .account__edit--exit {
+        top: 2rem;
+        left: 2rem;
+        background-image: url('/src/assets/img/ui/icons/menu__exit.svg');
+      }
+
       .account__edit--banner {
         top: 2rem;
         right: 2rem;
+        background-image: url('/src/assets/img/ui/icons/page__tools.svg');
       }
 
-      .account__edit--photo {
-        bottom: 0;
+      .account__edit--profile {
+        bottom: 2rem;
         right: 2rem;
+        background-image: url('/src/assets/img/ui/icons/page__tools.svg');
       }
 
       .account__edit--info {
@@ -61,23 +85,194 @@
         right: 2rem;
       }
 
-  .account-user__text {
-    padding: 0 2rem;
-    position: relative;
+  .account-user__favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 25.6rem = 5 images, 3.25 * 4 = 4 gaps */
+    max-width: 269rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
   }
-
-    .text__user-name, .text__user-email {      
-      text-overflow: ellipsis;
-      overflow: hidden;
-      max-width: calc(100% - 5rem);
+  
+    .favorites__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 51.2rem;
+      position: relative;
+      line-height: 0;
+      gap: 1rem;
     }
 
-    .text__user-name {
-      font-size: 2.4rem;
-      padding: 0 1rem 1rem 0;
+      .favorites__title {
+        padding: 0 0 0 2rem;
+      }
+
+      .favorites__image {
+        box-shadow: var(--boxshadow-medium);
+      }
+
+      .buttons__wrapper {
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+        width: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+      }
+
+        .favorites__button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          width: auto;
+          padding: 0 0 0 5rem;
+          box-shadow: none;
+          color: var(--color-font-light);
+          font-size: 1.2rem;
+          font-family: orbitron;
+          font-weight: 700;
+          text-decoration: none;
+          border-radius: 1rem;
+          background-color: var(--color-main);
+          background-repeat: no-repeat;
+          background-position: calc(1.875rem) center;
+          background-size: 1.25rem;
+          transition-property: filter;
+          transition-duration: 200ms;
+          outline: none;
+        }
+
+          .favorites__button:active {
+            animation: var(--animation-click);
+          }
+
+        .favorites__button--download {
+          background-image: url(/src/assets/img/ui/icons/download--white.svg);
+        }
+
+          .favorites__button--download:hover, .favorites__button--download:focus {
+            filter: brightness(0.5);
+          }
+        
+        .favorites__button--remove {
+          background-image: url(/src/assets/img/ui/icons/menu__delete--white.svg);
+        }
+
+          .button__text {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0px;
+          }
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .main__account-user {
+    gap: 3rem;
+  }
+  
+    .account-user__banner {
+      background-size: 100%;
+      aspect-ratio: 3.5555555556;
+    }
+  
+      .banner__profile-photo {}
+  
+      .account__edit {}
+  
+        .account__edit__input {}
+  
+        .account__edit::after {}
+  
+        .account__edit--banner {}
+  
+        .account__edit--profile {}
+  
+        .account__edit--info {}
+  
+    .account-user__favorites {
+      gap: 3rem;
+      padding-bottom: 3rem;
     }
     
-    .text__user-email {
-      font-size: 1.2rem;
-      padding: 0 1rem 0 0;
-    }
+      .favorites__wrapper {}
+  
+        .favorites__image {}
+  
+        .buttons__wrapper {}
+  
+          .favorites__button {
+            padding: 0 1.5rem 0 5rem;
+          }
+  
+          .favorites__button--download {}
+          
+          .favorites__button--remove {}
+  
+            .button__text {
+              clip: auto;
+              clip-path: none;
+              height: auto;
+              overflow: visible;
+              white-space: normal;
+              width: auto;
+            }
+}
+
+@media screen and (min-width: 1200px) {
+  .main__account-user {
+    gap: 3.25rem;
+  }
+  
+  .account-user__banner {}
+
+    .banner__profile-photo {}
+
+    .account__edit {}
+
+      .account__edit__input {}
+
+      .account__edit::after {}
+
+      .account__edit--banner {}
+
+      .account__edit--profile {}
+
+      .account__edit--info {}
+
+  .account-user__favorites {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+  
+    .favorites__wrapper {}
+
+      .favorites__image {}
+
+      .buttons__wrapper {}
+
+        .favorites__button {}
+
+        .favorites__button--download {}
+        
+        .favorites__button--remove {}
+
+          .button__text {}
+}
+    
+@media screen and (min-width: 1400px) {}
+    
+@media screen and (min-width: 1920px) {}
+    

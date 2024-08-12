@@ -10,17 +10,29 @@ function LoginForm(props) {
 
   // isLogin changes the form's functionality (login vs sign up)
   const [isLogin, setIsLogin] = useState(props.isLogin);
+  
   // useState for the form's inputs
   const [emailInput, setEmailInput] = useState('');
   const [pwdInput, setPwdInput] = useState('');
   const [confirmPwd, setConfirmPwd] = useState('');
-  // empties useState
+  
+  // clears useState & form
   function clearInputState() {
     setEmailInput('');
     setPwdInput('');
     setConfirmPwd('');
+    const fieldset = document.getElementById('fieldset');
+    const inputList = fieldset.querySelectorAll('input');
+    inputList.forEach(input => {
+      input.setCustomValidity('');
+    });
   }
 
+  // Changes login type and clears form
+  function loginType(type) {
+    setIsLogin(type);
+    clearInputState();
+  }
 
   // Custom error message for email field.
   function emailErrorMessage(target) {
@@ -152,9 +164,8 @@ function LoginForm(props) {
       const newAccount = {
         'user': userInput,
         'pwd': pwdInput,
-        'username': userInput.match(/(.*?)@/)[1],
-        'imgBase64': 'data:image/webp;base64,UklGRh4DAABXRUJQVlA4WAoAAAAwAAAAMQAAMQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIdQAAAAFHIBBI4SYXEREGOLFta1k+nOjQSUzAossQiC6R+A3glzPvT/67/gQtov8TYP6ADzsUXcBWNQkw1uTASQPwkXScs8Q4S00CtDVroKoxDzsw5V49ZpPHviro5LhHwRd/vVgaGBfLA9NiBE8lygLLYrdAvdjPHQBWUDggsgAAAPAGAJ0BKjIAMgA+bTSWR6QjIiEoFAoAgA2JYwB4g3AHqA2wG4A3gDeTMj5LFTYxWWRCwClFanUrvcQQfMvl9gAA/vyuMf7TL//+XT2BvBgLoSZF7rMcjcb44jKM2q//puf6XjvSPy0xl4Fy846i9uOcv3olai4BUPepbV3FzxTQ1fcO2Ev7n0Gy6WOxTqD5/nWvA1PXkW5TMVhFuUW0COJkvtOhUf4xtGgZCliP5bsAAAA=',
-        'bannerBase64': 'linear-gradient(to bottom, var(--color-banner-home), var(--color-banner-home))',
+        'imgBase64': 'data:image/webp;base64,UklGRqoCAABXRUJQVlA4WAoAAAAYAAAAGAAAGAAAQUxQSMEAAAABgGPb2rHn/rHV2nZrO5WddE4qG5UH4JSZQXqjsm3b/r7vx/O+KyOIiAmASs2Csbv39W5zMFstCEpfklmM1gWV3xEM7QJxV4ukfkURYkj2ArmR5EnrIJn+kopIGKP8WNNC/gi9YKz6UzGtx4KkA4WPHh2wa4SUV6Sa4b/ads1fng1n+PsltizfbY7Eqqr4FFhHTZXUChzndAG4fvMQ2gAMCFwftIADPoI/8MUpFRA4ZwM/nNKBGT4/ToDL1DeH43wAAFZQOCDiAAAAkAYAnQEqGQAZAAAgACexqoEYWQdnbyL8T/1y/uXOGbH8s2IBfAPtVuQC+APKV/Wb4AP2M9Er/7BHqv7GEAD+/7fih2k0F3gfKaGm3VWbLy2bmrxWfeXsw3X/9qIw1f+WmAhjGb+oxTf0f8Mu16/pbGA80Pt3/6pUonP2M4xPempM67cmH/Hy7U5B4dN/8eL//9rW3sEmbvDjDI42HifcS4Y3TWzVirmGUt+Nn/6Tg3h42xduy2sp/ae+/6TX0pLuZ+FNDf+eqDTitKXJhOTKR1GfNv6hxrzN8grSHs44TzgAAEVYSUbYAAAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAADEBAgARAAAAZgAAAGmHBAABAAAAeAAAAAAAAABgAAAAAQAAAGAAAAABAAAAcGFpbnQubmV0IDUuMC4xMwAABQAAkAcABAAAADAyMzABoAMAAQAAAAEAAAACoAQAAQAAABkAAAADoAQAAQAAABkAAAAFoAQAAQAAALoAAAAAAAAAAgABAAIABAAAAFI5OAACAAcABAAAADAxMDAAAAAA',
+        'bannerBase64': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY+BzbPgPAAL/Ac/0OOsPAAAAAElFTkSuQmCC',
         'favorites': []
       };
       loginList.push(newAccount);
@@ -171,11 +182,11 @@ function LoginForm(props) {
   return (
     <form action='' onSubmit={event => loginFormSubmit(event)} className='main__login-form'>
       <div className='login-form__switch'>
-        <button className='switch__button' type='button' onClick={event => setIsLogin(true)} disabled={isLogin ? true : undefined}>login</button>
-        <button className='switch__button' type='button' onClick={event => setIsLogin(false)} disabled={isLogin ? undefined : true}>cadastro</button>
+        <button type='button' className='switch__button' onClick={event => loginType(true)} disabled={isLogin ? true : undefined}>login</button>
+        <button type='button' className='switch__button' onClick={event => loginType(false)} disabled={isLogin ? undefined : true}>cadastro</button>
       </div>
 
-      <fieldset className='login-form__fieldset'>
+      <fieldset className='login-form__fieldset' id='fieldset'>
         <label className='fieldset__field'>
           <h2 className='field__login-title'>E-mail</h2>
           <input type={isLogin ? 'text' : 'email'} value={emailInput} onChange={event => emailOnChange(event)} placeholder='Seu e-mail aqui...' minLength={3} maxLength={50} required id="login-user" className='field__login-input' />

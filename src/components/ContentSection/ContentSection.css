@@ -1,12 +1,18 @@
 .articles {
-  padding: 1rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
   margin: 0 auto;
 }
 
   .articles__content {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
+
+    .articles__content:first-of-type .content__text {}
 
   .articles__content:last-child .content__image {
       aspect-ratio: auto;
@@ -20,10 +26,10 @@
 
       .content__image {
         display: inline-block;
+        min-width: 24rem;
         max-width: 25.6rem;
         height: fit-content;
         aspect-ratio: 1;
-        line-height: 0;
         border-radius: 2rem;
         overflow: hidden;
         box-shadow: var(--boxshadow-medium);
@@ -31,23 +37,30 @@
 
         .image__decoration {
           width: 100%;
+          height: auto;
         }
 
     .content__text {
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
 
       .text__heading, .text__paragraph {
         margin: 0;
       }
 
-      .text__heading {
-        padding: 1rem 0;
+      h1.text__heading {
+        font-size: 3.2rem;
+      }
+
+      h2.text__heading {
+        font-size: 2.4rem;
       }
 
       .text__paragraph {
-        line-height: 1.25;
         padding-bottom: 2rem;
+        border-bottom: .1rem solid var(--color-border-default);
       }
 
         h1 + p.text__paragraph {
@@ -58,36 +71,296 @@
           font-size: 1.6rem;
         }
 
-/* For CTRL + C & CTRL + V
+@media screen and (min-width: 576px) {
+  .articles {
+    gap: 3rem;
+    padding: 3rem;
+  }
+  
+    .articles__content {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: .1rem solid var(--color-border-default);
+    }
+  
+      .articles__content:first-of-type .content__text {}
 
-.articles
-.articles__content
-.articles__content:last-child .content__image
-.content__image
-.image__decoration
-.content__text
-.text__heading, .text__paragraph
-.text__heading
-.text__paragraph
-h1 + p.text__paragraph
-h2 + p.text__paragraph
+    .articles__content:last-child .content__image {}
+  
+      .content__images {
+        gap: 1.5rem;
+      }
+  
+        .content__image {
+          min-width: 25.6rem;
+          width: 25.6rem;
+        }
+  
+          .image__decoration {}
+  
+      .content__text {
+        justify-content: center;
+        gap: 1.5rem;
+      }
+  
+        .text__heading, .text__paragraph {}
+  
+        h1.text__heading {}
 
-*/
-
-@media screen and (min-width: 576px) {}
+        h2.text__heading {}
+  
+        .text__paragraph {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+  
+          h1 + p.text__paragraph {}
+  
+          h2 + p.text__paragraph {}
+}
 
 @media screen and (min-width: 768px) {
-  .content__image {
-    max-width: 51.2rem;
+  .articles {
+    gap: 3rem;
+    padding: 3rem;
   }
+  
+    .articles__content {}
+  
+      .articles__content:first-of-type .content__text {
+        width: 75%;
+      }
+
+    .articles__content:last-child .content__image {}
+  
+      .content__images {}
+  
+        .content__image {
+          min-width: 38.4rem;
+          width: 38.4rem;
+        }
+  
+          .image__decoration {}
+  
+      .content__text {}
+  
+        .text__heading, .text__paragraph {}
+  
+        h1.text__heading {
+          font-size: 4rem;
+        }
+
+        h2.text__heading {
+          font-size: 3rem;
+        }
+  
+        .text__paragraph {}
+  
+          h1 + p.text__paragraph {
+            font-size: 3rem;
+          }
+  
+          h2 + p.text__paragraph {
+            font-size: 2rem;
+          }
 }
 
 @media screen and (min-width: 1200px) {
-  .content__image {
-    max-width: 102.4rem;
+  .articles {
+    gap: 6rem;
   }
+  
+    .articles__content {
+      padding-bottom: 6rem;
+      gap: 6rem;
+    }
+  
+    .articles__content:last-child .content__image {}
+  
+      .content__images {}
+  
+        .content__image {}
+  
+          .image__decoration {}
+  
+      .content__text {
+        gap: 3rem;
+      }
+  
+        .text__heading, .text__paragraph {}
+  
+        h1.text__heading {
+          font-size: 4.8rem;
+        }
+
+        h2.text__heading {
+          font-size: 3.6rem;
+        }
+  
+        .text__paragraph {}
+  
+          h1 + p.text__paragraph {
+            font-size: 3.6rem;
+          }
+  
+          h2 + p.text__paragraph {
+            font-size: 2.4rem;
+          }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+  .articles {}
+  
+    .articles__content {}
+  
+    .articles__content:last-child .content__image {}
+  
+      .content__images {}
+  
+        .content__image {
+          min-width: 51.2rem;
+          width: 51.2rem;
+        }
+  
+          .image__decoration {}
+  
+      .content__text {}
+  
+        .text__heading, .text__paragraph {}
+  
+        h1.text__heading {}
 
-@media screen and (min-width: 1920px) {}
+        h2.text__heading {}
+  
+        .text__paragraph {}
+  
+          h1 + p.text__paragraph {}
+  
+          h2 + p.text__paragraph {}
+}
+
+@media screen and (min-width: 1920px) {
+  .articles {}
+  
+  .articles__content {}
+
+  .articles__content:last-child .content__image {}
+
+    .content__images {}
+
+      .content__image {
+        min-width: 64rem;
+        width: 64rem;
+      }
+
+        .image__decoration {}
+
+    .content__text {}
+
+      .text__heading, .text__paragraph {}
+
+      h1.text__heading {}
+
+      h2.text__heading {}
+
+      .text__paragraph {}
+
+        h1 + p.text__paragraph {}
+
+        h2 + p.text__paragraph {}
+}
+
+@media screen and (min-width: 2560px) {
+  .articles {}
+  
+  .articles__content {}
+
+  .articles__content:last-child .content__image {}
+
+    .content__images {}
+
+      .content__image {
+        min-width: 76.8rem;
+        width: 76.8rem;
+      }
+
+        .image__decoration {}
+
+    .content__text {}
+
+      .text__heading, .text__paragraph {}
+
+      h1.text__heading {}
+
+      h2.text__heading {}
+
+      .text__paragraph {}
+
+        h1 + p.text__paragraph {}
+
+        h2 + p.text__paragraph {}
+}
+
+@media screen and (min-width: 3200px) {
+  .articles {}
+  
+  .articles__content {}
+
+  .articles__content:last-child .content__image {}
+
+    .content__images {}
+
+      .content__image {
+        min-width: 89.6rem;
+        width: 89.6rem;
+      }
+
+        .image__decoration {}
+
+    .content__text {}
+
+      .text__heading, .text__paragraph {}
+
+      h1.text__heading {}
+
+      h2.text__heading {}
+
+      .text__paragraph {}
+
+        h1 + p.text__paragraph {}
+
+        h2 + p.text__paragraph {}
+}
+
+@media screen and (min-width: 3840px) {
+  .articles {}
+  
+  .articles__content {}
+
+  .articles__content:last-child .content__image {}
+
+    .content__images {}
+
+      .content__image {
+        min-width: 102.4rem;
+        width: 102.4rem;
+      }
+
+        .image__decoration {}
+
+    .content__text {}
+
+      .text__heading, .text__paragraph {}
+
+      h1.text__heading {}
+
+      h2.text__heading {}
+
+      .text__paragraph {}
+
+        h1 + p.text__paragraph {}
+
+        h2 + p.text__paragraph {}
+}

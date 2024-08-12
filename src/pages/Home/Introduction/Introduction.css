@@ -1,11 +1,11 @@
 .main__introduction {
-  padding: 2rem 2rem .5rem;
+  padding: 4rem 2rem 2rem;
   background-color: var(--color-main);
 }
 
   .introduction__title, .introduction__paragraph {
     color: var(--color-font-light);
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin: 0 auto;
     max-width: 96rem;
   }
@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 576px) {
   .main__introduction {
-    padding: 3rem 3rem 1.5rem;
+    padding: 6rem 3rem 3rem;
   }
   
     .introduction__title, .introduction__paragraph {}
@@ -48,7 +48,7 @@
       .title__decoration {}
   
     .introduction__paragraph {
-      padding-bottom: 1.5rem;
+      padding-bottom: 3rem;
     }
 }
 
@@ -75,7 +75,7 @@
 }
 @media screen and (min-width: 1200px) {
   .main__introduction {
-    padding: 6rem 0rem 4.5rem;
+    padding: 6rem 0rem 3rem;
   }
   
     .introduction__title, .introduction__paragraph {}
@@ -93,7 +93,7 @@
   
     .introduction__paragraph {
       font-size: 2.4rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 3rem;
     }
 }
 @media screen and (min-width: 1400px) {}

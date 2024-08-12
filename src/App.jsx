@@ -23,13 +23,12 @@ function App() {
   // This creates a basic 'loginList' object for localStorage.
   if(localStorage.getItem('loginList') === null) {
     // If there is no localStorage data, create it.
-    console.log('No login list exists in local storage. Login list with Admin account will be created now. Email: admin, Password: admin.');
+    //////////console.log('No login list exists in local storage. Login list with Admin account will be created now. Email: admin, Password: admin.');
     let myObject = [{
       'user': 'admin',
       'pwd': 'admin',
-      'username': 'admin',
-      'imgBase64': 'data:image/webp;base64,UklGRggEAABXRUJQVlA4WAoAAAAwAAAAMQAAMQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBI8QAAAAFfYJBt5Ng/wc/gGxEx1a0HwLFta3lyA/w6iq9DRpMaLyldKyr32t3invx3ePm/9x7WR/R/AuB3G4PSUQDLHkmWIoMn5pZ0RXqnVB1fSZX5mCiWKZxR1CUlRVfCQDYQRbJMlMho5mSpXSJCJoplA1Eo64pGZE3JNeTLkhmFywSJAk1fCdpF37QKT3nX0LveUCk0gNv/LO0G+MPdwefX+JB7/zoKJcWMJI+XNg8ykqUJnxtQWYo8TapLIzmOhmnOpcVJTt+CAQBH0xTAns0MgAebawBNmxKAlg1H7AKg/Y+NAE0jAFc2JwCcTQoAqwODXQAAVlA4ICABAABwCACdASoyADIAPm0okEYkIiGhLhtriIANiUAZ8w0hovd+OH+K8Btk/MB5vH9y9QG8PegB0nX3AAU2xjcqkbP6F8IeThMw+tH2z+QgAP75Jz/+/NV098eMZ7Fk0RYaHT9TjqPOjFJMgQhVFHDdqXR6dt8xN//fLsahi4fKQ4jY3WjbXKy1VN3dR5JeLBqcgzbBT2EhcMhG+uLUTnZ8FSBeM3TYHIlVgwSj+npHuGB334/48OZX3SN3dCNVQKgNmKqUqm322fqE5OwedsEXoYxYaM69aMHCUZoAIkaTfkn3V5UK3P/kcgO77WUJlB+3CnsBhH2cp+yhOB8NFnHgemTz7SBTPXs1gKwXVALM25rQ3JbK6E+SL4T1nkhC9+QAAAA=',
-      'bannerBase64': 'linear-gradient(to bottom, var(--color-banner-home), var(--color-banner-home))',
+      'imgBase64': 'data:image/webp;base64,UklGRqoCAABXRUJQVlA4WAoAAAAYAAAAGAAAGAAAQUxQSMEAAAABgGPb2rHn/rHV2nZrO5WddE4qG5UH4JSZQXqjsm3b/r7vx/O+KyOIiAmASs2Csbv39W5zMFstCEpfklmM1gWV3xEM7QJxV4ukfkURYkj2ArmR5EnrIJn+kopIGKP8WNNC/gi9YKz6UzGtx4KkA4WPHh2wa4SUV6Sa4b/ads1fng1n+PsltizfbY7Eqqr4FFhHTZXUChzndAG4fvMQ2gAMCFwftIADPoI/8MUpFRA4ZwM/nNKBGT4/ToDL1DeH43wAAFZQOCDiAAAAkAYAnQEqGQAZAAAgACexqoEYWQdnbyL8T/1y/uXOGbH8s2IBfAPtVuQC+APKV/Wb4AP2M9Er/7BHqv7GEAD+/7fih2k0F3gfKaGm3VWbLy2bmrxWfeXsw3X/9qIw1f+WmAhjGb+oxTf0f8Mu16/pbGA80Pt3/6pUonP2M4xPempM67cmH/Hy7U5B4dN/8eL//9rW3sEmbvDjDI42HifcS4Y3TWzVirmGUt+Nn/6Tg3h42xduy2sp/ae+/6TX0pLuZ+FNDf+eqDTitKXJhOTKR1GfNv6hxrzN8grSHs44TzgAAEVYSUbYAAAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAADEBAgARAAAAZgAAAGmHBAABAAAAeAAAAAAAAABgAAAAAQAAAGAAAAABAAAAcGFpbnQubmV0IDUuMC4xMwAABQAAkAcABAAAADAyMzABoAMAAQAAAAEAAAACoAQAAQAAABkAAAADoAQAAQAAABkAAAAFoAQAAQAAALoAAAAAAAAAAgABAAIABAAAAFI5OAACAAcABAAAADAxMDAAAAAA',
+      'bannerBase64': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY+BzbPgPAAL/Ac/0OOsPAAAAAElFTkSuQmCC',
       'favorites': []
     }];
     let userObject = {
@@ -59,7 +58,7 @@ function App() {
   async function fetchGallery() {
     let parsedJSON;
     if(localStorage.getItem('gallery') !== null) {
-      console.log('Gallery exists in localStorage. Retrieving data...');
+      //////////console.log('Gallery exists in localStorage. Retrieving data...');
       parsedJSON = JSON.parse(localStorage.getItem('gallery'));
       setGalleryJSON(parsedJSON);
     } else {
@@ -108,7 +107,7 @@ function App() {
 
           <Route path='contato' element={<Contact />} />
           
-          <Route path='galeria' element={<Gallery gallery={galleryJSON} />} />
+          <Route path='galeria' element={<Gallery gallery={galleryJSON} refresh={forceRefresh} />} />
 
           <Route path="*" element={<NoPage />} />
 

@@ -14,7 +14,7 @@ function Banner(props) {
     <picture className={`main__banner main__banner--${page}`}>
       <source media='(max-width: 576px)' srcSet={bannerSmall} />
       <source media='(max-width: 1200px)' srcSet={bannerDefault} />
-      <img className='banner__image' src={bannerMaximum} alt={alt} />
+      <img className='banner__image' width='1920' height='540' src={bannerMaximum} alt={alt} loading='eager' />
     </picture>
   )
 }

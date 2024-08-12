@@ -59,18 +59,21 @@
   
     .main__wrapper--login {
       width: auto;
+      max-width: 102.4rem;
       padding: 0;
       margin: 3rem auto;
       overflow: hidden;
       gap: 3rem;
       box-shadow: var(--boxshadow-medium);
+      background-color: var(--color-bg-light);
     }
 
       .main__banner--login {
         min-height: 57.1rem;
         max-height: calc(100vh - 11.1rem);
         min-width: 57.1rem;
-        max-width: calc(100vh - 11.1rem); 
+        max-width: calc(100vh - 11.1rem);
+        z-index: 0;
       }
 
         .main__banner--login img {
@@ -80,6 +83,7 @@
 @media screen and (min-width: 1400px) {
   .main__wrapper--login {
     margin: 6rem auto;
+    max-width: 128rem;
   }
 
     .main__banner--login {

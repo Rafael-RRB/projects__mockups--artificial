@@ -1,6 +1,12 @@
 import './AccountFavorites.css';
-import { GalleryContentFunction } from '../../Gallery/GalleryContent/GalleryContent.jsx';
+import { GalleryContentFunction } from '../../Gallery/GalleryPreview/GalleryContent/GalleryContent.jsx';
 import { useState } from 'react';
+
+/*
+
+Not used anymore.
+
+*/
 
 function AccountFavorites(props) {
   const [imageArray, setImageArray] = useState(props.object);

@@ -1,9 +1,12 @@
 import './GalleryPreview.css';
-import GalleryThumbnail from '../GalleryThumbnail/GalleryThumbnail.jsx';
-import GalleryContent from '../GalleryContent/GalleryContent.jsx';
+import GalleryThumbnail from './GalleryThumbnail/GalleryThumbnail.jsx';
+import GalleryContent from './GalleryContent/GalleryContent.jsx';
 import { useState } from 'react';
 
 function GalleryPreview(props) {
+  // Array with individual objects;
+  const allImages = [];
+
   // Array with correct paths
   const dataViews = [];
   const dataThumbs = [];
@@ -12,9 +15,12 @@ function GalleryPreview(props) {
 
   if(props.data !== undefined) {
     Object.entries(props.data).forEach((category, index) => {
+      // Array with every single item;
+      allImages.push(...category[1]);
       // Creates a 'category' array for each category (currently five).
       [dataViews, dataThumbs, dataSources, dataAlts].forEach(array => array.push([]));
       // Populates each category array with the respective paths.
+      // Reminder: category[0] is the category's name, category[1] are the objects.
       category[1].forEach(item => {
         dataViews[index].push(item.view);
         dataThumbs[index].push(item.thumbnail);
@@ -22,6 +28,23 @@ function GalleryPreview(props) {
         dataAlts[index].push(item.alt);
       });
     });
+  }
+
+  if(localStorage.galleryPage === undefined) {
+    localStorage.setItem('galleryPage', '0');
+  }
+  // How many thumbnails I want per page
+  const imagesPerPage = 20;
+  // How many pages that'll be, rounded up, considering the total amount of images
+  const totalPages = Math.ceil(allImages.length / imagesPerPage);
+  const pages = [];
+
+  for(let i = 0; i < totalPages; i++) {
+    const firstImage = 0 + i * imagesPerPage;
+    pages.push([]);
+    for(let i2 = firstImage; i2 < firstImage + imagesPerPage && i2 < allImages.length; i2++) {
+      pages[i].push(allImages[i2]);
+    }
   }
 
   // I feel extremely embarrassed to do this, but the only alternative would require some major code rewrites...
@@ -35,8 +58,8 @@ function GalleryPreview(props) {
   
   return (
     <section className='main__preview'>
-      <GalleryContent update={galleryUpdate} title='Galeria' alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
-      <GalleryThumbnail update={galleryUpdate} viewList={dataViews} thumbList={props.data === undefined ? undefined : dataThumbs} sourceList={dataSources} altList={dataAlts} />
+      <GalleryContent update={galleryUpdate} refresh={props.refresh} title='Galeria' alt={dataAlts.length > 0 ? dataAlts[0][0] : ''} />
+      <GalleryThumbnail pages={pages} />
     </section>
   );
 }
