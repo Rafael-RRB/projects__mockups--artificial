@@ -83,7 +83,6 @@ function App() {
   const [refreshCounter, setRefreshCounter] = useState(0);
   function forceRefresh() {
     setRefreshCounter(refreshCounter + 1);
-    console.log(refreshCounter);
   }  
 
   // Runs once, when APP is mounted

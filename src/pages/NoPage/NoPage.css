@@ -1,0 +1,24 @@
+.no-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  min-height: 75vh;
+}
+
+  .no-page__image {
+    min-width: 25.6rem;
+    width: 25%;
+    line-height: 0;
+    aspect-ratio: 1;
+  }
+
+  .no-page__title {
+
+  }
+
+  .no-page__subtitle {
+
+  }

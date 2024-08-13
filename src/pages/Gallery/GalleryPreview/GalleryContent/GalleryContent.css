@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem 2rem 0;
-  margin: auto;
+  padding: 4rem 2rem 0;
+  margin: auto;  
+  width: 30%;
   max-width: 55.2rem;
 }
 
@@ -17,6 +18,7 @@
 
     .figure__image {
       display: block;
+      width: 100%;
       box-shadow: var(--boxshadow-dark);
     }
 
@@ -92,3 +94,49 @@
         background-image: url(../../../../assets/img/ui/icons/link__external--white.svg);
         flex-grow: 1;
       }
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .preview__content {
+    padding: 6rem 2rem 0;
+  }
+  
+    .content__title {}
+  
+    .content__figure {}
+  
+      .figure__image {}
+  
+      .figure__favorite {}
+  
+        .figure__favorite--off {}
+  
+        .figure__favorite--on {}
+  
+    .preview__buttons {}
+  
+      .preview__button  {}
+      
+        .preview__button:active {}
+  
+        .preview__button:hover, .preview__button:focus {}
+  
+        .preview__button--download {}
+  
+        .preview__button--newtab {}
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
+
+@media screen and (min-width: 1400px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+  
+}

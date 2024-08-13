@@ -12,7 +12,7 @@ function Introduction(props) {
       </p>
       
       <p className="introduction__paragraph">
-      Seja você um entusiasta dessa nova tecnologia, ou simplesmente alguém em busca de inspiração, nossa galeria é o lugar perfeito para explorar e descobrir. Temos certeza de que você encontrará algo que chamará sua atenção e inspirará sua imaginação. Obrigado por nos visitar e esperamos que goste da sua experiência!
+      Seja você é um entusiasta dessa nova tecnologia, ou simplesmente alguém em busca de inspiração, nossa galeria é o lugar perfeito para explorar e descobrir. Temos certeza de que você encontrará algo que chamará sua atenção e inspirará sua imaginação. Obrigado por nos visitar e esperamos que goste da sua experiência!
       </p>
     </section>
     

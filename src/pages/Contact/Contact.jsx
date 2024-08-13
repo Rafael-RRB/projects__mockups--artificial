@@ -105,7 +105,7 @@ function Contact(props) {
 
             <li className="question-list__question" tabIndex={0}>
               <h3 className="question__title" >2. Que tipo de modelos de IA são usados para criar a arte deste site?</h3>
-              <p className="question__answer">Nós usamos DALL-E e Stable Diffusion para gerar as imagens, DALL-E e/ou Neural.love para outpainting, e DALL-E e/ou getimg.ai para inpainting. Mas não se preocupe, você não precisa entender disso tudo para aproveitar a arte!</p>
+              <p className="question__answer">Nós usamos DALL-E e Stable Diffusion para gerar as imagens, DALL-E e/ou getimg.ai para outpainting e inpainting, e neural.love para uncropping. Mas não se preocupe, você não precisa entender disso tudo para aproveitar a arte!</p>
             </li>
 
             <li className="question-list__question" tabIndex={0}>

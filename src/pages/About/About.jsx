@@ -37,7 +37,7 @@ const aboutChallenges = {
   identifier: 'challenges',
   modifier: page,
   title: 'Desafios',
-  text: 'A gente enfrentou muitos desafios pra encontrar um estilo de arte que escondesse os erros de geração e fizesse parecer que foi um artista que fez (tipo manchas de tinta ou pinceladas aleatórias). Depois disso... foi só ter muita paciência! Algumas imagens precisaram ser geradas mais de cem vezes, e o processo todo levou cerca de um mês pra criar as 120 imagens superlegais que a gente tem no site hoje.',
+  text: 'A gente enfrentou muitos desafios pra encontrar um estilo de arte que escondesse os erros de geração e fizesse parecer que foi um artista que fez (tipo manchas de tinta ou pinceladas aleatórias). Depois disso... foi só ter muita paciência! Algumas imagens precisaram ser geradas mais de cem vezes, e o processo todo levou cerca de um mês pra criar as 200 imagens superlegais que a gente tem no site hoje.',
   src: ['/static/pages/about/about__challenges'],
   sizes: [1024, 1024],
   alt: 'Arte vetorial de um braço robô manipulador pintando um quadro.'

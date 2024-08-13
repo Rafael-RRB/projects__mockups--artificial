@@ -452,14 +452,16 @@
           padding-left: 3.5rem;
           background-position: left center;
           border-bottom: none;
-          transition-property: text-decoration, filter;
+          text-decoration-color: transparent;
+          text-underline-offset: .5em;
+          transition-property: text-decoration-color, filter;
           transition-duration: 200ms;
         }
 
           .social__link:hover, .social__link:focus {
             background-color: unset;
             color: unset;
-            text-decoration: underline;
+            text-decoration-color: #ffffffff;
             filter: brightness(0.5);
           }
 

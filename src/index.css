@@ -230,6 +230,6 @@ button:hover, button:focus {
 @media screen and (min-width: 1400px) {}
 @media screen and (min-width: 1920px) {
   :root {
-    font-size: 0.5vw;
+    font-size: 0.55vw;
   }
 }

@@ -65,7 +65,17 @@
     border-radius: 1rem;
     background-color: var(--color-main);
     color: var(--color-font-light);
+    transition-property: filter;
+    transition-duration: 200ms;
   }
+
+    .form__send:active {
+      animation: var(--animation-click);
+    }
+
+    .form__send:hover, .form__send:focus {
+      filter: brightness(0.5);
+    }
 
 @media screen and (min-width: 576px) {
   .contact__form {
