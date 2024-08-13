@@ -4,7 +4,7 @@
   gap: 1rem;
   padding: 4rem 2rem 0;
   margin: auto;  
-  width: 30%;
+  width: 100%;
   max-width: 55.2rem;
 }
 
@@ -130,7 +130,33 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .preview__content {
+    width: 30%;
+  }
   
+    .content__title {}
+  
+    .content__figure {}
+  
+      .figure__image {}
+  
+      .figure__favorite {}
+  
+        .figure__favorite--off {}
+  
+        .figure__favorite--on {}
+  
+    .preview__buttons {}
+  
+      .preview__button  {}
+      
+        .preview__button:active {}
+  
+        .preview__button:hover, .preview__button:focus {}
+  
+        .preview__button--download {}
+  
+        .preview__button--newtab {}
 }
 
 @media screen and (min-width: 1400px) {

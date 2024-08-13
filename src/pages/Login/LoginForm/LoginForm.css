@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
   .login-form__switch {
@@ -67,7 +67,7 @@
 
 @media screen and (min-width: 576px) {
   .main__login-form {
-    padding: 3rem;
+    padding: 6rem 3rem;
   }
 }
 
