@@ -1,0 +1,1215 @@
+{
+  "name": "galleryInfo",
+  "categories": {
+      "animal": [
+          {
+              "source": "IMG__ANIMAL__SRC--0001",
+              "thumbnail": "IMG__ANIMAL__THUMB--0001",
+              "view": "IMG__ANIMAL__VIEW--0001",
+              "alt": "Uma pintura gerada por IA de uma pantera negra em uma selva, olhando para a direita."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0002",
+              "thumbnail": "IMG__ANIMAL__THUMB--0002",
+              "view": "IMG__ANIMAL__VIEW--0002",
+              "alt": "Uma pintura gerada por IA de uma pantera negra em uma selva, fazendo contato visual com o espectador."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0003",
+              "thumbnail": "IMG__ANIMAL__THUMB--0003",
+              "view": "IMG__ANIMAL__VIEW--0003",
+              "alt": "Uma pintura gerada por IA representando um grupo de borboletas na grama."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0004",
+              "thumbnail": "IMG__ANIMAL__THUMB--0004",
+              "view": "IMG__ANIMAL__VIEW--0004",
+              "alt": "Uma pintura gerada por IA apresentando uma borboleta descansando em uma rocha salpicada de tinta."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0005",
+              "thumbnail": "IMG__ANIMAL__THUMB--0005",
+              "view": "IMG__ANIMAL__VIEW--0005",
+              "alt": "Uma pintura gerada por IA capturando um close-up de um gato observando atentamente o espectador."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0006",
+              "thumbnail": "IMG__ANIMAL__THUMB--0006",
+              "view": "IMG__ANIMAL__VIEW--0006",
+              "alt": "Uma pintura gerada por IA mostrando um gato em close-up, com o olhar voltado para a esquerda."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0007",
+              "thumbnail": "IMG__ANIMAL__THUMB--0007",
+              "view": "IMG__ANIMAL__VIEW--0007",
+              "alt": "Uma pintura gerada por IA de um camaleão azul empoleirado em um galho."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0008",
+              "thumbnail": "IMG__ANIMAL__THUMB--0008",
+              "view": "IMG__ANIMAL__VIEW--0008",
+              "alt": "Uma pintura gerada por IA retratando um camaleão azul e verde descansando em um galho."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0009",
+              "thumbnail": "IMG__ANIMAL__THUMB--0009",
+              "view": "IMG__ANIMAL__VIEW--0009",
+              "alt": "Uma pintura gerada por IA de um cão border collie uivando sob um céu estrelado."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0010",
+              "thumbnail": "IMG__ANIMAL__THUMB--0010",
+              "view": "IMG__ANIMAL__VIEW--0010",
+              "alt": "Uma pintura gerada por IA capturando um cão border collie olhando para uma galáxia."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0011",
+              "thumbnail": "IMG__ANIMAL__THUMB--0011",
+              "view": "IMG__ANIMAL__VIEW--0011",
+              "alt": "Uma pintura gerada por IA de um flamingo graciosamente parado em uma lagoa."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0012",
+              "thumbnail": "IMG__ANIMAL__THUMB--0012",
+              "view": "IMG__ANIMAL__VIEW--0012",
+              "alt": "Uma pintura gerada por IA apresentando um par de flamingos caminhando em uma lagoa."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0013",
+              "thumbnail": "IMG__ANIMAL__THUMB--0013",
+              "view": "IMG__ANIMAL__VIEW--0013",
+              "alt": "Uma pintura gerada por IA de uma raposa branca brincando alegremente nos arredores cobertos de neve."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0014",
+              "thumbnail": "IMG__ANIMAL__THUMB--0014",
+              "view": "IMG__ANIMAL__VIEW--0014",
+              "alt": "Uma pintura gerada por IA mostrando uma raposa branca sentada no meio da neve."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0015",
+              "thumbnail": "IMG__ANIMAL__THUMB--0015",
+              "view": "IMG__ANIMAL__VIEW--0015",
+              "alt": "Uma pintura gerada por IA de uma cobra verde enrolada na raiz de uma árvore."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0016",
+              "thumbnail": "IMG__ANIMAL__THUMB--0016",
+              "view": "IMG__ANIMAL__VIEW--0016",
+              "alt": "Uma pintura gerada por IA oferecendo uma visão close-up de uma cobra verde enrolada."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0017",
+              "thumbnail": "IMG__ANIMAL__THUMB--0017",
+              "view": "IMG__ANIMAL__VIEW--0017",
+              "alt": "Uma pintura gerada por IA de uma água-viva flutuando graciosamente na água."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0018",
+              "thumbnail": "IMG__ANIMAL__THUMB--0018",
+              "view": "IMG__ANIMAL__VIEW--0018",
+              "alt": "Uma pintura gerada por IA exibindo um grupo de águas-vivas à deriva na água."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0019",
+              "thumbnail": "IMG__ANIMAL__THUMB--0019",
+              "view": "IMG__ANIMAL__VIEW--0019",
+              "alt": "Uma pintura gerada por IA capturando o poderoso rugido de um leão ecoando de uma rocha."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0020",
+              "thumbnail": "IMG__ANIMAL__THUMB--0020",
+              "view": "IMG__ANIMAL__VIEW--0020",
+              "alt": "Uma pintura gerada por IA de um leão majestoso em pose relaxada sobre uma rocha."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0021",
+              "thumbnail": "IMG__ANIMAL__THUMB--0021",
+              "view": "IMG__ANIMAL__VIEW--0021",
+              "alt": "Uma pintura gerada por IA retratando um macaco japonês desfrutando de uma fonte termal, olhando para seu próprio reflexo em meio a flocos de neve caindo."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0022",
+              "thumbnail": "IMG__ANIMAL__THUMB--0022",
+              "view": "IMG__ANIMAL__VIEW--0022",
+              "alt": "Uma pintura gerada por IA representando um macaco japonês contente relaxando em uma fonte termal em meio a uma nevasca."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0023",
+              "thumbnail": "IMG__ANIMAL__THUMB--0023",
+              "view": "IMG__ANIMAL__VIEW--0023",
+              "alt": "Uma pintura gerada por IA de um orangotango sentado pensativamente em uma rocha na selva."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0024",
+              "thumbnail": "IMG__ANIMAL__THUMB--0024",
+              "view": "IMG__ANIMAL__VIEW--0024",
+              "alt": "Uma pintura gerada por IA de um orangotango descansando em uma rocha na selva enquanto cai uma chuva suave."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0025",
+              "thumbnail": "IMG__ANIMAL__THUMB--0025",
+              "view": "IMG__ANIMAL__VIEW--0025",
+              "alt": "Uma pintura gerada por IA apresentando um papagaio escarlate vibrante em um cenário de selva."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0026",
+              "thumbnail": "IMG__ANIMAL__THUMB--0026",
+              "view": "IMG__ANIMAL__VIEW--0026",
+              "alt": "Uma pintura gerada por IA capturando um close-up de um papagaio arara escarlate na selva."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0027",
+              "thumbnail": "IMG__ANIMAL__THUMB--0027",
+              "view": "IMG__ANIMAL__VIEW--0027",
+              "alt": "Uma pintura gerada por IA retratando um pavão majestoso em meio à floresta."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0028",
+              "thumbnail": "IMG__ANIMAL__THUMB--0028",
+              "view": "IMG__ANIMAL__VIEW--0028",
+              "alt": "Uma pintura gerada por IA mostrando um pavão adornado com penas vibrantes."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0029",
+              "thumbnail": "IMG__ANIMAL__THUMB--0029",
+              "view": "IMG__ANIMAL__VIEW--0029",
+              "alt": "Uma pintura gerada por IA apresentando um sapo colorido e vibrante."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0030",
+              "thumbnail": "IMG__ANIMAL__THUMB--0030",
+              "view": "IMG__ANIMAL__VIEW--0030",
+              "alt": "Uma pintura gerada por IA mostrando um sapo colorido empoleirado em uma folha em meio à chuva."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0031",
+              "thumbnail": "IMG__ANIMAL__THUMB--0031",
+              "view": "IMG__ANIMAL__VIEW--0031",
+              "alt": "Uma pintura gerada por IA de um panda vermelho em meio à floresta."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0032",
+              "thumbnail": "IMG__ANIMAL__THUMB--0032",
+              "view": "IMG__ANIMAL__VIEW--0032",
+              "alt": "Uma pintura gerada por IA capturando um close-up do rosto de um panda vermelho, olhando para a direita."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0033",
+              "thumbnail": "IMG__ANIMAL__THUMB--0033",
+              "view": "IMG__ANIMAL__VIEW--0033",
+              "alt": "Uma pintura gerada por IA retratando um tubarão formidável."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0034",
+              "thumbnail": "IMG__ANIMAL__THUMB--0034",
+              "view": "IMG__ANIMAL__VIEW--0034",
+              "alt": "Uma pintura gerada por IA mostrando a presença imponente de um tubarão."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0035",
+              "thumbnail": "IMG__ANIMAL__THUMB--0035",
+              "view": "IMG__ANIMAL__VIEW--0035",
+              "alt": "Uma pintura gerada por IA capturando um close-up de um tigre mostrando suas presas e olhando atentamente para o espectador."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0036",
+              "thumbnail": "IMG__ANIMAL__THUMB--0036",
+              "view": "IMG__ANIMAL__VIEW--0036",
+              "alt": "Uma pintura gerada por IA apresentando um close-up do olhar intenso de um tigre para a esquerda."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0037",
+              "thumbnail": "IMG__ANIMAL__THUMB--0037",
+              "view": "IMG__ANIMAL__VIEW--0037",
+              "alt": "Uma pintura gerada por IA mostrando um pássaro tucano vibrante."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0038",
+              "thumbnail": "IMG__ANIMAL__THUMB--0038",
+              "view": "IMG__ANIMAL__VIEW--0038",
+              "alt": "Uma pintura gerada por IA apresentando as cores marcantes de um pássaro tucano."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0039",
+              "thumbnail": "IMG__ANIMAL__THUMB--0039",
+              "view": "IMG__ANIMAL__VIEW--0039",
+              "alt": "Uma pintura gerada por IA retratando uma zebra em pé no vasto deserto."
+          },
+          {
+              "source": "IMG__ANIMAL__SRC--0040",
+              "thumbnail": "IMG__ANIMAL__THUMB--0040",
+              "view": "IMG__ANIMAL__VIEW--0040",
+              "alt": "Uma pintura gerada por IA retratando uma zebra perto de uma árvore, seu olhar fixo no espectador."
+          }
+      ],
+      "chara": [
+          {
+              "source": "IMG__CHARA__SRC--0001",
+              "thumbnail": "IMG__CHARA__THUMB--0001",
+              "view": "IMG__CHARA__VIEW--0001",
+              "alt": "Uma pintura gerada por IA apresentando uma elfa fêmea em um elegante vestido verde, segurando graciosamente um arco e flecha."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0002",
+              "thumbnail": "IMG__CHARA__THUMB--0002",
+              "view": "IMG__CHARA__VIEW--0002",
+              "alt": "Uma pintura gerada por IA retratando uma jovem elfa com arco e flecha, pronta e preparada."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0003",
+              "thumbnail": "IMG__CHARA__THUMB--0003",
+              "view": "IMG__CHARA__VIEW--0003",
+              "alt": "Uma pintura gerada por IA retratando uma barda medieval habilmente tocando um instrumento musical."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0004",
+              "thumbnail": "IMG__CHARA__THUMB--0004",
+              "view": "IMG__CHARA__VIEW--0004",
+              "alt": "Uma pintura gerada por IA capturando o momento encantador da performance musical de uma barda medieval feminina."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0005",
+              "thumbnail": "IMG__CHARA__THUMB--0005",
+              "view": "IMG__CHARA__VIEW--0005",
+              "alt": "Uma pintura gerada por IA mostrando uma feroz berserker feminina empunhando uma glaive."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0006",
+              "thumbnail": "IMG__CHARA__THUMB--0006",
+              "view": "IMG__CHARA__VIEW--0006",
+              "alt": "Uma pintura gerada por IA retratando uma determinada berserker feminina segurando um machado."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0007",
+              "thumbnail": "IMG__CHARA__THUMB--0007",
+              "view": "IMG__CHARA__VIEW--0007",
+              "alt": "Uma pintura gerada por IA de um jovem bruxo absorto na leitura, sentado em uma varanda de pedra enquanto o sol se põe."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0008",
+              "thumbnail": "IMG__CHARA__THUMB--0008",
+              "view": "IMG__CHARA__VIEW--0008",
+              "alt": "Uma pintura gerada por IA apresentando uma jovem bruxa imersa na leitura, empoleirada em uma varanda de pedra durante o pôr do sol."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0009",
+              "thumbnail": "IMG__CHARA__THUMB--0009",
+              "view": "IMG__CHARA__VIEW--0009",
+              "alt": "Uma pintura gerada por IA retratando uma clériga medieval RPG com uma delicada flor na mão."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0010",
+              "thumbnail": "IMG__CHARA__THUMB--0010",
+              "view": "IMG__CHARA__VIEW--0010",
+              "alt": "Uma pintura gerada por IA retratando uma clériga medieval RPG em pé em meio a um campo de flores florescendo."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0011",
+              "thumbnail": "IMG__CHARA__THUMB--0011",
+              "view": "IMG__CHARA__VIEW--0011",
+              "alt": "Uma pintura gerada por IA retratando um cowboy do velho oeste"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0012",
+              "thumbnail": "IMG__CHARA__THUMB--0012",
+              "view": "IMG__CHARA__VIEW--0012",
+              "alt": "Uma pintura gerada por IA exibindo um cowboy do velho oeste"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0013",
+              "thumbnail": "IMG__CHARA__THUMB--0013",
+              "view": "IMG__CHARA__VIEW--0013",
+              "alt": "Uma pintura gerada por IA retratando um detetive noir masculino"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0014",
+              "thumbnail": "IMG__CHARA__THUMB--0014",
+              "view": "IMG__CHARA__VIEW--0014",
+              "alt": "Uma pintura gerada por IA retratando um detetive noir masculino"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0015",
+              "thumbnail": "IMG__CHARA__THUMB--0015",
+              "view": "IMG__CHARA__VIEW--0015",
+              "alt": "Uma pintura gerada por IA retratando uma dríade serena deitada em um lago dentro de uma floresta exuberante"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0016",
+              "thumbnail": "IMG__CHARA__THUMB--0016",
+              "view": "IMG__CHARA__VIEW--0016",
+              "alt": "Uma pintura gerada por IA capturando uma visão de perto de uma dríade contemplativa em um lago dentro de uma floresta tranquila"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0017",
+              "thumbnail": "IMG__CHARA__THUMB--0017",
+              "view": "IMG__CHARA__VIEW--0017",
+              "alt": "Uma pintura gerada por IA apresentando uma menina goblin sentada no meio das florestas encantadoras"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0018",
+              "thumbnail": "IMG__CHARA__THUMB--0018",
+              "view": "IMG__CHARA__VIEW--0018",
+              "alt": "Uma pintura gerada por IA apresentando uma menina goblin alegre sentada no meio das florestas"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0019",
+              "thumbnail": "IMG__CHARA__THUMB--0019",
+              "view": "IMG__CHARA__VIEW--0019",
+              "alt": "Uma pintura gerada por IA apresentando um homem medieval sentado pensativamente em uma pedra perto de uma fogueira crepitante"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0020",
+              "thumbnail": "IMG__CHARA__THUMB--0020",
+              "view": "IMG__CHARA__VIEW--0020",
+              "alt": "Uma pintura gerada por IA apresentando um homem medieval sentado contemplativamente em uma pedra áspera, a fogueira quente nas proximidades"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0021",
+              "thumbnail": "IMG__CHARA__THUMB--0021",
+              "view": "IMG__CHARA__VIEW--0021",
+              "alt": "Uma pintura gerada por IA retratando uma mulher adornada com uma máscara de gás e roupa esfarrapada, navegando em uma cidade pós-apocalíptica"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0022",
+              "thumbnail": "IMG__CHARA__THUMB--0022",
+              "view": "IMG__CHARA__VIEW--0022",
+              "alt": "Uma pintura gerada por IA retratando uma mulher usando uma máscara de gás e roupa desgastada, navegando através de uma paisagem urbana pós-apocalíptica desolada"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0023",
+              "thumbnail": "IMG__CHARA__THUMB--0023",
+              "view": "IMG__CHARA__VIEW--0023",
+              "alt": "Uma pintura gerada por IA exibindo um manticora majestoso"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0024",
+              "thumbnail": "IMG__CHARA__THUMB--0024",
+              "view": "IMG__CHARA__VIEW--0024",
+              "alt": "Uma pintura gerada por IA apresentando um grifo vibrante adornado com asas coloridas"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0025",
+              "thumbnail": "IMG__CHARA__THUMB--0025",
+              "view": "IMG__CHARA__VIEW--0025",
+              "alt": "Uma pintura gerada por IA retratando um homem necromante sentado regiamente em um trono"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0026",
+              "thumbnail": "IMG__CHARA__THUMB--0026",
+              "view": "IMG__CHARA__VIEW--0026",
+              "alt": "Uma pintura gerada por IA capturando um homem necromante sentado com ar de autoridade em um trono ornamentado"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0027",
+              "thumbnail": "IMG__CHARA__THUMB--0027",
+              "view": "IMG__CHARA__VIEW--0027",
+              "alt": "Uma pintura gerada por IA retratando um paladino masculino RPG em armadura olhando para cima com determinação"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0028",
+              "thumbnail": "IMG__CHARA__THUMB--0028",
+              "view": "IMG__CHARA__VIEW--0028",
+              "alt": "Uma pintura gerada por IA capturando a essência de um paladino masculino RPG em armadura, seu olhar dirigido para o céu com resolução"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0029",
+              "thumbnail": "IMG__CHARA__THUMB--0029",
+              "view": "IMG__CHARA__VIEW--0029",
+              "alt": "Uma pintura gerada por IA retratando uma nobre medieval reclinando graciosamente sobre uma cama opulenta"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0030",
+              "thumbnail": "IMG__CHARA__THUMB--0030",
+              "view": "IMG__CHARA__VIEW--0030",
+              "alt": "Uma pintura gerada por IA retratando uma nobre medieval deitada de costas sobre uma cama requintada"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0031",
+              "thumbnail": "IMG__CHARA__THUMB--0031",
+              "view": "IMG__CHARA__VIEW--0031",
+              "alt": "Uma pintura gerada por IA exibindo uma ladra feminina RPG sentada graciosamente sobre a terra"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0032",
+              "thumbnail": "IMG__CHARA__THUMB--0032",
+              "view": "IMG__CHARA__VIEW--0032",
+              "alt": "Uma pintura gerada por IA capturando uma ladra feminina RPG sentada no chão, seu olhar fixo no espectador com intriga"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0033",
+              "thumbnail": "IMG__CHARA__THUMB--0033",
+              "view": "IMG__CHARA__VIEW--0033",
+              "alt": "Uma pintura gerada por IA retratando um ronin estoico envolto em um robe vermelho impressionante"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0034",
+              "thumbnail": "IMG__CHARA__THUMB--0034",
+              "view": "IMG__CHARA__VIEW--0034",
+              "alt": "Uma pintura gerada por IA retratando um ronin determinado adornado com um robe vermelho distinto"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0035",
+              "thumbnail": "IMG__CHARA__THUMB--0035",
+              "view": "IMG__CHARA__VIEW--0035",
+              "alt": "Uma pintura gerada por IA retratando um soldado de infantaria do Japão feudal adornado com um chapéu cônico"
+          },
+          {
+              "source": "IMG__CHARA__SRC--0036",
+              "thumbnail": "IMG__CHARA__THUMB--0036",
+              "view": "IMG__CHARA__VIEW--0036",
+              "alt": "Uma pintura gerada por IA retratando um soldado de infantaria do Japão feudal adornado com um chapéu cônico."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0037",
+              "thumbnail": "IMG__CHARA__THUMB--0037",
+              "view": "IMG__CHARA__VIEW--0037",
+              "alt": "Uma pintura gerada por IA retratando uma nobre de um RPG, elegantemente vestida com um vestido vermelho."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0038",
+              "thumbnail": "IMG__CHARA__THUMB--0038",
+              "view": "IMG__CHARA__VIEW--0038",
+              "alt": "Uma pintura gerada por IA mostrando uma nobre de RPG, regiamente vestida com um vestido carmesim."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0039",
+              "thumbnail": "IMG__CHARA__THUMB--0039",
+              "view": "IMG__CHARA__VIEW--0039",
+              "alt": "Uma pintura gerada por IA capturando uma clériga de RPG, mulher, vestindo uma túnica com capuz e armadura, situada dentro de uma cidade."
+          },
+          {
+              "source": "IMG__CHARA__SRC--0040",
+              "thumbnail": "IMG__CHARA__THUMB--0040",
+              "view": "IMG__CHARA__VIEW--0040",
+              "alt": "Uma pintura gerada por IA de uma clériga de RPG, mulher, vestida com uma túnica com capuz e armadura, segurando um livro substancial em meio a uma paisagem urbana."
+          }
+      ],
+      "food": [
+          {
+              "source": "IMG__FOOD__SRC--0001",
+              "thumbnail": "IMG__FOOD__THUMB--0001",
+              "view": "IMG__FOOD__VIEW--0001",
+              "alt": "Uma pintura gerada por IA mostrando um prato adornado com camarão, graciosamente colocado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0002",
+              "thumbnail": "IMG__FOOD__THUMB--0002",
+              "view": "IMG__FOOD__VIEW--0002",
+              "alt": "Uma pintura gerada por IA apresentando um delicioso prato de waffles, perfeitamente posicionado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0003",
+              "thumbnail": "IMG__FOOD__THUMB--0003",
+              "view": "IMG__FOOD__VIEW--0003",
+              "alt": "Uma pintura gerada por IA exibindo um prato enfeitado com camarão, meticulosamente arranjado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0004",
+              "thumbnail": "IMG__FOOD__THUMB--0004",
+              "view": "IMG__FOOD__VIEW--0004",
+              "alt": "Uma pintura gerada por IA apresentando um prato de macarrão, tentadoramente posicionado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0005",
+              "thumbnail": "IMG__FOOD__THUMB--0005",
+              "view": "IMG__FOOD__VIEW--0005",
+              "alt": "Uma pintura gerada por IA capturando um sanduíche elegantemente colocado em um prato, descansando sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0006",
+              "thumbnail": "IMG__FOOD__THUMB--0006",
+              "view": "IMG__FOOD__VIEW--0006",
+              "alt": "Uma pintura gerada por IA de um prato adornado com comida, acompanhado por uma colher."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0007",
+              "thumbnail": "IMG__FOOD__THUMB--0007",
+              "view": "IMG__FOOD__VIEW--0007",
+              "alt": "Uma pintura gerada por IA retratando uma tigela de sopa, acompanhada por hashis."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0008",
+              "thumbnail": "IMG__FOOD__THUMB--0008",
+              "view": "IMG__FOOD__VIEW--0008",
+              "alt": "Uma pintura gerada por IA mostrando um prato com comida, graciosamente arranjado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0009",
+              "thumbnail": "IMG__FOOD__THUMB--0009",
+              "view": "IMG__FOOD__VIEW--0009",
+              "alt": "Uma pintura gerada por IA apresentando um prato adornado com deliciosos itens alimentares, descansando sobre a superfície de uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0010",
+              "thumbnail": "IMG__FOOD__THUMB--0010",
+              "view": "IMG__FOOD__VIEW--0010",
+              "alt": "Uma pintura gerada por IA capturando um tentador prato de comida meticulosamente arranjado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0011",
+              "thumbnail": "IMG__FOOD__THUMB--0011",
+              "view": "IMG__FOOD__VIEW--0011",
+              "alt": "Uma pintura gerada por IA mostrando um prato de comida colocado sobre uma bandeja."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0012",
+              "thumbnail": "IMG__FOOD__THUMB--0012",
+              "view": "IMG__FOOD__VIEW--0012",
+              "alt": "Uma pintura gerada por IA apresentando um prato adornado com comida deliciosa, elegantemente apresentado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0013",
+              "thumbnail": "IMG__FOOD__THUMB--0013",
+              "view": "IMG__FOOD__VIEW--0013",
+              "alt": "Uma pintura gerada por IA retratando um prato guarnecido com comida, ao lado de um garfo e faca."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0014",
+              "thumbnail": "IMG__FOOD__THUMB--0014",
+              "view": "IMG__FOOD__VIEW--0014",
+              "alt": "Uma pintura gerada por IA de um prato cheio de comida, incluindo suculentos morangos."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0015",
+              "thumbnail": "IMG__FOOD__THUMB--0015",
+              "view": "IMG__FOOD__VIEW--0015",
+              "alt": "Uma pintura gerada por IA mostrando um prato de comida, tentadoramente posicionado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0016",
+              "thumbnail": "IMG__FOOD__THUMB--0016",
+              "view": "IMG__FOOD__VIEW--0016",
+              "alt": "Uma pintura gerada por IA capturando uma tigela de sopa, acompanhada por hashis."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0017",
+              "thumbnail": "IMG__FOOD__THUMB--0017",
+              "view": "IMG__FOOD__VIEW--0017",
+              "alt": "Uma pintura gerada por IA retratando um prato de comida, acompanhado por uma colher."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0018",
+              "thumbnail": "IMG__FOOD__THUMB--0018",
+              "view": "IMG__FOOD__VIEW--0018",
+              "alt": "Uma pintura gerada por IA retratando uma cena com um prato enfeitado com uma colher e várias colheres."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0019",
+              "thumbnail": "IMG__FOOD__THUMB--0019",
+              "view": "IMG__FOOD__VIEW--0019",
+              "alt": "Uma pintura gerada por IA mostrando uma tigela de sopa, lindamente acompanhada por uma colher."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0020",
+              "thumbnail": "IMG__FOOD__THUMB--0020",
+              "view": "IMG__FOOD__VIEW--0020",
+              "alt": "Uma pintura gerada por IA apresentando um prato de comida, elegantemente colocado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0021",
+              "thumbnail": "IMG__FOOD__THUMB--0021",
+              "view": "IMG__FOOD__VIEW--0021",
+              "alt": "Uma pintura gerada por IA habilmente retrata um prato de comida, acentuado por um pincel."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0022",
+              "thumbnail": "IMG__FOOD__THUMB--0022",
+              "view": "IMG__FOOD__VIEW--0022",
+              "alt": "Uma pintura gerada por IA apresenta um prato de comida requintado, perfeitamente colocado em uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0023",
+              "thumbnail": "IMG__FOOD__THUMB--0023",
+              "view": "IMG__FOOD__VIEW--0023",
+              "alt": "Uma pintura gerada por IA captura lindamente a essência de um prato de comida descansando em uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0024",
+              "thumbnail": "IMG__FOOD__THUMB--0024",
+              "view": "IMG__FOOD__VIEW--0024",
+              "alt": "Uma pintura gerada por IA representa artisticamente um arranjo de comida em uma superfície branca imaculada."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0025",
+              "thumbnail": "IMG__FOOD__THUMB--0025",
+              "view": "IMG__FOOD__VIEW--0025",
+              "alt": "Uma pintura gerada por IA mostra habilmente uma deliciosa variedade de alimentos em uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0026",
+              "thumbnail": "IMG__FOOD__THUMB--0026",
+              "view": "IMG__FOOD__VIEW--0026",
+              "alt": "Uma pintura gerada por IA exibe elegantemente uma obra-prima culinária em um prato."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0027",
+              "thumbnail": "IMG__FOOD__THUMB--0027",
+              "view": "IMG__FOOD__VIEW--0027",
+              "alt": "Uma pintura gerada por IA retrata vividamente um prato delicioso de comida harmonizando com uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0028",
+              "thumbnail": "IMG__FOOD__THUMB--0028",
+              "view": "IMG__FOOD__VIEW--0028",
+              "alt": "Uma pintura gerada por IA dá vida à essência de uma criação de pizza deliciosa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0029",
+              "thumbnail": "IMG__FOOD__THUMB--0029",
+              "view": "IMG__FOOD__VIEW--0029",
+              "alt": "Uma pintura gerada por IA habilmente captura um prato suntuoso de comida adornando uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0030",
+              "thumbnail": "IMG__FOOD__THUMB--0030",
+              "view": "IMG__FOOD__VIEW--0030",
+              "alt": "Uma pintura gerada por IA apresenta um prato tentador de comida em meio ao cenário de uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0031",
+              "thumbnail": "IMG__FOOD__THUMB--0031",
+              "view": "IMG__FOOD__VIEW--0031",
+              "alt": "Uma pintura gerada por IA apresenta artisticamente uma pizza generosamente grande, dominando a presença da mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0032",
+              "thumbnail": "IMG__FOOD__THUMB--0032",
+              "view": "IMG__FOOD__VIEW--0032",
+              "alt": "Uma pintura gerada por IA captura o arranjo intrincado de conchas na superfície de uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0033",
+              "thumbnail": "IMG__FOOD__THUMB--0033",
+              "view": "IMG__FOOD__VIEW--0033",
+              "alt": "Uma pintura gerada por IA retrata vividamente o fascínio do deleite culinário em uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0034",
+              "thumbnail": "IMG__FOOD__THUMB--0034",
+              "view": "IMG__FOOD__VIEW--0034",
+              "alt": "Uma pintura gerada por IA captura evocativamente um prato de comida liberando tentadoras mechas de fumaça."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0035",
+              "thumbnail": "IMG__FOOD__THUMB--0035",
+              "view": "IMG__FOOD__VIEW--0035",
+              "alt": "Uma pintura gerada por IA lindamente apresenta uma variedade de alimentos em uma mesa à espera."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0036",
+              "thumbnail": "IMG__FOOD__THUMB--0036",
+              "view": "IMG__FOOD__VIEW--0036",
+              "alt": "Uma pintura gerada por IA habilmente captura um prato adornado com uma tentadora variedade de alimentos."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0037",
+              "thumbnail": "IMG__FOOD__THUMB--0037",
+              "view": "IMG__FOOD__VIEW--0037",
+              "alt": "Uma pintura gerada por IA retrata um prato agraciado pelo frango suculento, posicionado sobre uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0038",
+              "thumbnail": "IMG__FOOD__THUMB--0038",
+              "view": "IMG__FOOD__VIEW--0038",
+              "alt": "Uma pintura gerada por IA apresenta cuidadosamente a riqueza da cultura culinária em uma mesa."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0039",
+              "thumbnail": "IMG__FOOD__THUMB--0039",
+              "view": "IMG__FOOD__VIEW--0039",
+              "alt": "Uma pintura gerada por IA oferece uma visão íntima, capturando a essência de uma pintura em close-up."
+          },
+          {
+              "source": "IMG__FOOD__SRC--0040",
+              "thumbnail": "IMG__FOOD__THUMB--0040",
+              "view": "IMG__FOOD__VIEW--0040",
+              "alt": "Uma pintura gerada por IA exibe elegantemente um prato de sushi, acompanhado pelos hashis posicionados."
+          }
+      ],
+      "people": [
+          {
+              "source": "IMG__PEOPLE__SRC--0001",
+              "thumbnail": "IMG__PEOPLE__THUMB--0001",
+              "view": "IMG__PEOPLE__VIEW--0001",
+              "alt": "Uma pintura gerada por IA dá vida a um homem africano barbudo vestido com trajes resplandecentes e vibrantes."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0002",
+              "thumbnail": "IMG__PEOPLE__THUMB--0002",
+              "view": "IMG__PEOPLE__VIEW--0002",
+              "alt": "Uma pintura gerada por IA retrata habilmente um homem africano digno usando um robe ornado."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0003",
+              "thumbnail": "IMG__PEOPLE__THUMB--0003",
+              "view": "IMG__PEOPLE__VIEW--0003",
+              "alt": "Uma pintura gerada por IA evoca a presença soulful de uma mulher africana cantando, seu turbante vermelho é uma sinfonia visual."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0004",
+              "thumbnail": "IMG__PEOPLE__THUMB--0004",
+              "view": "IMG__PEOPLE__VIEW--0004",
+              "alt": "Uma pintura gerada por IA habilmente captura a arte de uma mulher africana meticulosamente criando uma tigela cerâmica."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0005",
+              "thumbnail": "IMG__PEOPLE__THUMB--0005",
+              "view": "IMG__PEOPLE__VIEW--0005",
+              "alt": "Uma pintura gerada por IA retrata cuidadosamente um homem branco sem-teto, sua barba é um testemunho de sua jornada."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0006",
+              "thumbnail": "IMG__PEOPLE__THUMB--0006",
+              "view": "IMG__PEOPLE__VIEW--0006",
+              "alt": "Uma pintura gerada por IA retratando um homem sem-teto contente com uma barba digna"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0007",
+              "thumbnail": "IMG__PEOPLE__THUMB--0007",
+              "view": "IMG__PEOPLE__VIEW--0007",
+              "alt": "Uma pintura gerada por IA de uma mulher jovem com cabelos loiros esvoaçantes"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0008",
+              "thumbnail": "IMG__PEOPLE__THUMB--0008",
+              "view": "IMG__PEOPLE__VIEW--0008",
+              "alt": "Uma pintura gerada por IA mostrando uma mulher jovem com cabelos loiros"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0009",
+              "thumbnail": "IMG__PEOPLE__THUMB--0009",
+              "view": "IMG__PEOPLE__VIEW--0009",
+              "alt": "Uma pintura gerada por IA capturando uma adolescente irritada com cabelos castanhos esvoaçantes"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0010",
+              "thumbnail": "IMG__PEOPLE__THUMB--0010",
+              "view": "IMG__PEOPLE__VIEW--0010",
+              "alt": "Uma pintura gerada por IA retratando uma mulher com cabelos castanhos longos exibindo irritação"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0011",
+              "thumbnail": "IMG__PEOPLE__THUMB--0011",
+              "view": "IMG__PEOPLE__VIEW--0011",
+              "alt": "Uma pintura gerada por IA de uma elegante mulher chinesa com um coque cuidadosamente arrumado"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0012",
+              "thumbnail": "IMG__PEOPLE__THUMB--0012",
+              "view": "IMG__PEOPLE__VIEW--0012",
+              "alt": "Uma pintura gerada por IA de uma garota chinesa graciosamente vestindo um qipao vermelho"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0013",
+              "thumbnail": "IMG__PEOPLE__THUMB--0013",
+              "view": "IMG__PEOPLE__VIEW--0013",
+              "alt": "Uma pintura gerada por IA de uma garota com cabelos pretos lisos"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0014",
+              "thumbnail": "IMG__PEOPLE__THUMB--0014",
+              "view": "IMG__PEOPLE__VIEW--0014",
+              "alt": "Uma pintura gerada por IA de uma garota com encantadoras tranças pretas"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0015",
+              "thumbnail": "IMG__PEOPLE__THUMB--0015",
+              "view": "IMG__PEOPLE__VIEW--0015",
+              "alt": "Uma pintura gerada por IA retratando um sábio homem grego idoso com uma barba branca distinta"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0016",
+              "thumbnail": "IMG__PEOPLE__THUMB--0016",
+              "view": "IMG__PEOPLE__VIEW--0016",
+              "alt": "Uma pintura gerada por IA de um homem grego envolto em um manto tradicional"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0017",
+              "thumbnail": "IMG__PEOPLE__THUMB--0017",
+              "view": "IMG__PEOPLE__VIEW--0017",
+              "alt": "Uma pintura gerada por IA capturando a essência da graça de uma mulher indiana"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0018",
+              "thumbnail": "IMG__PEOPLE__THUMB--0018",
+              "view": "IMG__PEOPLE__VIEW--0018",
+              "alt": "Uma pintura gerada por IA de uma mulher indiana adornada com um headdress requintado"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0019",
+              "thumbnail": "IMG__PEOPLE__THUMB--0019",
+              "view": "IMG__PEOPLE__VIEW--0019",
+              "alt": "Uma pintura gerada por IA capturando o fascínio de um homem italiano com cabelos cacheados e olhos verdes cativantes"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0020",
+              "thumbnail": "IMG__PEOPLE__THUMB--0020",
+              "view": "IMG__PEOPLE__VIEW--0020",
+              "alt": "Uma pintura gerada por IA de um homem italiano com cabelos cacheados carismáticos e uma barba bem aparada"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0021",
+              "thumbnail": "IMG__PEOPLE__THUMB--0021",
+              "view": "IMG__PEOPLE__VIEW--0021",
+              "alt": "Uma pintura gerada por IA retratando uma jovem japonesa com cabelos escuros em meio a uma tempestade de neve hipnotizante"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0022",
+              "thumbnail": "IMG__PEOPLE__THUMB--0022",
+              "view": "IMG__PEOPLE__VIEW--0022",
+              "alt": "Uma pintura gerada por IA de uma jovem japonesa com cabelos escuros, vestida em trajes de neve e absorta em música, em meio a uma tempestade de neve"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0023",
+              "thumbnail": "IMG__PEOPLE__THUMB--0023",
+              "view": "IMG__PEOPLE__VIEW--0023",
+              "alt": "Uma pintura gerada por IA capturando o sofrimento de um homem japonês em um terno, segurando a cabeça"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0024",
+              "thumbnail": "IMG__PEOPLE__THUMB--0024",
+              "view": "IMG__PEOPLE__VIEW--0024",
+              "alt": "Uma pintura gerada por IA ilustrando a tensão sentida por um homem japonês em um terno, agarrando a cabeça"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0025",
+              "thumbnail": "IMG__PEOPLE__THUMB--0025",
+              "view": "IMG__PEOPLE__VIEW--0025",
+              "alt": "Uma pintura gerada por IA de um homem branco pensativo com cabelo loiro e barba bem aparada, sua mão pensativamente no queixo"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0026",
+              "thumbnail": "IMG__PEOPLE__THUMB--0026",
+              "view": "IMG__PEOPLE__VIEW--0026",
+              "alt": "Uma pintura gerada por IA de um homem branco contemplativo com cabelo loiro e barba bem cuidada, profundamente pensativo com a mão no queixo"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0027",
+              "thumbnail": "IMG__PEOPLE__THUMB--0027",
+              "view": "IMG__PEOPLE__VIEW--0027",
+              "alt": "Uma pintura gerada por IA incorporando a presença de um homem iraniano com uma barba orgulhosa"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0028",
+              "thumbnail": "IMG__PEOPLE__THUMB--0028",
+              "view": "IMG__PEOPLE__VIEW--0028",
+              "alt": "Uma pintura gerada por IA mostrando o caráter de um homem iraniano com uma barba distinta"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0029",
+              "thumbnail": "IMG__PEOPLE__THUMB--0029",
+              "view": "IMG__PEOPLE__VIEW--0029",
+              "alt": "Uma pintura gerada por IA de uma garota francesa chique em uma camisa listrada clássica e um elegante beret"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0030",
+              "thumbnail": "IMG__PEOPLE__THUMB--0030",
+              "view": "IMG__PEOPLE__VIEW--0030",
+              "alt": "Uma pintura gerada por IA de uma garota francesa na moda usando uma camisa listrada e um beret chique"
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0031",
+              "thumbnail": "IMG__PEOPLE__THUMB--0031",
+              "view": "IMG__PEOPLE__VIEW--0031",
+              "alt": "Uma pintura gerada por IA retratando uma mulher com cabelos cacheados lindos, elegantemente vestida em um vestido frisado."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0032",
+              "thumbnail": "IMG__PEOPLE__THUMB--0032",
+              "view": "IMG__PEOPLE__VIEW--0032",
+              "alt": "Uma pintura gerada por IA retratando uma mulher com cabelos cacheados deslumbrantes."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0033",
+              "thumbnail": "IMG__PEOPLE__THUMB--0033",
+              "view": "IMG__PEOPLE__VIEW--0033",
+              "alt": "Uma pintura gerada por IA capturando a graça de uma idosa nativa americana usando um majestoso cocar de penas."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0034",
+              "thumbnail": "IMG__PEOPLE__THUMB--0034",
+              "view": "IMG__PEOPLE__VIEW--0034",
+              "alt": "Uma pintura gerada por IA mostrando uma jovem nativa americana adornada com um cocar de penas encantador."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0035",
+              "thumbnail": "IMG__PEOPLE__THUMB--0035",
+              "view": "IMG__PEOPLE__VIEW--0035",
+              "alt": "Uma pintura gerada por IA imortalizando um idoso branco alegre com um sorriso caloroso."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0036",
+              "thumbnail": "IMG__PEOPLE__THUMB--0036",
+              "view": "IMG__PEOPLE__VIEW--0036",
+              "alt": "Uma pintura gerada por IA capturando o brilho de um idoso branco sorridente, seu charme aumentado por um chapéu elegante."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0037",
+              "thumbnail": "IMG__PEOPLE__THUMB--0037",
+              "view": "IMG__PEOPLE__VIEW--0037",
+              "alt": "Uma pintura gerada por IA retratando um homem intelectualmente inclinado com cabelos de comprimento médio, que carrega um ar de sofisticação nerd enquanto usa óculos."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0038",
+              "thumbnail": "IMG__PEOPLE__THUMB--0038",
+              "view": "IMG__PEOPLE__VIEW--0038",
+              "alt": "Uma pintura gerada por IA mostrando um homem nerd com cabelo médio, exalando charme intelectual através de seus óculos."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0039",
+              "thumbnail": "IMG__PEOPLE__THUMB--0039",
+              "view": "IMG__PEOPLE__VIEW--0039",
+              "alt": "Uma pintura gerada por IA apresentando um homem americano branco vestindo uma jaqueta duster, incorporando o espírito do individualismo robusto."
+          },
+          {
+              "source": "IMG__PEOPLE__SRC--0040",
+              "thumbnail": "IMG__PEOPLE__THUMB--0040",
+              "view": "IMG__PEOPLE__VIEW--0040",
+              "alt": "Uma pintura gerada por IA retratando um homem americano branco confiantemente vestindo uma jaqueta duster, simbolizando o espírito aventureiro."
+          }
+      ],
+      "places": [
+          {
+              "source": "IMG__PLACES__SRC--0001",
+              "thumbnail": "IMG__PLACES__THUMB--0001",
+              "view": "IMG__PLACES__VIEW--0001",
+              "alt": "Uma pintura gerada por IA de uma floresta de outro mundo, evocando uma sensação de mistério e beleza desconhecida."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0002",
+              "thumbnail": "IMG__PLACES__THUMB--0002",
+              "view": "IMG__PLACES__VIEW--0002",
+              "alt": "Uma pintura gerada por IA capturando a essência de uma paisagem florestal alienígena, convidando os espectadores a explorar seu charme de outro mundo."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0003",
+              "thumbnail": "IMG__PLACES__THUMB--0003",
+              "view": "IMG__PLACES__VIEW--0003",
+              "alt": "Uma pintura gerada por IA retratando um caminho sereno que leva através de uma floresta exuberante, convidando caminhadas introspectivas."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0004",
+              "thumbnail": "IMG__PLACES__THUMB--0004",
+              "view": "IMG__PLACES__VIEW--0004",
+              "alt": "Uma pintura gerada por IA capturando uma ponte que atravessa graciosamente uma floresta vibrante e verdejante, fornecendo um caminho de encantamento."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0005",
+              "thumbnail": "IMG__PLACES__THUMB--0005",
+              "view": "IMG__PLACES__VIEW--0005",
+              "alt": "Uma pintura gerada por IA mostrando uma floresta outonal iluminada pelo toque suave dos raios solares, capturando a beleza da mudança sazonal."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0006",
+              "thumbnail": "IMG__PLACES__THUMB--0006",
+              "view": "IMG__PLACES__VIEW--0006",
+              "alt": "Uma pintura gerada por IA de árvores outonais dentro de uma floresta, um testemunho colorido dos ciclos da natureza."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0007",
+              "thumbnail": "IMG__PLACES__THUMB--0007",
+              "view": "IMG__PLACES__VIEW--0007",
+              "alt": "Uma pintura gerada por IA capturando a tranquilidade de uma floresta iluminada pelo sol adornada com árvores e folhagens exuberantes."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0008",
+              "thumbnail": "IMG__PLACES__THUMB--0008",
+              "view": "IMG__PLACES__VIEW--0008",
+              "alt": "Uma pintura gerada por IA retratando uma floresta resplandecente com árvores, suas folhas verdejantes formando um tapeçaria cativante."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0009",
+              "thumbnail": "IMG__PLACES__THUMB--0009",
+              "view": "IMG__PLACES__VIEW--0009",
+              "alt": "Uma pintura gerada por IA retratando uma floresta adornada com árvores e musgo delicado, um ecossistema de crescimento harmonioso."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0010",
+              "thumbnail": "IMG__PLACES__THUMB--0010",
+              "view": "IMG__PLACES__VIEW--0010",
+              "alt": "Uma pintura gerada por IA mostrando uma paisagem florestal banhada pelo sol com árvores majestosas como pilares do grandeur natural."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0011",
+              "thumbnail": "IMG__PLACES__THUMB--0011",
+              "view": "IMG__PLACES__VIEW--0011",
+              "alt": "Uma pintura gerada por IA capturando o encantamento de uma floresta coberta de neve, onde as árvores usam um casaco do abraço do inverno."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0012",
+              "thumbnail": "IMG__PLACES__THUMB--0012",
+              "view": "IMG__PLACES__VIEW--0012",
+              "alt": "Uma pintura gerada por IA retratando uma paisagem florestal invernal, onde as árvores ficam adornadas no traje prístino da neve."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0013",
+              "thumbnail": "IMG__PLACES__THUMB--0013",
+              "view": "IMG__PLACES__VIEW--0013",
+              "alt": "Uma pintura gerada por IA retratando um caminho hipnotizante que serpenteia através de uma floresta de cerejeiras, uma jornada pela beleza da natureza."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0014",
+              "thumbnail": "IMG__PLACES__THUMB--0014",
+              "view": "IMG__PLACES__VIEW--0014",
+              "alt": "Uma pintura gerada por IA apresentando uma floresta cativante de cerejeiras, cada árvore um testemunho da arte da natureza."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0015",
+              "thumbnail": "IMG__PLACES__THUMB--0015",
+              "view": "IMG__PLACES__VIEW--0015",
+              "alt": "Uma pintura gerada por IA apresentando uma galáxia vibrante, adornada com a presença distante de um planeta solitário, uma obra-prima cósmica."
+          },
+          {
+              "source": "IMG__PLACES__SRC--0016",
+              "thumbnail": "IMG__PLACES__THUMB--0016",
+              "view": "IMG__PLACES__VIEW--0016",
+              "alt": "Uma pintura gerada por IA de um céu colorido com uma lua"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0017",
+              "thumbnail": "IMG__PLACES__THUMB--0017",
+              "view": "IMG__PLACES__VIEW--0017",
+              "alt": "Uma pintura gerada por IA mostrando cristais coloridos dentro de uma caverna"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0018",
+              "thumbnail": "IMG__PLACES__THUMB--0018",
+              "view": "IMG__PLACES__VIEW--0018",
+              "alt": "Uma pintura gerada por IA representando uma caverna iluminada por luzes vibrantes"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0019",
+              "thumbnail": "IMG__PLACES__THUMB--0019",
+              "view": "IMG__PLACES__VIEW--0019",
+              "alt": "Uma pintura gerada por IA de uma rua de cidade cyberpunk adornada com luzes neon"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0020",
+              "thumbnail": "IMG__PLACES__THUMB--0020",
+              "view": "IMG__PLACES__VIEW--0020",
+              "alt": "Uma pintura gerada por IA retratando uma paisagem urbana cyberpunk com edifícios altos"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0021",
+              "thumbnail": "IMG__PLACES__THUMB--0021",
+              "view": "IMG__PLACES__VIEW--0021",
+              "alt": "Uma pintura gerada por IA capturando uma cidade situada em uma paisagem desértica"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0022",
+              "thumbnail": "IMG__PLACES__THUMB--0022",
+              "view": "IMG__PLACES__VIEW--0022",
+              "alt": "Uma pintura gerada por IA mostrando uma paisagem urbana contra um pano de fundo desértico"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0023",
+              "thumbnail": "IMG__PLACES__THUMB--0023",
+              "view": "IMG__PLACES__VIEW--0023",
+              "alt": "Uma pintura gerada por IA retratando uma cidade que sucumbiu às ruínas"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0024",
+              "thumbnail": "IMG__PLACES__THUMB--0024",
+              "view": "IMG__PLACES__VIEW--0024",
+              "alt": "Uma pintura gerada por IA capturando uma paisagem desolada com pássaros voando graciosamente pelo céu"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0025",
+              "thumbnail": "IMG__PLACES__THUMB--0025",
+              "view": "IMG__PLACES__VIEW--0025",
+              "alt": "Uma pintura gerada por IA representando um aglomerado de edifícios em uma área de favela"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0026",
+              "thumbnail": "IMG__PLACES__THUMB--0026",
+              "view": "IMG__PLACES__VIEW--0026",
+              "alt": "Uma pintura gerada por IA mostrando uma favela extensa com uma variedade de edifícios"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0027",
+              "thumbnail": "IMG__PLACES__THUMB--0027",
+              "view": "IMG__PLACES__VIEW--0027",
+              "alt": "Uma pintura gerada por IA retratando a entrada de uma caverna adornada com flores coloridas"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0028",
+              "thumbnail": "IMG__PLACES__THUMB--0028",
+              "view": "IMG__PLACES__VIEW--0028",
+              "alt": "Uma pintura gerada por IA capturando uma caverna adornada com flores amarelas"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0029",
+              "thumbnail": "IMG__PLACES__THUMB--0029",
+              "view": "IMG__PLACES__VIEW--0029",
+              "alt": "Uma pintura gerada por IA apresentando árvores adornadas com tons de azul e laranja"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0030",
+              "thumbnail": "IMG__PLACES__THUMB--0030",
+              "view": "IMG__PLACES__VIEW--0030",
+              "alt": "Uma pintura gerada por IA retratando uma floresta iluminada por luz azul serena, com árvores majestosas"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0031",
+              "thumbnail": "IMG__PLACES__THUMB--0031",
+              "view": "IMG__PLACES__VIEW--0031",
+              "alt": "Uma pintura gerada por IA de uma floresta escura com árvores retorcidas, evocando um senso de mistério"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0032",
+              "thumbnail": "IMG__PLACES__THUMB--0032",
+              "view": "IMG__PLACES__VIEW--0032",
+              "alt": "Uma pintura gerada por IA de uma floresta escura com uma luz suave perfurando a densa folhagem"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0033",
+              "thumbnail": "IMG__PLACES__THUMB--0033",
+              "view": "IMG__PLACES__VIEW--0033",
+              "alt": "Uma pintura gerada por IA representando uma paisagem urbana medieval fantástica"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0034",
+              "thumbnail": "IMG__PLACES__THUMB--0034",
+              "view": "IMG__PLACES__VIEW--0034",
+              "alt": "Uma pintura gerada por IA retratando uma cidade medieval fantástica movimentada, repleta de edifícios e pessoas passeando"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0035",
+              "thumbnail": "IMG__PLACES__THUMB--0035",
+              "view": "IMG__PLACES__VIEW--0035",
+              "alt": "Uma pintura gerada por IA mostrando um poste de rua no meio de uma cidade medieval"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0036",
+              "thumbnail": "IMG__PLACES__THUMB--0036",
+              "view": "IMG__PLACES__VIEW--0036",
+              "alt": "Uma pintura gerada por IA capturando a essência de uma paisagem urbana medieval"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0037",
+              "thumbnail": "IMG__PLACES__THUMB--0037",
+              "view": "IMG__PLACES__VIEW--0037",
+              "alt": "Uma pintura gerada por IA retratando um castelo subaquático cercado por um conjunto de peixes coloridos"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0038",
+              "thumbnail": "IMG__PLACES__THUMB--0038",
+              "view": "IMG__PLACES__VIEW--0038",
+              "alt": "Uma pintura gerada por IA apresentando um sortimento de peixes habitando o reino do castelo subaquático"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0039",
+              "thumbnail": "IMG__PLACES__THUMB--0039",
+              "view": "IMG__PLACES__VIEW--0039",
+              "alt": "Uma pintura gerada por IA de uma montanha majestosa envolta em névoa e nuvens"
+          },
+          {
+              "source": "IMG__PLACES__SRC--0040",
+              "thumbnail": "IMG__PLACES__THUMB--0040",
+              "view": "IMG__PLACES__VIEW--0040",
+              "alt": "Uma pintura gerada por IA retratando um pico vulcânico emitindo fumaça, acompanhado de pássaros em voo"
+          }
+      ]
+  }
+}
